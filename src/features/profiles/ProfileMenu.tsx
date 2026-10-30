@@ -72,6 +72,22 @@ export function ProfileMenu() {
           >
             ➕ Añadir o gestionar perfiles
           </Link>
+          <Link
+            role="menuitem"
+            to="/ajustes"
+            onClick={() => setOpen(false)}
+            className="block rounded-lg px-3 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-800"
+          >
+            ⚙️ Ajustes
+          </Link>
+          <Link
+            role="menuitem"
+            to="/tablero"
+            onClick={() => setOpen(false)}
+            className="block rounded-lg px-3 py-2 text-sm hover:bg-slate-100 dark:hover:bg-slate-800"
+          >
+            ♟️ Tablero libre (para dos jugadores)
+          </Link>
         </div>
       )}
     </div>

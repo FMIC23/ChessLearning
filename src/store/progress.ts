@@ -53,6 +53,8 @@ export interface SavedGame {
   analysis?: AnalysisSummary;
 }
 
+export type AnticipationKind = 'visualization' | 'threats' | 'predictions';
+
 export interface ProgressData {
   lessons: Record<string, LessonRecord>;
   /** Días con actividad (AAAA-MM-DD). */
@@ -67,6 +69,8 @@ export interface ProgressData {
   gameRating: number;
   gameCount: number;
   openings: Record<string, OpeningStat>;
+  /** Entrenamiento de anticipación: aciertos e intentos por modalidad. */
+  anticipation: Record<AnticipationKind, ThemeStat>;
 }
 
 export interface PuzzleResult {
@@ -88,6 +92,7 @@ export interface ProgressState extends ProgressData {
   deleteGame: (gameId: string) => void;
   recordOpeningLine: (openingId: string, lineIndex: number, perfect: boolean) => void;
   markOpeningStudied: (openingId: string) => void;
+  recordAnticipation: (kind: AnticipationKind, success: boolean) => void;
   /** Sustituye todo el progreso (importación). */
   replaceProgress: (data: ProgressData) => void;
   resetProgress: () => void;
@@ -106,6 +111,11 @@ export const initialProgress = (): ProgressData => ({
   gameRating: INITIAL_RATING,
   gameCount: 0,
   openings: {},
+  anticipation: {
+    visualization: { attempts: 0, successes: 0 },
+    threats: { attempts: 0, successes: 0 },
+    predictions: { attempts: 0, successes: 0 },
+  },
 });
 
 const MAX_GAMES = 100;
@@ -204,6 +214,15 @@ export const useProgress = create<ProgressState>()(
           openings: { ...state.openings, [openingId]: { lines: {}, ...state.openings[openingId], studiedAt: new Date().toISOString() } },
           activityDays: withActivity(state.activityDays),
         })),
+      recordAnticipation: (kind, success) =>
+        set((state) => {
+          const base = state.anticipation ?? initialProgress().anticipation;
+          const prev = base[kind] ?? { attempts: 0, successes: 0 };
+          return {
+            anticipation: { ...base, [kind]: { attempts: prev.attempts + 1, successes: prev.successes + (success ? 1 : 0) } },
+            activityDays: withActivity(state.activityDays),
+          };
+        }),
       deleteGame: (gameId) => set((state) => ({ games: state.games.filter((g) => g.id !== gameId) })),
       replaceProgress: (data) => set({ ...initialProgress(), ...data }),
       resetProgress: () => set(initialProgress()),

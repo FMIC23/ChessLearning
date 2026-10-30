@@ -10,10 +10,12 @@ import { useSettings } from '@/store/settings';
 const SECTIONS = [
   { to: '/aprender', icon: '📚', title: 'Ruta de aprendizaje', text: '7 niveles con lecciones cortas y ejercicios interactivos, desde cómo se mueven las piezas.' },
   { to: '/tactica', icon: '⚔️', title: 'Táctica', text: 'Problemas a tu medida con pistas, solución paso a paso y repetición espaciada.' },
+  { to: '/anticipacion', icon: '🧠', title: 'Anticipación', text: 'Calcula sin mover las piezas y aprende a ver venir las amenazas del rival.' },
   { to: '/aperturas', icon: '📖', title: 'Aperturas', text: 'Un repertorio explicado con ideas. Estúdialo y ponte a prueba en modo test.' },
   { to: '/jugar', icon: '🤖', title: 'Jugar', text: 'Partidas contra Stockfish con 8 niveles, de muy débil a nivel de maestro.' },
   { to: '/analisis', icon: '📈', title: 'Análisis', text: 'Analiza tus partidas o importa un PGN: errores, mejores jugadas y gráfica.' },
   { to: '/progreso', icon: '📊', title: 'Progreso', text: 'Tu Elo estimado, racha, puntos débiles y copia de seguridad del progreso.' },
+  { to: '/tablero', icon: '♟️', title: 'Tablero libre', text: 'Para jugar dos personas en el mismo dispositivo o probar posiciones.' },
 ];
 
 export function HomePage() {

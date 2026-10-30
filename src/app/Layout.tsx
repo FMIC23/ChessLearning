@@ -46,11 +46,11 @@ export function Layout() {
         <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-2">
           <NavLink to="/" className="flex items-center gap-2 text-lg font-bold" aria-label="Escuela de Ajedrez, inicio">
             <span aria-hidden="true" className="text-2xl">♞</span>
-            <span>Escuela de Ajedrez</span>
+            <span className="whitespace-nowrap xl:hidden 2xl:inline">Escuela de Ajedrez</span>
           </NavLink>
           <nav aria-label="Principal" className="ml-auto hidden xl:block">
             <ul className="flex gap-1">
-              {NAV_ITEMS.map((item) => (
+              {NAV_ITEMS.filter((item) => !item.secondary).map((item) => (
                 <li key={item.to}>
                   <NavLink to={item.to} end={item.to === '/'} className={navClass}>
                     <span aria-hidden="true">{item.icon}</span>

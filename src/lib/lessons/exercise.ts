@@ -1,6 +1,5 @@
 import type { MovesExercise, SquaresExercise } from '../../types/lesson';
-import { applyMove, createGame, sameMove, toUci, type MoveInput } from '../chess';
-import type { Square } from 'chess.js';
+import { applyMove, createGame, pieceMoves, sameMove, toUci, type MoveInput } from '../chess';
 
 export interface MoveAttemptResult {
   legal: boolean;
@@ -61,17 +60,7 @@ export function studentColor(fen: string): 'white' | 'black' {
  * Útil para ejercicios del tipo «marca todas las casillas a las que puede ir el alfil».
  */
 export function pieceTargets(fen: string, square: string): string[] {
-  const probe = createGame(fen);
-  const piece = probe.get(square as Square);
-  if (!piece) return [];
-  const parts = fen.split(' ');
-  if (parts[1] !== piece.color) {
-    parts[1] = piece.color;
-    parts[3] = '-';
-  }
-  const game = createGame(parts.join(' '));
-  const targets = game.moves({ square: square as Square, verbose: true }).map((m) => m.to);
-  return [...new Set(targets)].sort();
+  return pieceMoves(fen, square).map((m) => m.to);
 }
 
 /** Resuelve la lista de casillas objetivo de un ejercicio de casillas. */

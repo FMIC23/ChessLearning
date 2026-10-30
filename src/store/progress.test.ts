@@ -57,3 +57,18 @@ describe('partidas guardadas', () => {
     expect(useProgress.getState().games).toHaveLength(0);
   });
 });
+
+describe('anticipación', () => {
+  beforeEach(() => useProgress.getState().resetProgress());
+
+  it('cuenta intentos y aciertos por modalidad', () => {
+    const { recordAnticipation } = useProgress.getState();
+    recordAnticipation('predictions', true);
+    recordAnticipation('predictions', false);
+    recordAnticipation('visualization', true);
+    const a = useProgress.getState().anticipation;
+    expect(a.predictions).toEqual({ attempts: 2, successes: 1 });
+    expect(a.visualization).toEqual({ attempts: 1, successes: 1 });
+    expect(a.threats).toEqual({ attempts: 0, successes: 0 });
+  });
+});

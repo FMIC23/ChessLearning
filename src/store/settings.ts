@@ -12,7 +12,9 @@ export interface SettingsState {
   /** Últimas opciones usadas al jugar contra el ordenador. */
   playLevel: number;
   playColor: 'w' | 'b' | 'random';
-  setPlayOptions: (options: { playLevel?: number; playColor?: 'w' | 'b' | 'random' }) => void;
+  /** Modo «Adivina la jugada del ordenador». */
+  playPredict: boolean;
+  setPlayOptions: (options: { playLevel?: number; playColor?: 'w' | 'b' | 'random'; playPredict?: boolean }) => void;
   setTheme: (theme: ThemePreference) => void;
   setShowCoordinates: (value: boolean) => void;
   setShowLegalMoves: (value: boolean) => void;
@@ -28,6 +30,7 @@ export const useSettings = create<SettingsState>()(
       unlockAll: false,
       playLevel: 2,
       playColor: 'w',
+      playPredict: false,
       setPlayOptions: (options) => set(options),
       setTheme: (theme) => set({ theme }),
       setShowCoordinates: (showCoordinates) => set({ showCoordinates }),

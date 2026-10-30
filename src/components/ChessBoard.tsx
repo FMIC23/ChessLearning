@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useId, useMemo, useRef, useState, type CSSProperties } from 'react';
 import { Chessboard, type Arrow } from 'react-chessboard';
-import { createGame, findKing, legalTargets, needsPromotion, PIECE_NAMES, type MoveInput } from '@/lib/chess';
+import { createGame, findKing, needsPromotion, PIECE_NAMES, pieceMoves, type MoveInput } from '@/lib/chess';
 import { useSettings } from '@/store/settings';
 import { PromotionDialog } from './PromotionDialog';
 import { MoveTextInput } from './MoveTextInput';
@@ -31,6 +31,12 @@ export interface ChessBoardProps {
 
 const LAST_MOVE = 'rgba(255, 213, 79, 0.55)';
 const SELECTED = 'rgba(47, 111, 214, 0.45)';
+/** Sombra gris para las casillas a las que puede ir la pieza y roja para las capturas. */
+const MOVE_SHADE = 'radial-gradient(circle, rgba(30,41,59,0.55) 18%, rgba(71,85,105,0.38) 20%)';
+const CAPTURE_SHADE = 'rgba(220, 38, 38, 0.55)';
+const PEEK_MOVE_SHADE = 'radial-gradient(circle, rgba(30,41,59,0.35) 16%, rgba(100,116,139,0.22) 18%)';
+const PEEK_CAPTURE_SHADE = 'rgba(220, 38, 38, 0.3)';
+const PEEK_SELECTED = 'rgba(148, 163, 184, 0.55)';
 
 export function ChessBoard({
   fen,
@@ -52,12 +58,15 @@ export function ChessBoard({
   const showCoordinates = useSettings((s) => s.showCoordinates);
   const showLegalMoves = useSettings((s) => s.showLegalMoves);
   const [selected, setSelected] = useState<string | null>(null);
+  /** Pieza que se está inspeccionando sin poder moverla (p. ej. una pieza rival). */
+  const [peek, setPeek] = useState<string | null>(null);
   const [pendingPromotion, setPendingPromotion] = useState<{ from: string; to: string } | null>(null);
   // Si cambia la posición, se descarta la selección (patrón "ajustar estado al cambiar props").
   const [prevFen, setPrevFen] = useState(fen);
   if (prevFen !== fen) {
     setPrevFen(fen);
     setSelected(null);
+    setPeek(null);
     setPendingPromotion(null);
   }
 
@@ -102,7 +111,9 @@ export function ChessBoard({
     [fen, onMove],
   );
 
-  const targets = useMemo(() => (selected ? legalTargets(fen, selected) : []), [fen, selected]);
+  const selectedMoves = useMemo(() => (selected ? pieceMoves(fen, selected) : []), [fen, selected]);
+  const targets = useMemo(() => selectedMoves.map((m) => m.to), [selectedMoves]);
+  const peekMoves = useMemo(() => (peek ? pieceMoves(fen, peek) : []), [fen, peek]);
 
   const squareStyles = useMemo(() => {
     const styles: Record<string, CSSProperties> = {};
@@ -123,19 +134,16 @@ export function ChessBoard({
       }
     }
     if (selected) styles[selected] = { ...styles[selected], backgroundColor: SELECTED };
+    if (peek) styles[peek] = { ...styles[peek], backgroundColor: PEEK_SELECTED };
     if (showLegalMoves) {
-      for (const target of targets) {
-        const occupied = game.get(target as never);
-        styles[target] = {
-          ...styles[target],
-          background: occupied
-            ? 'radial-gradient(circle, transparent 58%, rgba(0,0,0,0.25) 60%)'
-            : 'radial-gradient(circle, rgba(0,0,0,0.22) 22%, transparent 24%)',
-        };
-      }
+      const paint = (moves: typeof selectedMoves, move: string, capture: string) => {
+        for (const m of moves) styles[m.to] = { ...styles[m.to], background: m.capture ? capture : move };
+      };
+      paint(peekMoves, PEEK_MOVE_SHADE, PEEK_CAPTURE_SHADE);
+      paint(selectedMoves, MOVE_SHADE, CAPTURE_SHADE);
     }
     return styles;
-  }, [game, highlights, lastMove, selected, showLegalMoves, targets]);
+  }, [game, highlights, lastMove, peek, peekMoves, selected, selectedMoves, showLegalMoves]);
 
   const handleSquareClick = useCallback(
     ({ square, piece }: { square: string; piece: { pieceType: string } | null }) => {
@@ -147,11 +155,17 @@ export function ChessBoard({
       }
       if (piece && canMoveColor(piece.pieceType[0] ?? '')) {
         setSelected(square === selected ? null : square);
+        setPeek(null);
+      } else if (piece) {
+        // Pieza que no se puede mover ahora (normalmente del rival): se muestra su alcance.
+        setSelected(null);
+        setPeek(square === peek ? null : square);
       } else {
         setSelected(null);
+        setPeek(null);
       }
     },
-    [attemptMove, canMoveColor, interactive, onSquareClick, selected, targets],
+    [attemptMove, canMoveColor, interactive, onSquareClick, peek, selected, targets],
   );
 
   const options = {
@@ -167,6 +181,12 @@ export function ChessBoard({
     lightSquareStyle: { backgroundColor: 'var(--color-board-light)' },
     animationDurationInMs: 200,
     canDragPiece: ({ piece }: { piece: { pieceType: string } }) => canMoveColor(piece.pieceType[0] ?? ''),
+    onPieceDrag: ({ square }: { square: string | null }) => {
+      if (square) {
+        setSelected(square);
+        setPeek(null);
+      }
+    },
     onPieceDrop: ({ sourceSquare, targetSquare }: { sourceSquare: string; targetSquare: string | null }) => {
       if (!targetSquare || sourceSquare === targetSquare) return false;
       return attemptMove(sourceSquare, targetSquare);
