@@ -1,0 +1,451 @@
+[
+  {
+    "id": "combi-001",
+    "fen": "2r5/2p3k1/3p2b1/p2P3B/4nB1K/1PP5/6P1/4R3 w - - 10 41",
+    "moves": [
+      "h5g6",
+      "g7g6",
+      "e1e4"
+    ],
+    "rating": 900,
+    "themes": [
+      "capturingDefender",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Quita al defensor",
+    "hint": "¿Qué pieza negra protege al caballo de e4?",
+    "explanation": "El caballo de e4 solo está defendido por el Ag6. **Axg6!** elimina al defensor y, tras **...Rxg6**, **Txe4** gana el caballo.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-002",
+    "fen": "rn3k1r/1q4b1/4P2p/3p1pBQ/p1Pp4/7P/PP4P1/R5K1 w - - 0 21",
+    "moves": [
+      "e6e7",
+      "b7e7",
+      "g5e7"
+    ],
+    "rating": 950,
+    "themes": [
+      "attraction",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "El peón atrae a la dama",
+    "hint": "Un jaque de peón puede obligar a la dama negra a ponerse donde tu alfil la espera.",
+    "explanation": "**e7+!** da jaque y la mejor respuesta es **...Dxe7**, pero entonces **Axe7+** gana la dama con jaque: el peón ha **atraído** a la dama a una casilla atacada por el Ag5.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-003",
+    "fen": "4rk2/ppp5/2p5/6p1/2np4/1P6/P1P3P1/2B1R1K1 w - - 0 23",
+    "moves": [
+      "e1e8",
+      "f8e8",
+      "b3c4"
+    ],
+    "rating": 1000,
+    "themes": [
+      "endgame",
+      "zwischenzug",
+      "advantage"
+    ],
+    "title": "Primero, el cambio",
+    "hint": "Puedes capturar el caballo, pero mira antes qué pasa en la primera fila.",
+    "explanation": "Si capturas el caballo de inmediato, **...Txe1+** gana tu torre con jaque. Por eso primero **Txe8+ Rxe8** y luego **bxc4**: el orden de jugadas lo es todo.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-004",
+    "fen": "3Q4/6kp/pp3pr1/8/8/q7/6PP/4R2K w - - 0 42",
+    "moves": [
+      "e1e7",
+      "a3e7",
+      "d8e7"
+    ],
+    "rating": 1100,
+    "themes": [
+      "deflection",
+      "sacrifice",
+      "endgame",
+      "advantage"
+    ],
+    "title": "La torre como cebo",
+    "hint": "Un jaque de torre en la séptima obliga a la dama negra a decidir.",
+    "explanation": "**Te7+!** es un jaque que las negras deben resolver capturando con la dama (si el rey se aparta, las blancas ganan todavía más). Tras **...Dxe7 Dxe7+** las blancas cambian torre por dama.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-005",
+    "fen": "1rb1r1k1/2p2pb1/7p/p3p3/R1Nq1P2/4Q3/2B3PP/4R1K1 w - - 0 26",
+    "moves": [
+      "e3d4",
+      "e5d4",
+      "e1e8"
+    ],
+    "rating": 1100,
+    "themes": [
+      "clearance",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "La columna e se abre",
+    "hint": "Tras cambiar damas, ¿qué pasa con el peón de e5 y la torre de e8?",
+    "explanation": "**Dxd4!** obliga a **...exd4**, y el peón de e5 abandona la columna e. Ahora la torre de e8 queda indefensa frente a la tuya: **Txe8+** gana una torre.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-006",
+    "fen": "2kr4/pp2n2p/2b4B/4P3/2Q5/P2R4/1q4PP/4KR2 b - - 0 32",
+    "moves": [
+      "b2b1",
+      "e1e2",
+      "b1d3",
+      "c4d3",
+      "d8d3"
+    ],
+    "rating": 1100,
+    "themes": [
+      "middlegame",
+      "advantage",
+      "exposedKing"
+    ],
+    "title": "Jaque y torre de d3",
+    "hint": "La torre de d3 solo está defendida por la dama. Un jaque puede preparar su captura.",
+    "explanation": "**...Db1+** obliga al rey a **Re2**, y ahora **...Dxd3+!** aprovecha que la torre de d3 está atacada dos veces (dama y torre de d8) y defendida solo por la dama. Tras **Dxd3 Txd3** las negras ganan una torre.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-007",
+    "fen": "5rk1/1p4bp/r1pNq1p1/p1P5/5nQ1/P6P/1P3P2/R1BR2K1 b - - 2 24",
+    "moves": [
+      "f4h3",
+      "g4h3",
+      "e6h3"
+    ],
+    "rating": 1150,
+    "themes": [
+      "zwischenzug",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Mejor que cambiar damas",
+    "hint": "Antes de cambiar damas, busca un jaque que cambie el panorama.",
+    "explanation": "En vez de cambiar damas, **...Cxh3+!** se come un peón con jaque. Si **Dxh3**, la dama ha abandonado g4 y queda en la diagonal de la tuya: **...Dxh3** la gana. Y si el rey se mueve, **...Dxg4** gana la dama directamente.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-008",
+    "fen": "1q3rk1/p2r1p1p/Bp1bp1p1/8/3P4/P3PQP1/1PR3KP/2R5 w - - 4 26",
+    "moves": [
+      "c2c8",
+      "f8c8",
+      "c1c8",
+      "b8c8",
+      "a6c8"
+    ],
+    "rating": 1250,
+    "themes": [
+      "fork",
+      "sacrifice",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "La torre entre dama y torre",
+    "hint": "La dama de b8 y la torre de f8 están en la misma fila, con una casilla libre en medio.",
+    "explanation": "**Tc8!** se planta entre la dama de b8 y la torre de f8, atacando a las dos y protegida por la otra torre y el Aa6. Tras **...Txc8 Txc8+ Dxc8 Axc8** las blancas han ganado la dama por torre.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-009",
+    "fen": "8/Bp1r4/p1b5/4k2p/P1PRP3/4KpP1/8/8 b - - 0 53",
+    "moves": [
+      "f3f2",
+      "d4d1",
+      "d7d1"
+    ],
+    "rating": 1300,
+    "themes": [
+      "overloading",
+      "endgame",
+      "advancedPawn",
+      "advantage"
+    ],
+    "title": "El rey no llega a todo",
+    "hint": "El rey blanco protege su torre de d4. ¿Puede encargarse también de un peón que avanza?",
+    "explanation": "**...f2!** **sobrecarga** al rey blanco: si **Rxf2**, la torre de d4 se queda sin defensa y **...Txd4** la gana. Si la torre vuelve a **Td1** para frenar el peón, **...Txd1** y el peón corona.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-010",
+    "fen": "1r3rk1/pbqn1pp1/1p2p3/6P1/2PPp3/P3Q3/1P2B1P1/R3K1NR w KQ - 4 18",
+    "moves": [
+      "e3h3",
+      "c7g3",
+      "h3g3"
+    ],
+    "rating": 1300,
+    "themes": [
+      "quietMove",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "La columna h abierta",
+    "hint": "Tu torre de h1 ya domina la columna h. Falta que la dama se una al ataque.",
+    "explanation": "**Dh3!** amenaza **Dh7#** y **Dh8#** con el apoyo de la torre de h1, y las negras no pueden cubrir la columna. Para evitar el mate tienen que entregar la dama con **...Dg3+ Dxg3**.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-011",
+    "fen": "r1b2rk1/ppp2ppp/1b2q3/8/3nB3/4BN2/PP3PPP/R2Q1RK1 w - - 2 14",
+    "moves": [
+      "e4h7",
+      "g8h7",
+      "f3g5",
+      "h7g8",
+      "g5e6"
+    ],
+    "rating": 1350,
+    "themes": [
+      "sacrifice",
+      "fork",
+      "attraction",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Sacrificio en h7",
+    "hint": "Si el rey negro llega a h7, tu caballo puede saltar con jaque atacando también a la dama.",
+    "explanation": "**Axh7+!** **atrae** al rey a h7. Tras **...Rxh7 Cg5+** el caballo da jaque y ataca la dama de e6: es una **horquilla**. Después de **...Rg8 Cxe6** las blancas han ganado la dama.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-012",
+    "fen": "8/5p1k/8/1q2PPQp/3p4/1P6/6PK/8 w - - 1 44",
+    "moves": [
+      "f5f6",
+      "b5e5",
+      "g5e5"
+    ],
+    "rating": 1350,
+    "themes": [
+      "quietMove",
+      "endgame",
+      "advantage"
+    ],
+    "title": "La amenaza de g7",
+    "hint": "Un simple avance de peón puede preparar un mate imparable.",
+    "explanation": "**f6!** amenaza **Dg7#** y las negras no tienen buena defensa. Lo único que evita el mate es entregar la dama: **...Dxe5+ Dxe5**, y las blancas quedan con dama contra nada.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-013",
+    "fen": "2rk1bR1/3q1p2/1p5p/p7/P6P/2NQ4/5P2/5K2 w - - 2 46",
+    "moves": [
+      "g8f8",
+      "d8e7",
+      "f8f7",
+      "e7f7",
+      "d3d7"
+    ],
+    "rating": 1400,
+    "themes": [
+      "attraction",
+      "sacrifice",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Aleja al rey de su dama",
+    "hint": "La dama de d7 solo está defendida por el rey.",
+    "explanation": "**Txf8+ Re7** y ahora **Txf7+!** entrega la torre para **atraer** al rey a f7. Tras **...Rxf7** la dama de d7 se queda sin defensa y **Dxd7+** la gana.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-014",
+    "fen": "r2q1r1k/1p2n1pp/3b1p2/p2p1b2/Q7/2B2N2/PPB2PPP/R3R1K1 b - - 3 21",
+    "moves": [
+      "b7b5",
+      "a4b3",
+      "a5a4",
+      "b3b5",
+      "f5c2"
+    ],
+    "rating": 1450,
+    "themes": [
+      "deflection",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Peones contra la dama",
+    "hint": "La dama blanca es la que defiende el alfil de c2. Persíguela con tus peones.",
+    "explanation": "**...b5!** echa a la dama: tras **Db3**, **...a4!** la vuelve a atacar y la obliga a abandonar la defensa del Ac2. Después de **Dxb5 Axc2** las negras ganan una pieza por un peón: es una **desviación** con peones.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-015",
+    "fen": "r1bqkb1r/pppn1ppp/5n2/3N2B1/3P4/8/PP2PPPP/R2QKBNR b KQkq - 0 6",
+    "moves": [
+      "f6d5",
+      "g5d8",
+      "f8b4"
+    ],
+    "rating": 1450,
+    "themes": [
+      "zwischenzug",
+      "sacrifice",
+      "opening",
+      "advantage"
+    ],
+    "title": "La trampa del elefante",
+    "hint": "No temas por tu dama: ¿hay algún jaque que cambie las cuentas?",
+    "explanation": "**...Cxd5!** entrega la dama: tras **Axd8** llega la **jugada intermedia** **...Ab4+**, y las blancas tienen que dar su propia dama con **Dd2 Axd2+ Rxd2 Rxd8**. Al final las negras quedan con una pieza de ventaja.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-016",
+    "fen": "3rr1k1/5p2/q2p3Q/5bB1/8/2P3PP/1P3P2/5RK1 w - - 1 34",
+    "moves": [
+      "g5f6",
+      "a6f1",
+      "g1f1",
+      "e8e1",
+      "f1e1"
+    ],
+    "rating": 1500,
+    "themes": [
+      "quietMove",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Un alfil en f6",
+    "hint": "Tu dama ya está en h6. Busca una jugada tranquila que amenace mate en g7.",
+    "explanation": "**Af6!** amenaza **Dg7#** y las negras no tienen defensa. Solo les quedan jaques desesperados: **...Dxf1+ Rxf1 Te1+ Rxe1**, y el mate sigue amenazando con material de más para las blancas.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-017",
+    "fen": "8/2r3k1/4Q3/p3P1P1/8/1P6/P1p4K/3q1R2 b - - 8 53",
+    "moves": [
+      "d1e2",
+      "h2g1",
+      "e2f1",
+      "g1f1",
+      "c2c1q"
+    ],
+    "rating": 1600,
+    "themes": [
+      "deflection",
+      "sacrifice",
+      "promotion",
+      "endgame"
+    ],
+    "title": "Abrir paso al peón de c",
+    "hint": "La torre de f1 controla la casilla de coronación de tu peón. Busca la forma de eliminarla con ganancia de tiempo.",
+    "explanation": "**...De2+! Rg1** y ahora **...Dxf1+!** **desvía** al rey hacia f1. Tras **Rxf1** el peón corona con jaque, **...c1=D+**, y las negras quedan con dama y torre contra dama.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-018",
+    "fen": "1qr1r1k1/3b1pp1/1b2p1p1/1p2PnN1/4pB2/1PP4Q/5PPP/3RR1K1 w - - 2 23",
+    "moves": [
+      "h3h7",
+      "g8f8",
+      "d1d7",
+      "f5h6",
+      "h7h8",
+      "h6g8",
+      "d7f7"
+    ],
+    "rating": 1850,
+    "themes": [
+      "mateIn4",
+      "attraction",
+      "capturingDefender",
+      "middlegame"
+    ],
+    "title": "Asalto a f7",
+    "hint": "Empieza con un jaque de dama apoyado por el caballo y después mira qué pieza defiende f7.",
+    "explanation": "**Dh7+ Rf8** y **Txd7!** elimina un defensor y amenaza **Txf7#**. Tras **...Ch6 Dh8+ Cg8** el caballo negro tapa el jaque pero deja f7 sin protección: **Txf7#**, con la torre apoyada por el Cg5.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-019",
+    "fen": "6k1/8/4n1pp/4P3/2R2PP1/2P4K/2r4P/8 b - - 0 45",
+    "moves": [
+      "c2c3",
+      "c4c3",
+      "e6f4",
+      "h3h4",
+      "g6g5",
+      "h4g3",
+      "f4e2",
+      "g3f2",
+      "e2c3"
+    ],
+    "rating": 2050,
+    "themes": [
+      "sacrifice",
+      "fork",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Jaques hasta la horquilla",
+    "hint": "Entrega la torre con jaque: después, tu caballo y tus peones empujarán al rey blanco hasta una horquilla.",
+    "explanation": "**...Txc3+! Txc3 Cxf4+** gana un peón con jaque; tras **Rh4 g5+ Rg3** llega **...Ce2+**, una **horquilla** al rey y a la torre de c3. Después de **Rf2 Cxc3** las negras recuperan la torre y quedan con un peón de más en el final.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-020",
+    "fen": "4q1k1/5p2/p2P2p1/2p1b1Q1/br2B1P1/1p1P1R2/7P/1R5K w - - 3 30",
+    "moves": [
+      "e4d5",
+      "e5f4",
+      "g5g6",
+      "g8f8",
+      "g6h7",
+      "f4d6",
+      "f3f7",
+      "e8f7",
+      "h7f7"
+    ],
+    "rating": 2050,
+    "themes": [
+      "pin",
+      "quietMove",
+      "sacrifice",
+      "mateIn5",
+      "middlegame"
+    ],
+    "title": "Clavar el peón de f7",
+    "hint": "El peón de f7 es el único defensor de g6. ¿Puedes dejarlo inmovilizado?",
+    "explanation": "**Ad5!** clava el peón de f7 contra el rey, así que g6 queda sin defensa real. Tras **...Af4 Dxg6+ Rf8 Dh7** las blancas amenazan mate; si **...Axd6**, la columna f se abre y **Txf7+! Dxf7 Dxf7#** remata gracias al alfil de d5.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-021",
+    "fen": "3NR3/1pk2P1p/1p1R3p/3p2P1/q7/P7/3K3P/8 w - - 11 46",
+    "moves": [
+      "d8e6",
+      "c7d6",
+      "f7f8q",
+      "d6e5",
+      "e6c5",
+      "e5d4",
+      "c5a4",
+      "d4c4",
+      "f8b4"
+    ],
+    "rating": 2150,
+    "themes": [
+      "mateIn5",
+      "sacrifice",
+      "promotion",
+      "fork",
+      "endgame"
+    ],
+    "title": "Caza del rey en el centro",
+    "hint": "Empieza con un jaque de caballo: si el rey captura tu torre, tu peón de f7 coronará con jaque.",
+    "explanation": "**Ce6+!** entrega la torre de d6: tras **...Rxd6 f8=D+** el peón corona con jaque. Sigue **...Re5 Cc5+**, un **jaque descubierto** de la torre de e8 en el que el caballo ataca además la dama de a4; tras **...Rd4 Cxa4 Rc4** llega **Db4#**.",
+    "source": "propio"
+  }
+]

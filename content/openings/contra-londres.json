@@ -1,0 +1,123 @@
+{
+  "id": "contra-londres",
+  "name": "Contra el Sistema Londres",
+  "eco": "D02, A46",
+  "color": "black",
+  "group": "Con negras: contra 1.d4",
+  "summary": "El Londres (d4 y Af4) es muy popular entre jugadores de club. Lo combatimos con ...c5, ...Cc6 y ...Db6: presión inmediata sobre d4 y b2, justo cuando el alfil blanco ha abandonado la defensa de b2.",
+  "ideas": [
+    "Al jugar **Af4** las blancas sacan el alfil de dama del flanco: el peón de **b2** queda sin su defensor natural. **...Db6** lo ataca a la vez que presiona d4.",
+    "**...c5 + ...Cc6** atacan el centro blanco antes de que las blancas completen su desarrollo cómodo (Cf3, e3, Ad3, Cbd2, c3).",
+    "Si las blancas defienden b2 con **Db3**, respondemos **...c4**: ganamos espacio y obligamos a la dama a moverse otra vez. Si cambian damas en b6, nuestra columna a se abre y los peones de b nos dan juego en el flanco de dama.",
+    "Ojo a las trampas: si las blancas juegan **Cd2** demasiado pronto, el caballo tapa a la dama y **...cxd4 exd4 Cxd4** gana un peón.",
+    "Nuestro alfil de c8 sale a **f5** o **g4** antes de jugar ...e6: así no se queda encerrado como en el Gambito de Dama.",
+    "Si las blancas juegan Cf3 y Cbd2 sin c3, un plan sencillo es ...e6, ...Ad6 para ofrecer el cambio del alfil de f4, y enroque."
+  ],
+  "plans": "**Estructura.** Las blancas forman una pirámide con peones en c3, d4 y e3 y quieren jugar tranquilamente Ad3, Cbd2, O-O y Ce5. Nosotros atacamos d4 con ...c5 y ...Cc6 y b2 con ...Db6. Si cerramos con **...c4**, ganamos espacio en el flanco de dama y podemos seguir con ...b5–b4 para abrir líneas; las blancas responderán con b3 o e4.\n\n**Contra Cf3 y Cbd2.** Si las blancas no juegan c3 pronto, podemos ofrecer el cambio de alfiles con **...Ad6**: el alfil de f4 es la mejor pieza blanca del Londres, y cambiarlo reduce mucho su ataque. Tras ...O-O, el plan es ...b6, ...Ab7 o ...Dc7 y ...e5.\n\n**Errores comunes.** Jugar ...e6 demasiado pronto (el alfil de c8 se queda encerrado), coger el peón de b2 con la dama cuando las blancas pueden atraparla con Cbd2–c4 o Tb1, y permitir Cb5 contra c7 cuando el alfil de f4 vigila esa casilla.",
+  "lines": [
+    {
+      "name": "4.c3 Db6 5.Db3 c4 6.Dc2 Cf6",
+      "moves": "d4 d5 Bf4 c5 e3 Nc6 c3 Qb6 Qb3 c4 Qc2 Nf6 Nf3 Bf5 Qc1 e6 Nbd2 Be7",
+      "comments": {
+        "2": "Ocupamos el centro.",
+        "3": "El Sistema Londres: el alfil sale antes de e3 para no quedar encerrado.",
+        "4": "¡Atacamos d4 de inmediato! El alfil de f4 ya no defiende b2.",
+        "5": "Las blancas abren la diagonal de su alfil de f1 y apoyan d4.",
+        "6": "Más presión sobre d4.",
+        "7": "Las blancas refuerzan d4 con un peón: la típica pirámide del Londres.",
+        "8": "La dama ataca b2, que ha quedado sin defensa al salir el alfil a f4.",
+        "9": "Las blancas defienden b2 ofreciendo el cambio de damas.",
+        "10": "Ganamos espacio y echamos a la dama sin cambiar.",
+        "11": "La dama se retira y vigila f5.",
+        "12": "Primero el caballo. ¡Cuidado con ...Af5 aquí! Tras Dxf5 Dxb2 las blancas cogerían el peón de d5, que no tendría defensa. Con el caballo en f6, d5 queda protegido.",
+        "13": "Las blancas desarrollan el caballo.",
+        "14": "Ahora sí: el alfil sale con tempo sobre la dama. Si Dxf5?, Dxb2 ataca la torre de a1 y las blancas quedan muy mal.",
+        "15": "La dama vuelve a c1 para defender b2.",
+        "16": "Cerramos con ...e6: el alfil de c8 ya está fuera de la cadena.",
+        "18": "Preparamos el enroque. Plan: ...O-O, ...b5 y ...b4 para abrir el flanco de dama."
+      }
+    },
+    {
+      "name": "5.Db3 c4 6.Dxb6 axb6",
+      "moves": "d4 d5 Bf4 c5 e3 Nc6 c3 Qb6 Qb3 c4 Qxb6 axb6 Nd2 b5",
+      "comments": {
+        "11": "Las blancas cambian damas.",
+        "12": "Recapturamos hacia el centro: la torre de a8 queda en la columna a abierta.",
+        "13": "Las blancas preparan b3 o e4 contra nuestra cadena.",
+        "14": "Avanzamos en el flanco de dama: ...b4 abrirá líneas para nuestras torres. Final cómodo para las negras."
+      }
+    },
+    {
+      "name": "6...Cf6 7.b3 cxb3",
+      "moves": "d4 d5 Bf4 c5 e3 Nc6 c3 Qb6 Qb3 c4 Qc2 Nf6 b3 cxb3 axb3 Nh5",
+      "comments": {
+        "13": "Las blancas atacan nuestra cadena por la base.",
+        "14": "Cambiamos: la columna c se abre para nuestras torres.",
+        "15": "Las blancas recapturan hacia el centro y abren la columna a.",
+        "16": "El caballo ataca al alfil de f4: si lo cambiamos, nos quedamos con la pareja de alfiles y el Londres pierde su mejor pieza."
+      }
+    },
+    {
+      "name": "4.Cf3 Cf6 5.Cbd2 e6: ofrecer el cambio de alfiles",
+      "moves": "d4 d5 Bf4 c5 e3 Nc6 Nf3 Nf6 Nbd2 e6 c3 Bd6 Bg3 O-O Bd3 b6",
+      "comments": {
+        "7": "Las blancas desarrollan el caballo en lugar de jugar c3.",
+        "8": "Desarrollo natural.",
+        "9": "El caballo de dama defiende c4 y e4.",
+        "10": "Cerramos con ...e6: nuestro alfil de f8 ya puede salir.",
+        "12": "Ofrecemos cambiar el alfil de f4, la mejor pieza blanca del Londres.",
+        "13": "Las blancas evitan el cambio retirando el alfil.",
+        "14": "Rey a salvo.",
+        "16": "Preparamos ...Ab7 para activar el alfil de c8 por la gran diagonal. Luego ...Dc7 y ...e5."
+      }
+    },
+    {
+      "name": "3.dxc5 e6",
+      "moves": "d4 d5 Bf4 c5 dxc5 e6 e3 Bxc5 Nf3 Nf6 Nbd2 O-O Bd3 Nc6",
+      "comments": {
+        "5": "Las blancas toman el peón, pero no lo podrán mantener.",
+        "6": "Abrimos la diagonal del alfil de f8 para recuperar el peón.",
+        "8": "Recuperamos el peón con desarrollo.",
+        "10": "Desarrollo natural.",
+        "12": "Rey seguro.",
+        "14": "Tenemos el centro con el peón de d5 y piezas activas. Igualdad cómoda."
+      }
+    },
+    {
+      "name": "Trampa: 4.Cd2? cxd4",
+      "moves": "d4 d5 Bf4 c5 e3 Nc6 Nd2 cxd4 exd4 Nxd4",
+      "comments": {
+        "7": "Error frecuente: el caballo tapa la columna d y la dama ya no defiende d4.",
+        "8": "Cambiamos en d4 para atacar el peón que queda allí.",
+        "9": "Las blancas recapturan con el peón.",
+        "10": "¡Ganamos un peón! d4 no tenía defensores porque el caballo de d2 bloqueaba a la dama."
+      }
+    },
+    {
+      "name": "4.Cc3 cxd4",
+      "moves": "d4 d5 Bf4 c5 e3 Nc6 Nc3 cxd4 exd4 Bf5 Nf3 e6",
+      "comments": {
+        "7": "Las blancas desarrollan el caballo delante del peón de c.",
+        "8": "Cambiamos en d4: las blancas quedan con un peón en d4 que hay que defender con piezas.",
+        "9": "Las blancas recapturan con el peón de e: se abre la columna e.",
+        "10": "Desarrollamos el alfil fuera de la cadena antes de ...e6.",
+        "12": "Desarrollo sólido. Plan: ...Ad6 para cambiar el alfil de f4, ...Cf6 y ...O-O."
+      }
+    },
+    {
+      "name": "Orden 2.Cf3 Cf6 3.Af4 c5",
+      "moves": "d4 d5 Nf3 Nf6 Bf4 c5 e3 Nc6 c3 Qb6 Qb3 c4 Qc2 Bf5 Qc1 e6",
+      "comments": {
+        "3": "Las blancas sacan primero el caballo.",
+        "4": "Desarrollo natural.",
+        "5": "Ya tenemos el Londres en el tablero.",
+        "6": "El mismo golpe: atacamos d4 antes de que las blancas estén bien desarrolladas.",
+        "8": "Más presión sobre d4.",
+        "10": "La dama ataca b2 y d4.",
+        "12": "Ganamos espacio y tiempo.",
+        "14": "Con el caballo ya en f6 (defendiendo d5), ...Af5 funciona: si Dxf5?, Dxb2 ataca la torre de a1 y las negras ganan material.",
+        "16": "Hemos llegado a la línea principal: ...Cf6 ya está jugado y seguimos con ...Ae7, ...O-O y ...b5."
+      }
+    }
+  ]
+}

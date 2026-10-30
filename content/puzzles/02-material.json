@@ -1,0 +1,307 @@
+[
+  {
+    "id": "material-001",
+    "fen": "r1bq1rk1/p1p2ppp/2n1pn2/1p6/1b1Pp3/P1N1B1Q1/1PP1NPPP/R3KB1R w KQ - 0 9",
+    "moves": [
+      "a3b4"
+    ],
+    "rating": 400,
+    "themes": [
+      "hangingPiece",
+      "opening",
+      "oneMove"
+    ],
+    "title": "Pieza al aire",
+    "hint": "Revisa qué piezas negras están atacadas y si alguien las defiende.",
+    "explanation": "El Ab4 está atacado por el peón de a3 y ninguna pieza negra lo defiende. **axb4** gana una pieza limpia. Antes de nada, pregúntate siempre: ¿qué ha quedado sin defensa?",
+    "source": "propio"
+  },
+  {
+    "id": "material-002",
+    "fen": "2k5/p5rR/p1p2p2/8/2pP1P2/6P1/PP6/2K5 w - - 1 33",
+    "moves": [
+      "h7g7"
+    ],
+    "rating": 400,
+    "themes": [
+      "hangingPiece",
+      "endgame",
+      "rookEndgame",
+      "oneMove"
+    ],
+    "title": "Torre por torre... o gratis",
+    "hint": "¿Está defendida la torre negra de g7?",
+    "explanation": "La torre de g7 está atacada por tu torre de h7 y ninguna pieza negra la protege. **Txg7** deja a las blancas con una torre de ventaja.",
+    "source": "propio"
+  },
+  {
+    "id": "material-003",
+    "fen": "2r2rk1/1b3p1p/p2p1B1b/1p1P2p1/2q5/PR2PN1P/3Q1PP1/3R2K1 b - - 2 24",
+    "moves": [
+      "c4b3"
+    ],
+    "rating": 450,
+    "themes": [
+      "hangingPiece",
+      "middlegame",
+      "oneMove"
+    ],
+    "title": "La torre olvidada",
+    "hint": "Mira todas las piezas que ataca tu dama.",
+    "explanation": "La torre de b3 está atacada por la dama de c4 por la diagonal y nadie la protege. **...Dxb3** gana una torre entera.",
+    "source": "propio"
+  },
+  {
+    "id": "material-004",
+    "fen": "4k3/3p1p2/6p1/4P1N1/2b1R2p/1p1n4/7P/1K6 w - - 0 48",
+    "moves": [
+      "e4c4"
+    ],
+    "rating": 450,
+    "themes": [
+      "hangingPiece",
+      "endgame",
+      "oneMove"
+    ],
+    "title": "Un alfil sin amigos",
+    "hint": "Mira lo que ataca tu torre en la cuarta fila.",
+    "explanation": "El Ac4 está atacado por la torre de e4 y ni el caballo de d3 ni el peón de b3 lo defienden. **Txc4** gana la pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "material-005",
+    "fen": "r3kb1r/ppp2pp1/5n1p/3q4/2N3P1/3P4/PPP4P/RNBQK2R b KQkq - 0 12",
+    "moves": [
+      "d5h1"
+    ],
+    "rating": 450,
+    "themes": [
+      "hangingPiece",
+      "opening",
+      "oneMove"
+    ],
+    "title": "La esquina abierta",
+    "hint": "Tu dama está en una diagonal muy larga.",
+    "explanation": "La dama de d5 ve toda la diagonal hasta h1, donde está la torre blanca sin defensa. **...Dxh1+** gana una torre y además da jaque.",
+    "source": "propio"
+  },
+  {
+    "id": "material-006",
+    "fen": "r2qr1k1/1b3pp1/ppn1pn1p/4B3/2Q5/1P1BP2P/P3NPP1/R2R2K1 b - - 2 17",
+    "moves": [
+      "c6e5"
+    ],
+    "rating": 450,
+    "themes": [
+      "hangingPiece",
+      "middlegame",
+      "oneMove"
+    ],
+    "title": "El alfil de e5",
+    "hint": "Una pieza blanca está atacada por tu caballo y nadie la protege.",
+    "explanation": "El Ae5 está atacado por el caballo de c6 y ninguna pieza blanca lo defiende. **...Cxe5** gana una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "material-007",
+    "fen": "2r1k3/1r3p2/pp2p1pp/8/8/PP2P1PP/6P1/2RR1K2 w - - 2 32",
+    "moves": [
+      "c1c8"
+    ],
+    "rating": 500,
+    "themes": [
+      "hangingPiece",
+      "endgame",
+      "rookEndgame",
+      "oneMove"
+    ],
+    "title": "Columna abierta",
+    "hint": "¿Quién defiende la torre de c8?",
+    "explanation": "La torre de c8 está atacada por tu torre de c1 y no la defiende nadie: el rey está en e8 y la otra torre en b7. **Txc8+** gana una torre con jaque.",
+    "source": "propio"
+  },
+  {
+    "id": "material-008",
+    "fen": "1k6/1p5p/1p1nB2r/5P2/3R4/2P4P/3K4/8 w - - 5 52",
+    "moves": [
+      "d4d6"
+    ],
+    "rating": 550,
+    "themes": [
+      "hangingPiece",
+      "endgame",
+      "oneMove"
+    ],
+    "title": "Defensa tapada",
+    "hint": "La torre de h6 parece defender al caballo... ¿de verdad lo hace?",
+    "explanation": "El caballo de d6 parece protegido por la torre de h6, pero tu Ae6 se interpone en la fila. **Txd6** gana una pieza: comprueba siempre si una defensa está bloqueada.",
+    "source": "propio"
+  },
+  {
+    "id": "material-009",
+    "fen": "r4r2/pp3ppk/2b2q2/3Q2B1/8/2P5/P1P2PPP/R4RK1 b - - 4 17",
+    "moves": [
+      "c6d5",
+      "g5f6",
+      "g7f6"
+    ],
+    "rating": 650,
+    "themes": [
+      "hangingPiece",
+      "advantage"
+    ],
+    "title": "Primero, la dama",
+    "hint": "Las dos damas están atacadas. ¿Cuál se captura antes?",
+    "explanation": "La dama blanca de d5 está atacada por el Ac6 y nadie la defiende. **...Axd5** la gana primero; tras **Axf6 gxf6** las negras se quedan con una pieza de ventaja. Cuando hay damas atacadas por ambos lados, captura tú primero.",
+    "source": "propio"
+  },
+  {
+    "id": "material-010",
+    "fen": "rn2k2r/pppb1ppp/2q2n2/1Q6/4P3/2P2N2/P1PB1PPP/R3KB1R b KQkq - 4 10",
+    "moves": [
+      "c6b5",
+      "f1b5",
+      "d7b5"
+    ],
+    "rating": 650,
+    "themes": [
+      "opening",
+      "advantage"
+    ],
+    "title": "Dos contra uno",
+    "hint": "La dama blanca está atacada por dos piezas tuyas y defendida por una.",
+    "explanation": "La dama de b5 está atacada por la dama de c6 y por el Ad7, y solo la defiende el Af1. Tras **...Dxb5 Axb5 Axb5** las negras han cambiado damas y se quedan con un alfil de ventaja.",
+    "source": "propio"
+  },
+  {
+    "id": "material-011",
+    "fen": "r4rk1/pp1q2bp/2p1bnp1/3p4/5P2/2NBQ2P/PPPB2P1/4RRK1 w - - 6 18",
+    "moves": [
+      "e3e6",
+      "d7e6",
+      "e1e6"
+    ],
+    "rating": 700,
+    "themes": [
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Cuenta atacantes",
+    "hint": "Cuenta cuántas piezas atacan el Ae6 y cuántas lo defienden.",
+    "explanation": "El Ae6 está atacado dos veces (dama y torre en la columna e) y defendido solo una (la dama de d7). **Dxe6+ Dxe6 Txe6** gana una pieza. Contar atacantes y defensores es la base de la táctica.",
+    "source": "propio"
+  },
+  {
+    "id": "material-012",
+    "fen": "1rr3k1/5pp1/7p/4p3/4P1QP/3p2P1/R1q2PK1/R7 w - - 0 43",
+    "moves": [
+      "a2c2",
+      "d3c2",
+      "a1c1"
+    ],
+    "rating": 800,
+    "themes": [
+      "middlegame",
+      "advantage"
+    ],
+    "title": "La dama en la segunda",
+    "hint": "La dama negra está en la segunda fila, al alcance de tu torre.",
+    "explanation": "**Txc2!** gana la dama a cambio de una torre. Tras **...dxc2** el peón parece peligroso, pero **Tc1** lo frena y las blancas quedan con dama contra torre.",
+    "source": "propio"
+  },
+  {
+    "id": "material-013",
+    "fen": "8/5p2/1k2p3/8/1r4Pp/6bP/6Q1/7K b - - 9 52",
+    "moves": [
+      "b4b1",
+      "g2f1",
+      "b1f1"
+    ],
+    "rating": 850,
+    "themes": [
+      "endgame",
+      "advantage"
+    ],
+    "title": "Jaque que gana la dama",
+    "hint": "El rey blanco no tiene casillas: el Ag3 controla h2.",
+    "explanation": "**...Tb1+** y el rey no puede moverse (el Ag3 controla h2), así que la dama tiene que interponerse: **Df1 Txf1+** y las negras ganan la dama por la torre.",
+    "source": "propio"
+  },
+  {
+    "id": "material-014",
+    "fen": "r1b2rk1/ppp2pp1/2n4p/8/4PB1P/2P2NP1/P3PbB1/R2K3R w - - 0 13",
+    "moves": [
+      "e2e3",
+      "f2e3",
+      "f4e3"
+    ],
+    "rating": 1000,
+    "themes": [
+      "trappedPiece",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Alfil encerrado",
+    "hint": "El alfil de f2 está metido en tu campo. ¿Le quedan casillas de retirada?",
+    "explanation": "El Af2 está **atrapado**: g1 la controla la torre de h1, e1 el rey y g3 está defendida. **e3!** le corta la última salida y, tras **...Axe3 Axe3**, las blancas ganan la pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "material-015",
+    "fen": "8/1p1n1pk1/6p1/1P6/nB2p1N1/4P2P/5PPK/8 b - - 4 32",
+    "moves": [
+      "f7f5",
+      "h2g3",
+      "f5g4"
+    ],
+    "rating": 1050,
+    "themes": [
+      "trappedPiece",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Caballo sin casillas",
+    "hint": "Revisa las casillas a las que puede ir el caballo de g4.",
+    "explanation": "El caballo de g4 no tiene casillas seguras: e5 lo controla tu caballo de d7, f6 y h6 tu rey, y f2, h2 y e3 están ocupadas. **...f5!** lo ataca y queda **atrapado**: tras **Rg3 fxg4** las negras ganan una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "material-016",
+    "fen": "1r1q1rk1/p1p1bpp1/2p2n1p/3pP3/5Bb1/2NB4/PPP2PPP/1R1Q1RK1 w - - 1 13",
+    "moves": [
+      "f2f3",
+      "g4c8",
+      "e5f6"
+    ],
+    "rating": 1100,
+    "themes": [
+      "zwischenzug",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Primero, echa al alfil",
+    "hint": "El caballo de f6 está atacado por tu peón, pero si lo capturas ya, pierdes la dama.",
+    "explanation": "Si **exf6?** directamente, **...Axd1** se lleva la dama. Por eso primero **f3!** ataca al Ag4; tras **...Ac8** (o cualquier retirada) llega **exf6** y las blancas ganan una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "material-017",
+    "fen": "2rr2k1/1b6/2n1p1pB/1p1n2Q1/8/5N2/B1q2PPP/4R1K1 w - - 0 26",
+    "moves": [
+      "a2b1",
+      "c2b1",
+      "e1b1"
+    ],
+    "rating": 1300,
+    "themes": [
+      "trappedPiece",
+      "quietMove",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "La dama atrapada",
+    "hint": "La dama negra se ha metido muy dentro de tu campo. ¿Puedes atacarla sin dejarle salida?",
+    "explanation": "**Ab1!** ataca la dama de c2 y ninguna de sus casillas es segura: está **atrapada**. Lo menos malo para las negras es **...Dxb1 Txb1**, con lo que se quedan con un alfil a cambio de la dama.",
+    "source": "propio"
+  }
+]

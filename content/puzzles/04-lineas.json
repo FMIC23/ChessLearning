@@ -1,0 +1,328 @@
+[
+  {
+    "id": "linea-001",
+    "fen": "8/5k2/R5p1/p7/2P1Nn1p/3r4/P1K4P/8 w - - 0 44",
+    "moves": [
+      "a6f6",
+      "f7e7",
+      "f6f4"
+    ],
+    "rating": 650,
+    "themes": [
+      "fork",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Torre a f6",
+    "hint": "Un jaque de torre puede atacar también al caballo.",
+    "explanation": "**Tf6+** da jaque al rey de f7 y ataca al caballo de f4, que está en la misma columna. Tras **...Re7 Txf4** las blancas ganan una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-002",
+    "fen": "8/2p3pk/p2bp2p/4p2P/PP1pP1Q1/3P1KP1/1R3P2/2q5 b - - 0 49",
+    "moves": [
+      "c1d1",
+      "f3g2",
+      "d1g4"
+    ],
+    "rating": 850,
+    "themes": [
+      "skewer",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Ensartada en diagonal",
+    "hint": "El rey blanco y su dama están en la misma diagonal.",
+    "explanation": "**...Dd1+** es una **ensartada**: la dama da jaque al rey de f3 por la diagonal d1-g4 y, cuando el rey se aparta, captura la dama de g4 que estaba detrás.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-003",
+    "fen": "r7/4bp1p/p5p1/3k4/8/P5P1/4BP1P/2R3K1 w - - 0 1",
+    "moves": [
+      "e2f3"
+    ],
+    "rating": 850,
+    "themes": [
+      "skewer",
+      "endgame",
+      "oneMove"
+    ],
+    "title": "Rey y torre en diagonal",
+    "hint": "El rey negro y la torre de a8 están en la misma diagonal.",
+    "explanation": "**Af3+** es una **ensartada**: el alfil da jaque por la gran diagonal y, cuando el rey se aparte, capturará la torre de a8 que está detrás.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-004",
+    "fen": "8/b7/3kp3/P4p1B/8/R5PK/8/1r6 b - - 2 51",
+    "moves": [
+      "b1h1",
+      "h3g2",
+      "h1h5"
+    ],
+    "rating": 850,
+    "themes": [
+      "skewer",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Torre a h1",
+    "hint": "El rey blanco y su alfil están en la misma columna.",
+    "explanation": "**...Th1+** es una **ensartada**: el rey de h3 tiene que salir de la columna h y el Ah5, que estaba detrás, queda indefenso. Tras **Rg2 Txh5** las negras ganan una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-005",
+    "fen": "2r5/4k1p1/1p3p1p/1Pr1pb2/P1B5/6R1/4KPPP/2R5 b - - 1 32",
+    "moves": [
+      "c5c4",
+      "c1c4",
+      "c8c4"
+    ],
+    "rating": 900,
+    "themes": [
+      "pin",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Dos torres contra una",
+    "hint": "El alfil de c4 está en la columna c, justo delante de la torre blanca.",
+    "explanation": "El Ac4 está atacado por las dos torres negras dobladas en la columna c y solo lo defiende la torre de c1. **...Txc4 Txc4 Txc4** gana una pieza limpia.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-006",
+    "fen": "rnbqk2r/1p2ppbp/2pp2p1/p7/2PPP1n1/2N5/PP2BPPP/R1BQK1NR w KQkq - 0 8",
+    "moves": [
+      "e2g4",
+      "c8g4",
+      "d1g4"
+    ],
+    "rating": 900,
+    "themes": [
+      "xRayAttack",
+      "opening",
+      "advantage"
+    ],
+    "title": "La dama detrás del alfil",
+    "hint": "Tu dama de d1 está en la misma diagonal que tu alfil y el caballo de g4.",
+    "explanation": "El caballo de g4 está atacado por el Ae2 y, por **rayos X**, también por la dama de d1. Solo lo defiende el Ac8. **Axg4 Axg4 Dxg4** gana una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-007",
+    "fen": "3b2k1/R4p2/4p1p1/4P2p/8/4BP1P/5PK1/1r6 w - - 7 44",
+    "moves": [
+      "a7a8",
+      "g8g7",
+      "a8d8"
+    ],
+    "rating": 900,
+    "themes": [
+      "pin",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Clavada en la octava",
+    "hint": "El alfil de d8 y el rey negro están en la misma fila.",
+    "explanation": "**Ta8!** **clava** el Ad8 contra el rey de g8: el alfil no puede moverse y nadie lo defiende. Tras **...Rg7**, que rompe la clavada demasiado tarde, **Txd8** gana la pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-008",
+    "fen": "2k5/R1n2p1p/p1N5/8/PPK4P/8/8/4r3 b - - 2 47",
+    "moves": [
+      "e1c1",
+      "c4d3",
+      "c1c6"
+    ],
+    "rating": 900,
+    "themes": [
+      "skewer",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Rey delante del caballo",
+    "hint": "El rey blanco y el caballo de c6 están en la misma columna.",
+    "explanation": "**...Tc1+** es una **ensartada**: el rey de c4 tiene que apartarse de la columna y el caballo de c6, que estaba detrás, queda indefenso. Tras **Rd3 Txc6** las negras ganan una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-009",
+    "fen": "rnbqkbnr/p3pppp/8/1p6/2pP4/4P3/1P3PPP/RNBQKBNR w KQkq - 0 6",
+    "moves": [
+      "d1f3"
+    ],
+    "rating": 1000,
+    "themes": [
+      "pin",
+      "opening",
+      "oneMove",
+      "advantage"
+    ],
+    "title": "Dama a la gran diagonal",
+    "hint": "La torre de a8 está en una diagonal larga y muy abierta.",
+    "explanation": "**Df3!** ataca la torre de a8 por la gran diagonal y las negras no tienen una buena defensa: si se interponen con **...Cc6**, **Dxc6+**; si con **...Ab7**, **Dxb7**, porque la pieza que tapa queda clavada y sin defensa suficiente. Las negras pierden material en cualquier caso.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-010",
+    "fen": "8/8/2kBb2p/7R/6PK/8/8/r7 b - - 4 59",
+    "moves": [
+      "a1h1",
+      "h4g3",
+      "h1h5"
+    ],
+    "rating": 1000,
+    "themes": [
+      "skewer",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Ensartada en la columna h",
+    "hint": "El rey blanco y su torre están en la misma columna.",
+    "explanation": "**...Th1+** es una **ensartada**: el rey tiene que apartarse y la torre de h5, detrás, queda a merced: **Rg3 Txh5**. Si ahora **gxh5**, **...Rxd6** y las negras siguen con una pieza de más.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-011",
+    "fen": "r3k2r/p1p2p2/2b1qp2/2P4p/8/2Q5/PP3PPP/R1B2RK1 w kq - 0 20",
+    "moves": [
+      "f1e1",
+      "e8c8",
+      "e1e6"
+    ],
+    "rating": 1000,
+    "themes": [
+      "pin",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Clavada en la columna e",
+    "hint": "La dama negra y su rey están en la misma columna abierta.",
+    "explanation": "**Te1!** **clava** la dama de e6 contra el rey de e8. La dama no puede apartarse y las negras no pueden defenderla de verdad: tras **...O-O-O Txe6** las blancas ganan la dama por torre.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-012",
+    "fen": "7k/p5p1/p2Q4/2r2b2/6p1/2r5/P1P2R1P/K7 w - - 2 33",
+    "moves": [
+      "d6f8",
+      "h8h7",
+      "f2f5",
+      "c5f5",
+      "f8f5"
+    ],
+    "rating": 1150,
+    "themes": [
+      "xRayAttack",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Dama detrás de la torre",
+    "hint": "Con un jaque, coloca la dama en la columna f, detrás de tu torre.",
+    "explanation": "**Df8+ Rh7** y ahora el Af5 está atacado por la torre y, por **rayos X**, también por la dama. Solo lo defiende la torre de c5, así que **Txf5 Txf5 Dxf5+** gana una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-013",
+    "fen": "8/R7/1r6/5pPk/5K2/8/8/8 w - - 5 70",
+    "moves": [
+      "a7h7",
+      "h5g6",
+      "h7h6",
+      "g6f7",
+      "h6b6"
+    ],
+    "rating": 1150,
+    "themes": [
+      "skewer",
+      "endgame",
+      "rookEndgame",
+      "advantage"
+    ],
+    "title": "Jaques hasta la ensartada",
+    "hint": "Da jaques con la torre hasta que el rey negro y su torre queden en la misma fila.",
+    "explanation": "**Th7+ Rg6** y **Th6+!**: ahora el rey y la torre negra están en la sexta fila. Es una **ensartada**: el rey tiene que apartarse (**...Rf7**) y **Txb6** gana la torre.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-014",
+    "fen": "r1b1kbnr/pppp1ppp/2n5/4P3/8/2B2N2/PqP1PPPP/RN1QKB1R b KQkq - 1 6",
+    "moves": [
+      "f8b4"
+    ],
+    "rating": 1200,
+    "themes": [
+      "pin",
+      "opening",
+      "oneMove"
+    ],
+    "title": "La trampa del Englund",
+    "hint": "El Ac3 está atacado una vez. ¿Puedes atacarlo otra vez y que además no pueda moverse?",
+    "explanation": "**...Ab4!** clava el Ac3 contra el rey de e1 y lo ataca por segunda vez. Las blancas no pueden mantener la pieza: por ejemplo, **Dd2 Axc3** y si **Dxc3??**, **...Dc1#**.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-015",
+    "fen": "6r1/p3kp2/2R1b3/P3P3/1KP5/8/2P4p/3R4 b - - 1 43",
+    "moves": [
+      "g8g1",
+      "d1g1",
+      "h2g1q"
+    ],
+    "rating": 1300,
+    "themes": [
+      "interference",
+      "promotion",
+      "endgame",
+      "sacrifice"
+    ],
+    "title": "Cortar la primera fila",
+    "hint": "La torre de d1 vigila h1 desde lejos. ¿Puedes interponer algo en esa fila?",
+    "explanation": "**...Tg1!** es una **interferencia**: la torre se coloca entre la torre de d1 y la casilla de coronación. Si **Txg1**, **...hxg1=D**; y si no, **...Txd1** y el peón corona igualmente.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-016",
+    "fen": "1k3r2/p3p3/1p1p1bP1/3P4/Q7/1R6/P1q1BP2/5K2 w - - 2 31",
+    "moves": [
+      "b3b6",
+      "a7b6",
+      "a4c2"
+    ],
+    "rating": 1300,
+    "themes": [
+      "clearance",
+      "sacrifice",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Abrir la diagonal",
+    "hint": "Tu propia torre tapa la diagonal entre tu dama y la dama negra.",
+    "explanation": "La torre de b3 bloquea la diagonal a4-c2. **Txb6+!** la quita de en medio con jaque (**despeje**) y, tras **...axb6**, **Dxc2** gana la dama negra.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-017",
+    "fen": "r4rk1/2pqbppp/p1n1b3/1p1pP3/3Nn3/1BP5/PP3PPP/RNBQR1K1 w - - 5 12",
+    "moves": [
+      "d4e6",
+      "f7e6",
+      "e1e4"
+    ],
+    "rating": 1700,
+    "themes": [
+      "pin",
+      "sacrifice",
+      "opening",
+      "advantage"
+    ],
+    "title": "La trampa de Tarrasch",
+    "hint": "Tras cambiar en e6, el peón de d5 queda en una diagonal muy peligrosa.",
+    "explanation": "**Cxe6 fxe6** y **Txe4!**: el peón de d5 no puede capturar porque, si **...dxe4**, **Axe6+** gana la dama de d7 con jaque. El peón de d5 está **clavado** en la práctica y las blancas ganan una pieza.",
+    "source": "propio"
+  }
+]

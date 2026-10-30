@@ -1,0 +1,103 @@
+{
+  "id": "francesa-avance",
+  "name": "Francesa: Variante del Avance (3.e5)",
+  "eco": "C02",
+  "color": "white",
+  "group": "Con blancas: 1.e4",
+  "summary": "Contra la Francesa avanzamos 3.e5 y ganamos espacio en el flanco de rey. Defendemos la base de la cadena (d4) contra ...c5, ...Cc6 y ...Db6 y aprovechamos que el alfil de c8 negro queda encerrado.",
+  "ideas": [
+    "**3.e5** crea una cadena de peones **d4–e5**: tenemos espacio en el flanco de rey y el caballo negro pierde la casilla f6.",
+    "Las negras atacan la **base de la cadena (d4)** con **...c5**, **...Cc6**, **...Db6** y a veces **...Cf5**. Nuestro trabajo es defender d4 con **c3**, **Cf3** y, si hace falta, Ae3 o Ce2.",
+    "**6.a3** es la respuesta moderna a ...Db6: prepara **b4** para ganar espacio en el flanco de dama y quitar a las negras la presión sobre d4.",
+    "El alfil de c8 negro es la pieza mala de la Francesa: queda encerrado detrás de e6. Cambiarlo no suele interesarnos; si las negras lo intentan con ...b6 y ...Aa6, intentamos cambiarlo en condiciones favorables o evitarlo.",
+    "Cuidado con ganar o perder el peón de d4: **Ad3** con ...cxd4 cxd4 deja d4 colgando tras ...Cxd4. El sistema con a3 y Ae2 evita esas complicaciones.",
+    "Si las negras juegan **...f6** para atacar e5, defendemos el peón con piezas (Cf3, Ad3, De2) y estamos atentos a la columna f abierta."
+  ],
+  "plans": "**La cadena d4–e5.** Toda la partida gira alrededor de ella. Las negras la atacan por la base (d4) con ...c5 y por la punta (e5) con ...f6. Nosotros defendemos d4 y usamos el espacio en el flanco de rey: piezas hacia g5, h5 o f4, y a veces h4–h5. Si las negras cierran con ...c4, el centro queda bloqueado y la lucha se traslada a los flancos: nosotros con b3 o b4 en el de dama y con h4, Cf1–e3 o Ag5 en el de rey.\n\n**Las maniobras típicas.** Cuando el caballo de g1 no puede ir a f3, se desarrolla por **e2** (Ce2–f4), muy buena casilla para presionar e6 y d5. El caballo de b1, con c3 jugado, va por **d2** o, tras a3, por **a3–c2** para reforzar d4. El alfil de casillas oscuras suele ir a **e3** para defender d4 o a **b2** tras b4.\n\n**Errores comunes.** Cambiar en c5 (dxc5) sin motivo y regalar el centro; olvidar el peón de b2 cuando la dama negra está en b6; y jugar Ad3 sin pensar en ...cxd4 cxd4 Cxd4."
+  ,
+  "lines": [
+    {
+      "name": "Línea principal: 6.a3 c4",
+      "moves": "e4 e6 d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 a3 c4 Nbd2 Na5 Rb1 Bd7 h4",
+      "comments": {
+        "2": "La Defensa Francesa: las negras preparan ...d5 con un apoyo sólido.",
+        "3": "Ocupamos el centro.",
+        "4": "Las negras atacan e4.",
+        "5": "Variante del Avance: cerramos el centro y ganamos espacio en el flanco de rey. El caballo negro ya no puede ir a f6.",
+        "6": "El golpe típico contra la cadena: las negras atacan la base, d4.",
+        "7": "Defendemos d4 con un peón: si ...cxd4, recapturamos con el peón y la cadena sigue en pie.",
+        "8": "Más presión sobre d4.",
+        "9": "Otro defensor para d4 y, además, protegemos e5.",
+        "10": "La dama ataca d4 y b2 a la vez: es el plan típico de la Francesa.",
+        "11": "Preparamos b4 para ganar espacio en el flanco de dama y alejar la presión del centro.",
+        "12": "Las negras cierran el flanco de dama e impiden b4 con comodidad.",
+        "13": "El caballo va a d2, desde donde puede ir a f1 y e3 o g3. Si ...Ca5, ya no puede saltar a b3.",
+        "14": "El caballo busca la casilla b3.",
+        "15": "Defendemos b2 y preparamos b4 o b3 en el momento oportuno.",
+        "17": "Ganamos espacio en el flanco de rey: el peón de h podría seguir a h5 y la torre puede entrar por h3."
+      }
+    },
+    {
+      "name": "6.a3 Ad7 7.b4",
+      "moves": "e4 e6 d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 a3 Bd7 b4 cxd4 cxd4 Rc8 Bb2",
+      "comments": {
+        "12": "Desarrollo sencillo; las negras preparan ...Tc8 para usar la columna c.",
+        "13": "Ganamos espacio en el flanco de dama y amenazamos b5 o bxc5.",
+        "14": "Las negras cambian para abrir la columna c.",
+        "15": "Recapturamos con el peón: d4 está bien defendido y la cadena intacta.",
+        "16": "La torre ocupa la columna abierta.",
+        "17": "El alfil defiende d4 desde b2. Seguimos con Ad3, O-O y Cbd2."
+      }
+    },
+    {
+      "name": "6.a3 Ch6 7.b4",
+      "moves": "e4 e6 d4 d5 e5 c5 c3 Nc6 Nf3 Qb6 a3 Nh6 b4 cxd4 cxd4 Nf5 Bb2",
+      "comments": {
+        "12": "El caballo va a f5 por h6 para atacar d4 una vez más.",
+        "13": "Ganamos espacio y tiempo: la presión sobre d4 se reduce con la amenaza b5.",
+        "14": "Las negras cambian en d4.",
+        "15": "Recapturamos con el peón.",
+        "16": "Cuarto atacante sobre d4: caballos de c6 y f5, dama de b6.",
+        "17": "El alfil defiende d4: tenemos tantos defensores como atacantes. Seguimos con Ad3 y O-O."
+      }
+    },
+    {
+      "name": "4...Cc6 5.Cf3 Ad7 6.Ae2",
+      "moves": "e4 e6 d4 d5 e5 c5 c3 Nc6 Nf3 Bd7 Be2 Nge7 Na3 cxd4 cxd4 Nf5 Nc2",
+      "comments": {
+        "10": "Desarrollo tranquilo: las negras preparan ...Db6 o ...Cge7–f5.",
+        "11": "Desarrollamos y preparamos el enroque, sin dar a las negras ningún objetivo.",
+        "12": "El caballo va a f5 para presionar d4.",
+        "13": "El caballo de dama va por a3 hacia c2, desde donde defenderá d4.",
+        "15": "Recapturamos con el peón.",
+        "17": "Maniobra completada: el caballo de c2 defiende d4 y e3. Seguimos con O-O y Ad3."
+      }
+    },
+    {
+      "name": "5...Ch6 6.Ad3",
+      "moves": "e4 e6 d4 d5 e5 c5 c3 Nc6 Nf3 Nh6 Bd3 cxd4 cxd4 Nf5 Bxf5 exf5 Nc3",
+      "comments": {
+        "10": "El caballo va hacia f5 por h6.",
+        "11": "Controlamos f5 con el alfil.",
+        "12": "Las negras cambian en d4.",
+        "13": "Recapturamos con el peón.",
+        "14": "El caballo llega a f5 y presiona d4.",
+        "15": "Cambiamos el alfil por el caballo: las negras quedan con peones doblados en f5 y f7 y su alfil de c8 sigue siendo malo.",
+        "17": "Desarrollo y presión sobre d5. Nuestro caballo puede ir a e2 y f4, una casilla magnífica."
+      }
+    },
+    {
+      "name": "3...b6: contra el cambio del alfil malo",
+      "moves": "e4 e6 d4 d5 e5 b6 c3 Qd7 Nf3 Ba6 Bxa6 Nxa6 Qe2 Nb8 O-O",
+      "comments": {
+        "6": "Las negras quieren cambiar su alfil malo por ...Aa6.",
+        "7": "Sólido: defendemos d4 de antemano.",
+        "8": "La dama prepara ...Aa6 sin permitir Axa6 con daño en la estructura.",
+        "10": "El alfil de casillas blancas negro ofrece el cambio.",
+        "11": "Cambiamos: el caballo negro queda mal colocado en a6.",
+        "13": "La dama ataca el caballo de a6 y ocupa la diagonal: el caballo tiene que volver a casa.",
+        "15": "Enroque con ventaja de desarrollo. Plan: c4 para abrir el juego o Ca3–c2."
+      }
+    }
+  ]
+}

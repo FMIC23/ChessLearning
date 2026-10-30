@@ -1,0 +1,406 @@
+[
+  {
+    "id": "final-001",
+    "fen": "8/8/8/3K2k1/8/5p2/1B6/8 b - - 6 61",
+    "moves": [
+      "f3f2",
+      "b2d4",
+      "f2f1q"
+    ],
+    "rating": 700,
+    "themes": [
+      "endgame",
+      "promotion",
+      "advancedPawn"
+    ],
+    "title": "Casilla del color equivocado",
+    "hint": "¿De qué color es la casilla de coronación y de qué color es el alfil blanco?",
+    "explanation": "**...f2!** y el peón corona: el alfil blanco va por casillas oscuras y f1 es clara, así que nunca podrá controlarla. Aunque ataque el peón con **Ad4**, **...f1=D** llega antes.",
+    "source": "propio"
+  },
+  {
+    "id": "final-002",
+    "fen": "8/8/2P3p1/1KB1nk1p/8/6P1/8/8 w - - 2 47",
+    "moves": [
+      "c6c7"
+    ],
+    "rating": 750,
+    "themes": [
+      "endgame",
+      "promotion",
+      "advancedPawn",
+      "oneMove"
+    ],
+    "title": "El caballo no llega",
+    "hint": "Comprueba si el caballo negro puede controlar c8 a tiempo.",
+    "explanation": "**c7!** y el caballo de e5 no puede controlar c8 a tiempo (ni desde d7 ni desde c6 vigila esa casilla). En la jugada siguiente el peón corona con **c8=D**.",
+    "source": "propio"
+  },
+  {
+    "id": "final-003",
+    "fen": "4rk2/R7/4pp1P/8/1pB4K/p3P3/4P2P/2b5 w - - 2 53",
+    "moves": [
+      "h6h7",
+      "e8e7",
+      "h7h8q"
+    ],
+    "rating": 800,
+    "themes": [
+      "endgame",
+      "promotion",
+      "advancedPawn"
+    ],
+    "title": "El peón de h no se para",
+    "hint": "¿Quién controla la casilla h8?",
+    "explanation": "**h7!** y el peón ya no se puede frenar: el rey negro está en f8 y ninguna pieza negra vigila h8. Tras **...Te7** llega **h8=D+**.",
+    "source": "propio"
+  },
+  {
+    "id": "final-004",
+    "fen": "8/4k3/p3Pp2/P7/2Bb3p/2P5/5p1P/7K w - - 2 52",
+    "moves": [
+      "c3d4",
+      "f2f1r",
+      "c4f1"
+    ],
+    "rating": 800,
+    "themes": [
+      "endgame",
+      "hangingPiece",
+      "advancedPawn"
+    ],
+    "title": "El alfil vigila f1",
+    "hint": "El peón de f2 parece peligroso, pero tu alfil controla su casilla de coronación.",
+    "explanation": "**cxd4** gana el alfil sin miedo: el Ac4 controla f1, así que si **...f1=T+** (o dama) llega **Axf1**. Antes de capturar, comprueba que el peón rival no corona gratis.",
+    "source": "propio"
+  },
+  {
+    "id": "final-005",
+    "fen": "8/8/1K4p1/P7/4p3/2k5/8/8 w - - 1 53",
+    "moves": [
+      "a5a6",
+      "c3d3",
+      "a6a7",
+      "e4e3",
+      "a7a8q"
+    ],
+    "rating": 800,
+    "themes": [
+      "endgame",
+      "pawnEndgame",
+      "promotion",
+      "advancedPawn"
+    ],
+    "title": "Carrera de peones",
+    "hint": "Cuenta cuántas jugadas necesita cada peón para coronar.",
+    "explanation": "El peón de a está más avanzado: **a6 Rd3 a7 e3 a8=D** corona antes que el peón negro, que todavía está en e3: dama contra peón es una victoria fácil. En las carreras de peones, cuenta las jugadas antes de mover.",
+    "source": "propio"
+  },
+  {
+    "id": "final-006",
+    "fen": "8/6k1/8/2P3K1/2p5/1P6/8/8 b - - 0 50",
+    "moves": [
+      "c4c3",
+      "g5f4",
+      "c3c2"
+    ],
+    "rating": 850,
+    "themes": [
+      "endgame",
+      "pawnEndgame",
+      "advancedPawn"
+    ],
+    "title": "El peón se cuela",
+    "hint": "No captures: avanza.",
+    "explanation": "**...c3!** convierte el peón de c4 en pasado: el peón de b3 no puede capturarlo y el rey blanco está demasiado lejos. Tras **Rf4 c2** el peón corona. En cambio, **...cxb3?** dejaría pasar también al peón blanco de c5 y serían tablas.",
+    "source": "propio"
+  },
+  {
+    "id": "final-007",
+    "fen": "8/5P2/4B1k1/6P1/8/3b2K1/2r5/1r5R w - - 0 50",
+    "moves": [
+      "f7f8q",
+      "b1g1",
+      "h1g1"
+    ],
+    "rating": 850,
+    "themes": [
+      "endgame",
+      "promotion",
+      "advantage"
+    ],
+    "title": "Corona sin miedo",
+    "hint": "Las torres negras amenazan jaques, pero tu torre de h1 vigila la primera fila.",
+    "explanation": "**f8=D** corona ya, porque el rey negro no controla f8; y tras **...Tg1+**, **Txg1** elimina la torre. Las negras se quedan sin contrajuego y con una dama menos.",
+    "source": "propio"
+  },
+  {
+    "id": "final-008",
+    "fen": "8/1p3k2/5BpP/4p3/6P1/1b6/3K4/8 w - - 2 51",
+    "moves": [
+      "h6h7",
+      "f7f6",
+      "h7h8q"
+    ],
+    "rating": 900,
+    "themes": [
+      "endgame",
+      "promotion",
+      "sacrifice",
+      "advancedPawn"
+    ],
+    "title": "El alfil distrae",
+    "hint": "Tu alfil está atacado. ¿Hace falta salvarlo?",
+    "explanation": "No hay que salvar el alfil: **h7!** y si **...Rxf6**, **h8=D+** corona con jaque. El rey negro no puede atender a la vez el alfil y el peón.",
+    "source": "propio"
+  },
+  {
+    "id": "final-009",
+    "fen": "8/p4k1p/PpP5/8/5pP1/B4p1P/2P2P1K/1r6 w - - 1 39",
+    "moves": [
+      "c6c7"
+    ],
+    "rating": 900,
+    "themes": [
+      "endgame",
+      "promotion",
+      "advancedPawn",
+      "oneMove"
+    ],
+    "title": "La torre llega tarde",
+    "hint": "¿Puede la torre de b1 ponerse delante del peón de c6?",
+    "explanation": "**c7!** y el peón ya no se puede parar: la torre no puede ir a b8 porque su propio peón de b6 le cierra el paso, ni frenarlo desde c1 porque el peón blanco de c2 tapa la columna. En la jugada siguiente llega **c8=D**.",
+    "source": "propio"
+  },
+  {
+    "id": "final-010",
+    "fen": "3k4/8/8/5K2/3P4/8/8/8 w - - 0 60",
+    "moves": [
+      "f5e6"
+    ],
+    "rating": 900,
+    "themes": [
+      "endgame",
+      "pawnEndgame",
+      "oneMove"
+    ],
+    "title": "El rey primero",
+    "hint": "Antes de avanzar el peón, coloca tu rey lo más adelante posible.",
+    "explanation": "**Re6!** lleva el rey a la sexta fila, delante del peón. Desde ahí controla las casillas por las que pasará el peón y gana sin problemas. Si empujas el peón demasiado pronto, el rey negro se planta delante y son tablas.",
+    "source": "propio"
+  },
+  {
+    "id": "final-011",
+    "fen": "1K2k3/p7/5P2/7P/8/8/8/8 w - - 0 50",
+    "moves": [
+      "h5h6",
+      "e8f7",
+      "h6h7",
+      "f7f6",
+      "h7h8q"
+    ],
+    "rating": 950,
+    "themes": [
+      "endgame",
+      "pawnEndgame",
+      "promotion",
+      "advancedPawn"
+    ],
+    "title": "Dos peones lejanos",
+    "hint": "El rey negro no puede vigilar a la vez el peón de f6 y el de h5.",
+    "explanation": "**h6!** y el rey negro tiene que elegir. Si va a por el peón de f6 (**...Rf7 h7 Rxf6**), el de h corona con **h8=D+**. Dos peones pasados separados son demasiado para un rey solo.",
+    "source": "propio"
+  },
+  {
+    "id": "final-012",
+    "fen": "8/8/5k2/8/3K4/4P3/8/8 w - - 0 60",
+    "moves": [
+      "d4d5",
+      "f6e7",
+      "d5e5"
+    ],
+    "rating": 1050,
+    "themes": [
+      "endgame",
+      "pawnEndgame"
+    ],
+    "title": "Casillas clave",
+    "hint": "Con el peón en e3, tu rey quiere llegar a la quinta fila delante de él.",
+    "explanation": "**Rd5!** pisa una **casilla clave** del peón (d5, e5 o f5). Tras **...Re7 Re5** el rey blanco toma la **oposición** y ya nada impide que el peón avance escoltado hasta coronar.",
+    "source": "propio"
+  },
+  {
+    "id": "final-013",
+    "fen": "8/2k5/8/8/1P1K4/8/8/8 w - - 0 60",
+    "moves": [
+      "d4c5",
+      "c7b7",
+      "c5b5"
+    ],
+    "rating": 1100,
+    "themes": [
+      "endgame",
+      "pawnEndgame"
+    ],
+    "title": "Frente a frente",
+    "hint": "Tu rey debe ponerse delante del peón y ganar la oposición.",
+    "explanation": "**Rc5!** y tras **...Rb7**, **Rb5** toma la **oposición**. El rey negro tendrá que apartarse y el rey blanco entrará en a6, b6 o c6, las casillas clave del peón de b4.",
+    "source": "propio"
+  },
+  {
+    "id": "final-014",
+    "fen": "8/8/2k5/8/8/3P1K2/8/8 w - - 0 60",
+    "moves": [
+      "f3e4",
+      "c6d6",
+      "e4d4"
+    ],
+    "rating": 1200,
+    "themes": [
+      "endgame",
+      "pawnEndgame"
+    ],
+    "title": "La oposición",
+    "hint": "Los reyes van a quedar frente a frente: procura que sea el negro quien tenga que ceder.",
+    "explanation": "**Re4!** y tras **...Rd6**, **Rd4** toma la **oposición**: los reyes quedan enfrentados con una casilla en medio y le toca mover al negro, que tiene que ceder el paso. Así el rey blanco llega a las casillas clave c5, d5 o e5.",
+    "source": "propio"
+  },
+  {
+    "id": "final-015",
+    "fen": "8/1k6/8/8/1K2P3/8/8/8 w - - 0 60",
+    "moves": [
+      "b4b5",
+      "b7c8",
+      "b5c6",
+      "c8d8",
+      "c6d6"
+    ],
+    "rating": 1250,
+    "themes": [
+      "endgame",
+      "pawnEndgame"
+    ],
+    "title": "El rey se adelanta",
+    "hint": "No muevas el peón: lleva el rey hacia la sexta fila.",
+    "explanation": "**Rb5! Rc8 Rc6 Rd8 Rd6**: el rey blanco avanza en diagonal hacia las **casillas clave** del peón de e4 (d6, e6 y f6). Con el rey en d6 el peón coronará escoltado; avanzar el peón antes habría permitido al rey negro bloquearlo.",
+    "source": "propio"
+  },
+  {
+    "id": "final-016",
+    "fen": "r3k3/2P1P3/8/1p5p/1B1RppbP/8/8/7K w - - 1 47",
+    "moves": [
+      "d4d8",
+      "e8f7",
+      "e7e8q"
+    ],
+    "rating": 1300,
+    "themes": [
+      "endgame",
+      "promotion",
+      "deflection",
+      "sacrifice"
+    ],
+    "title": "Dos peones en séptima",
+    "hint": "Un jaque de torre en d8 prepara la coronación de uno de tus peones.",
+    "explanation": "**Td8+!** Si **...Txd8**, cualquiera de los peones captura y corona. Tras **...Rf7**, **e8=D+** corona con jaque: aunque las negras cambien en e8, el peón de c7 sigue esperando para coronar.",
+    "source": "propio"
+  },
+  {
+    "id": "final-017",
+    "fen": "8/4P1q1/3k4/8/8/8/5PPP/6K1 w - - 0 1",
+    "moves": [
+      "e7e8n",
+      "d6d5",
+      "e8g7"
+    ],
+    "rating": 1400,
+    "themes": [
+      "endgame",
+      "underPromotion",
+      "fork"
+    ],
+    "title": "No siempre dama",
+    "hint": "Coronar dama no da jaque... pero hay otra pieza que sí.",
+    "explanation": "**e8=C+!** es una **subpromoción**: el nuevo caballo da jaque al rey de d6 y ataca a la dama de g7 a la vez. Tras **...Rd5 Cxg7** las blancas se quedan con pieza y tres peones de ventaja.",
+    "source": "propio"
+  },
+  {
+    "id": "final-018",
+    "fen": "R7/P4k2/8/8/8/8/r4PK1/8 w - - 0 1",
+    "moves": [
+      "a8h8"
+    ],
+    "rating": 1500,
+    "themes": [
+      "endgame",
+      "rookEndgame",
+      "skewer",
+      "promotion",
+      "oneMove"
+    ],
+    "title": "La torre se aparta",
+    "hint": "Tu torre estorba a su propio peón. ¿A dónde puede ir para que, si la negra captura el peón, haya una sorpresa?",
+    "explanation": "**Th8!** deja libre la casilla a8. Si **...Txa7**, **Th7+** ensarta al rey y gana la torre; y si las negras no capturan, **a8=D** corona. Es la ensartada típica de los finales de torre con peón en a7.",
+    "source": "propio"
+  },
+  {
+    "id": "final-019",
+    "fen": "1r6/1P1R1pk1/3P4/5p2/6p1/7p/7P/4K3 b - - 1 41",
+    "moves": [
+      "g4g3"
+    ],
+    "rating": 1500,
+    "themes": [
+      "endgame",
+      "sacrifice",
+      "advancedPawn",
+      "oneMove"
+    ],
+    "title": "Abrir paso al peón",
+    "hint": "Tus peones de g y h están muy avanzados. Sacrifica uno para que el otro pase.",
+    "explanation": "**...g3!** es una **ruptura**: si **hxg3**, el peón de h queda libre y **...h2** ya no se puede parar; y si las blancas no capturan, **...gxh2** amenaza coronar igualmente. La torre de b8 frena mientras tanto los peones blancos.",
+    "source": "propio"
+  },
+  {
+    "id": "final-020",
+    "fen": "6k1/ppp3pp/8/PPP5/8/8/6PP/6K1 w - - 0 1",
+    "moves": [
+      "b5b6",
+      "a7b6",
+      "c5c6",
+      "b7c6",
+      "a5a6"
+    ],
+    "rating": 1550,
+    "themes": [
+      "endgame",
+      "pawnEndgame",
+      "advancedPawn",
+      "sacrifice",
+      "promotion"
+    ],
+    "title": "La ruptura de los tres peones",
+    "hint": "Tres peones contra tres: si sacrificas dos, el tercero corona. Empieza por el del centro.",
+    "explanation": "**b6!** es la ruptura clásica: tras **...axb6 c6! bxc6 a6** el peón de a corona porque el rey negro está demasiado lejos (si **...cxb6**, entonces **a6!**). Con peones enfrentados en a5-b5-c5, el golpe siempre empieza por el **peón central**.",
+    "source": "propio"
+  },
+  {
+    "id": "final-021",
+    "fen": "rnbqk1nr/ppp2ppp/8/4P3/1BP5/4p3/PP3PPP/RN1QKBNR b KQkq - 0 6",
+    "moves": [
+      "e3f2",
+      "e1e2",
+      "f2g1n"
+    ],
+    "rating": 1600,
+    "themes": [
+      "underPromotion",
+      "opening",
+      "advantage"
+    ],
+    "title": "La trampa de Lasker",
+    "hint": "Tu peón llega a la última fila. ¿Qué pieza conviene elegir?",
+    "explanation": "**...exf2+ Re2** y ahora **...fxg1=C+!**: una **subpromoción** con jaque. Si coronas dama, **Txg1** y las blancas se salvan; con el caballo das jaque, ganas tiempo y te quedas con una pieza de más.",
+    "source": "propio"
+  }
+]
