@@ -1,0 +1,7 @@
+node_modules
+dist
+coverage
+*.log
+.DS_Store
+public/stockfish/
+content/puzzles/lichess-*.csv
