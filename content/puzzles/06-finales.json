@@ -1,25 +1,43 @@
 [
   {
     "id": "final-001",
-    "fen": "8/8/2P3p1/1KB1nk1p/8/6P1/8/8 w - - 2 47",
+    "fen": "8/8/8/3K2k1/8/5p2/1B6/8 b - - 6 61",
     "moves": [
-      "c6c7",
-      "e5g4",
-      "c7c8q"
+      "f3f2",
+      "b2d4",
+      "f2f1q"
     ],
-    "rating": 750,
+    "rating": 700,
     "themes": [
       "endgame",
       "promotion",
       "advancedPawn"
     ],
-    "title": "El caballo no llega",
-    "hint": "Comprueba si el caballo negro puede controlar c8 a tiempo.",
-    "explanation": "**c7!** y el caballo de e5 no puede controlar c8 en una sola jugada (ni desde d7 ni desde c6 lo vigila). Tras **...Cg4 c8=D+** las blancas tienen dama.",
+    "title": "Casilla del color equivocado",
+    "hint": "¿De qué color es la casilla de coronación y de qué color es el alfil blanco?",
+    "explanation": "**...f2!** y el peón corona: el alfil blanco va por casillas oscuras y f1 es clara, así que nunca podrá controlarla. Aunque ataque el peón con **Ad4**, **...f1=D** llega antes.",
     "source": "propio"
   },
   {
     "id": "final-002",
+    "fen": "8/8/2P3p1/1KB1nk1p/8/6P1/8/8 w - - 2 47",
+    "moves": [
+      "c6c7"
+    ],
+    "rating": 750,
+    "themes": [
+      "endgame",
+      "promotion",
+      "advancedPawn",
+      "oneMove"
+    ],
+    "title": "El caballo no llega",
+    "hint": "Comprueba si el caballo negro puede controlar c8 a tiempo.",
+    "explanation": "**c7!** y el caballo de e5 no puede controlar c8 a tiempo (ni desde d7 ni desde c6 vigila esa casilla). En la jugada siguiente el peón corona con **c8=D**.",
+    "source": "propio"
+  },
+  {
+    "id": "final-003",
     "fen": "4rk2/R7/4pp1P/8/1pB4K/p3P3/4P2P/2b5 w - - 2 53",
     "moves": [
       "h6h7",
@@ -38,7 +56,7 @@
     "source": "propio"
   },
   {
-    "id": "final-003",
+    "id": "final-004",
     "fen": "8/4k3/p3Pp2/P7/2Bb3p/2P5/5p1P/7K w - - 2 52",
     "moves": [
       "c3d4",
@@ -57,7 +75,7 @@
     "source": "propio"
   },
   {
-    "id": "final-004",
+    "id": "final-005",
     "fen": "8/8/1K4p1/P7/4p3/2k5/8/8 w - - 1 53",
     "moves": [
       "a5a6",
@@ -79,7 +97,7 @@
     "source": "propio"
   },
   {
-    "id": "final-005",
+    "id": "final-006",
     "fen": "8/6k1/8/2P3K1/2p5/1P6/8/8 b - - 0 50",
     "moves": [
       "c4c3",
@@ -98,7 +116,7 @@
     "source": "propio"
   },
   {
-    "id": "final-006",
+    "id": "final-007",
     "fen": "8/5P2/4B1k1/6P1/8/3b2K1/2r5/1r5R w - - 0 50",
     "moves": [
       "f7f8q",
@@ -117,7 +135,7 @@
     "source": "propio"
   },
   {
-    "id": "final-007",
+    "id": "final-008",
     "fen": "8/1p3k2/5BpP/4p3/6P1/1b6/3K4/8 w - - 2 51",
     "moves": [
       "h6h7",
@@ -137,7 +155,7 @@
     "source": "propio"
   },
   {
-    "id": "final-008",
+    "id": "final-009",
     "fen": "8/p4k1p/PpP5/8/5pP1/B4p1P/2P2P1K/1r6 w - - 1 39",
     "moves": [
       "c6c7"
@@ -155,7 +173,7 @@
     "source": "propio"
   },
   {
-    "id": "final-009",
+    "id": "final-010",
     "fen": "3k4/8/8/5K2/3P4/8/8/8 w - - 0 60",
     "moves": [
       "f5e6"
@@ -172,7 +190,7 @@
     "source": "propio"
   },
   {
-    "id": "final-010",
+    "id": "final-011",
     "fen": "1K2k3/p7/5P2/7P/8/8/8/8 w - - 0 50",
     "moves": [
       "h5h6",
@@ -194,7 +212,7 @@
     "source": "propio"
   },
   {
-    "id": "final-011",
+    "id": "final-012",
     "fen": "8/8/5k2/8/3K4/4P3/8/8 w - - 0 60",
     "moves": [
       "d4d5",
@@ -212,7 +230,7 @@
     "source": "propio"
   },
   {
-    "id": "final-012",
+    "id": "final-013",
     "fen": "8/2k5/8/8/1P1K4/8/8/8 w - - 0 60",
     "moves": [
       "d4c5",
@@ -230,7 +248,7 @@
     "source": "propio"
   },
   {
-    "id": "final-013",
+    "id": "final-014",
     "fen": "8/8/2k5/8/8/3P1K2/8/8 w - - 0 60",
     "moves": [
       "f3e4",
@@ -248,7 +266,7 @@
     "source": "propio"
   },
   {
-    "id": "final-014",
+    "id": "final-015",
     "fen": "8/1k6/8/8/1K2P3/8/8/8 w - - 0 60",
     "moves": [
       "b4b5",
@@ -268,7 +286,7 @@
     "source": "propio"
   },
   {
-    "id": "final-015",
+    "id": "final-016",
     "fen": "r3k3/2P1P3/8/1p5p/1B1RppbP/8/8/7K w - - 1 47",
     "moves": [
       "d4d8",
@@ -288,7 +306,7 @@
     "source": "propio"
   },
   {
-    "id": "final-016",
+    "id": "final-017",
     "fen": "8/4P1q1/3k4/8/8/8/5PPP/6K1 w - - 0 1",
     "moves": [
       "e7e8n",
@@ -307,7 +325,7 @@
     "source": "propio"
   },
   {
-    "id": "final-017",
+    "id": "final-018",
     "fen": "R7/P4k2/8/8/8/8/r4PK1/8 w - - 0 1",
     "moves": [
       "a8h8"
@@ -326,7 +344,25 @@
     "source": "propio"
   },
   {
-    "id": "final-018",
+    "id": "final-019",
+    "fen": "1r6/1P1R1pk1/3P4/5p2/6p1/7p/7P/4K3 b - - 1 41",
+    "moves": [
+      "g4g3"
+    ],
+    "rating": 1500,
+    "themes": [
+      "endgame",
+      "sacrifice",
+      "advancedPawn",
+      "oneMove"
+    ],
+    "title": "Abrir paso al peón",
+    "hint": "Tus peones de g y h están muy avanzados. Sacrifica uno para que el otro pase.",
+    "explanation": "**...g3!** es una **ruptura**: si **hxg3**, el peón de h queda libre y **...h2** ya no se puede parar; y si las blancas no capturan, **...gxh2** amenaza coronar igualmente. La torre de b8 frena mientras tanto los peones blancos.",
+    "source": "propio"
+  },
+  {
+    "id": "final-020",
     "fen": "6k1/ppp3pp/8/PPP5/8/8/6PP/6K1 w - - 0 1",
     "moves": [
       "b5b6",
@@ -349,7 +385,7 @@
     "source": "propio"
   },
   {
-    "id": "final-019",
+    "id": "final-021",
     "fen": "rnbqk1nr/ppp2ppp/8/4P3/1BP5/4p3/PP3PPP/RN1QKBNR b KQkq - 0 6",
     "moves": [
       "e3f2",
@@ -365,28 +401,6 @@
     "title": "La trampa de Lasker",
     "hint": "Tu peón llega a la última fila. ¿Qué pieza conviene elegir?",
     "explanation": "**...exf2+ Re2** y ahora **...fxg1=C+!**: una **subpromoción** con jaque. Si coronas dama, **Txg1** y las blancas se salvan; con el caballo das jaque, ganas tiempo y te quedas con una pieza de más.",
-    "source": "propio"
-  },
-  {
-    "id": "final-020",
-    "fen": "1r6/1P1R1pk1/3P4/5p2/6p1/7p/7P/4K3 b - - 1 41",
-    "moves": [
-      "g4g3",
-      "h2g3",
-      "h3h2",
-      "e1f2",
-      "h2h1q"
-    ],
-    "rating": 1650,
-    "themes": [
-      "endgame",
-      "sacrifice",
-      "promotion",
-      "advancedPawn"
-    ],
-    "title": "Abrir paso al peón",
-    "hint": "Tus peones de g y h están muy avanzados. Sacrifica uno para que el otro pase.",
-    "explanation": "**...g3!** es una **ruptura**: tras **hxg3** el peón de h queda libre y **...h2** ya no se puede parar; después de **Rf2 h1=D** las negras tienen dama. La torre de b8 frena los peones blancos mientras tanto.",
     "source": "propio"
   }
 ]

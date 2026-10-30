@@ -229,6 +229,25 @@
   },
   {
     "id": "material-014",
+    "fen": "r1b2rk1/ppp2pp1/2n4p/8/4PB1P/2P2NP1/P3PbB1/R2K3R w - - 0 13",
+    "moves": [
+      "e2e3",
+      "f2e3",
+      "f4e3"
+    ],
+    "rating": 1000,
+    "themes": [
+      "trappedPiece",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Alfil encerrado",
+    "hint": "El alfil de f2 está metido en tu campo. ¿Le quedan casillas de retirada?",
+    "explanation": "El Af2 está **atrapado**: g1 la controla la torre de h1, e1 el rey y g3 está defendida. **e3!** le corta la última salida y, tras **...Axe3 Axe3**, las blancas ganan la pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "material-015",
     "fen": "8/1p1n1pk1/6p1/1P6/nB2p1N1/4P2P/5PPK/8 b - - 4 32",
     "moves": [
       "f7f5",
@@ -247,7 +266,7 @@
     "source": "propio"
   },
   {
-    "id": "material-015",
+    "id": "material-016",
     "fen": "1r1q1rk1/p1p1bpp1/2p2n1p/3pP3/5Bb1/2NB4/PPP2PPP/1R1Q1RK1 w - - 1 13",
     "moves": [
       "f2f3",
@@ -263,6 +282,26 @@
     "title": "Primero, echa al alfil",
     "hint": "El caballo de f6 está atacado por tu peón, pero si lo capturas ya, pierdes la dama.",
     "explanation": "Si **exf6?** directamente, **...Axd1** se lleva la dama. Por eso primero **f3!** ataca al Ag4; tras **...Ac8** (o cualquier retirada) llega **exf6** y las blancas ganan una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "material-017",
+    "fen": "2rr2k1/1b6/2n1p1pB/1p1n2Q1/8/5N2/B1q2PPP/4R1K1 w - - 0 26",
+    "moves": [
+      "a2b1",
+      "c2b1",
+      "e1b1"
+    ],
+    "rating": 1300,
+    "themes": [
+      "trappedPiece",
+      "quietMove",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "La dama atrapada",
+    "hint": "La dama negra se ha metido muy dentro de tu campo. ¿Puedes atacarla sin dejarle salida?",
+    "explanation": "**Ab1!** ataca la dama de c2 y ninguna de sus casillas es segura: está **atrapada**. Lo menos malo para las negras es **...Dxb1 Txb1**, con lo que se quedan con un alfil a cambio de la dama.",
     "source": "propio"
   }
 ]

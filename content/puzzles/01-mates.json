@@ -68,22 +68,6 @@
   },
   {
     "id": "mate-005",
-    "fen": "r3r1k1/p5p1/1pb2p1B/8/8/2P3QP/P1q2PP1/R3R1K1 w - - 0 23",
-    "moves": [
-      "g3g7"
-    ],
-    "rating": 450,
-    "themes": [
-      "mateIn1",
-      "oneMove"
-    ],
-    "title": "Alfil y dama",
-    "hint": "El alfil de h6 ya está apoyando una casilla clave.",
-    "explanation": "**Dxg7#**. La dama entra en g7 protegida por el Ah6 y el rey negro no tiene escapatoria: f8, f7 y h7 quedan controladas por la dama.",
-    "source": "propio"
-  },
-  {
-    "id": "mate-006",
     "fen": "r1bqkb1r/pp1npppp/2p2n2/8/3PN3/8/PPP1QPPP/R1B1KBNR w KQkq - 3 6",
     "moves": [
       "e4d6"
@@ -101,7 +85,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-007",
+    "id": "mate-006",
     "fen": "r4rk1/pp3p2/2p3P1/8/8/2q4Q/P4PPP/6K1 w - - 0 1",
     "moves": [
       "h3h7"
@@ -117,7 +101,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-008",
+    "id": "mate-007",
     "fen": "r4rk1/pp3pp1/2b3q1/8/7Q/P1P5/2P2PPP/R1B2RK1 b - - 0 19",
     "moves": [
       "g6g2"
@@ -133,7 +117,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-009",
+    "id": "mate-008",
     "fen": "r4rk1/pp3ppp/2n5/8/3P4/5pPq/PP3P1P/R2Q1RK1 b - - 0 1",
     "moves": [
       "h3g2"
@@ -149,7 +133,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-010",
+    "id": "mate-009",
     "fen": "r1b1k2r/ppppqppp/2n5/4n3/1PP2B2/5N2/1P1NPPPP/R2QKB1R b KQkq - 0 8",
     "moves": [
       "e5d3"
@@ -167,7 +151,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-011",
+    "id": "mate-010",
     "fen": "8/5pk1/p1B3p1/PP6/2Q1n2q/4P2P/5PK1/2Rr4 b - - 0 39",
     "moves": [
       "h4f2"
@@ -183,7 +167,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-012",
+    "id": "mate-011",
     "fen": "1rb1k2r/4ppb1/2pp1p2/p6q/NP2PP2/P2B4/2P1Q1PP/1R3R1K b k - 0 19",
     "moves": [
       "h5h2"
@@ -200,7 +184,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-013",
+    "id": "mate-012",
     "fen": "2r3k1/pp3ppp/8/8/3qn3/1Q6/PP4PP/R5RK b - - 0 1",
     "moves": [
       "e4f2"
@@ -217,7 +201,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-014",
+    "id": "mate-013",
     "fen": "r5k1/pb3ppp/1Pq1pn2/2p1p3/2P4N/1QP3PP/4PP2/R4RK1 b - - 0 19",
     "moves": [
       "c6h1"
@@ -233,7 +217,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-015",
+    "id": "mate-014",
     "fen": "1Q1R4/4qrpk/ppp4p/5b2/1P3N2/7P/P5PK/8 w - - 0 35",
     "moves": [
       "d8h8"
@@ -249,7 +233,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-016",
+    "id": "mate-015",
     "fen": "8/8/2R1pk1p/2P4K/4P1P1/4r3/8/8 b - - 2 49",
     "moves": [
       "e3h3"
@@ -267,7 +251,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-017",
+    "id": "mate-016",
     "fen": "3rkr2/pp4pp/2p5/8/8/8/PPP1QPPP/2R3K1 w - - 0 1",
     "moves": [
       "e2e6"
@@ -283,7 +267,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-018",
+    "id": "mate-017",
     "fen": "5k1r/pp3pp1/2p5/8/8/5n2/PP3P1P/R4R1K b - - 0 1",
     "moves": [
       "h8h2"
@@ -299,7 +283,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-019",
+    "id": "mate-018",
     "fen": "6k1/R5p1/p1p3Pp/2p2pbP/2P5/1P6/2P4r/1K2N3 w - - 3 38",
     "moves": [
       "a7a8",
@@ -318,26 +302,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-020",
-    "fen": "rr4k1/pp2qp1p/6pQ/1B1bP1N1/1n6/8/5PPP/R1R3K1 w - - 3 24",
-    "moves": [
-      "h6h7",
-      "g8f8",
-      "h7h8"
-    ],
-    "rating": 650,
-    "themes": [
-      "mateIn2",
-      "backRankMate",
-      "middlegame"
-    ],
-    "title": "El caballo de g5",
-    "hint": "Tu caballo de g5 apoya la entrada de la dama en h7.",
-    "explanation": "**Dxh7+** (protegida por el Cg5) obliga a **...Rf8**, y **Dh8#** cierra la red: la dama controla toda la octava fila y g7, y la dama negra tapa la casilla e7.",
-    "source": "propio"
-  },
-  {
-    "id": "mate-021",
+    "id": "mate-019",
     "fen": "r4rk1/8/pqn1bp1p/1pbpP2N/8/3Q1N1P/1PP1RPP1/R5K1 w - - 0 21",
     "moves": [
       "d3g6",
@@ -355,7 +320,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-022",
+    "id": "mate-020",
     "fen": "1k5r/p7/1PR5/3p2p1/3P1pp1/7r/1P3P2/3R2K1 b - - 2 31",
     "moves": [
       "h3h1",
@@ -373,7 +338,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-023",
+    "id": "mate-021",
     "fen": "3r2k1/1p6/4R3/2p1pP2/2P2pPq/Q6B/P2r3N/6K1 b - - 3 44",
     "moves": [
       "h4f2",
@@ -391,7 +356,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-024",
+    "id": "mate-022",
     "fen": "8/3q4/r1p2pk1/P1P1p1p1/2QpP2p/1B1P3P/1R3P1K/5b2 b - - 5 65",
     "moves": [
       "d7h3",
@@ -409,7 +374,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-025",
+    "id": "mate-023",
     "fen": "3r2k1/pp3ppp/2p5/8/Q7/3q4/PP3PPP/3R2K1 b - - 0 1",
     "moves": [
       "d3d1",
@@ -429,7 +394,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-026",
+    "id": "mate-024",
     "fen": "4n1k1/p1r5/2RB2p1/3Pp2p/Q3Pp1b/5P1P/6P1/1q3B1K b - - 0 34",
     "moves": [
       "b1f1",
@@ -447,7 +412,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-027",
+    "id": "mate-025",
     "fen": "r5k1/p7/1p2b1p1/2r5/2Pp2PQ/P3qP2/1P6/1KR4R w - - 2 31",
     "moves": [
       "h4h8",
@@ -465,7 +430,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-028",
+    "id": "mate-026",
     "fen": "5k2/p4r2/1p4Q1/3PP1p1/4P3/P3p3/6KP/2q2B2 b - - 9 41",
     "moves": [
       "c1f1",
@@ -483,7 +448,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-029",
+    "id": "mate-027",
     "fen": "4r1k1/pp3pr1/n3q3/7Q/3p1B2/P2R4/1P3PpP/2R3K1 b - - 1 32",
     "moves": [
       "e6e1",
@@ -503,7 +468,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-030",
+    "id": "mate-028",
     "fen": "6k1/p7/1bP3p1/4Q2p/4Pp1P/5P2/6PK/5q2 b - - 16 55",
     "moves": [
       "f1g1",
@@ -521,7 +486,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-031",
+    "id": "mate-029",
     "fen": "8/8/3Q4/p7/6k1/Pnr1p3/6r1/4K3 b - - 4 45",
     "moves": [
       "g2g1",
@@ -539,7 +504,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-032",
+    "id": "mate-030",
     "fen": "2Q5/1pp2kpp/2p5/p3p3/N3Pn2/1P1P2KP/P1q3P1/8 b - - 11 31",
     "moves": [
       "c2g2",
@@ -557,7 +522,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-033",
+    "id": "mate-031",
     "fen": "2r4k/1p4p1/2bR3p/P7/8/5QPq/5P1P/4R1K1 b - - 0 39",
     "moves": [
       "c6f3",
@@ -577,7 +542,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-034",
+    "id": "mate-032",
     "fen": "r2qkbnr/ppp2ppp/2np4/4N3/2B1P3/2N5/PPPP1PPP/R1BbK2R w KQkq - 0 6",
     "moves": [
       "c4f7",
@@ -595,7 +560,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-035",
+    "id": "mate-033",
     "fen": "r4r1k/pp4pB/2p2q2/3b4/2pP4/6PP/PP1Q1P2/R4RK1 b - - 3 23",
     "moves": [
       "f6f3",
@@ -614,7 +579,28 @@
     "source": "propio"
   },
   {
-    "id": "mate-036",
+    "id": "mate-034",
+    "fen": "3Q1rk1/ppp4p/6b1/8/3P1BpP/1PP3P1/P3q3/R5K1 b - - 8 35",
+    "moves": [
+      "f8d8",
+      "a1d1",
+      "g6e4",
+      "c3c4",
+      "e2g2"
+    ],
+    "rating": 1300,
+    "themes": [
+      "mateIn3",
+      "quietMove",
+      "middlegame"
+    ],
+    "title": "El alfil cierra la diagonal",
+    "hint": "Primero captura la dama. Después, una jugada tranquila de alfil prepara el mate en g2.",
+    "explanation": "**...Txd8** gana la dama y, tras **Td1**, **...Ae4!** es una **jugada tranquila**: el alfil apoya g2 y la dama da mate en la jugada siguiente. Nada impide **...Dg2#**.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-035",
     "fen": "1r1q1r1k/p3np2/1p3b1p/2p1pPB1/P2pP3/3P1B1P/1PPQ2R1/5RK1 w - - 0 22",
     "moves": [
       "g5f6",
@@ -635,7 +621,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-037",
+    "id": "mate-036",
     "fen": "2kr3r/pp1nbppp/2p1p3/8/3P1Bq1/3B1Q2/PPP2PPP/R4RK1 w - - 0 1",
     "moves": [
       "f3c6",
@@ -654,7 +640,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-038",
+    "id": "mate-037",
     "fen": "4r3/2p3pk/5p1p/N4b2/Pp1P1b2/1Q3PPq/RP5P/5RK1 b - - 2 29",
     "moves": [
       "e8e2",
@@ -676,7 +662,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-039",
+    "id": "mate-038",
     "fen": "rq3rk1/pb3ppp/8/3N3Q/8/3R4/PP3PPP/6K1 w - - 0 1",
     "moves": [
       "d5e7",
@@ -697,7 +683,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-040",
+    "id": "mate-039",
     "fen": "2r1k1r1/p6p/B1bbpn2/5p2/P7/2P5/5PPP/RNB2RK1 b - - 3 22",
     "moves": [
       "g8g2",
@@ -719,7 +705,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-041",
+    "id": "mate-040",
     "fen": "5k2/2Q5/1p6/p2qn1p1/PP1p4/5PPp/8/4BK2 b - - 8 45",
     "moves": [
       "d5f3",
@@ -739,6 +725,27 @@
     "source": "propio"
   },
   {
+    "id": "mate-041",
+    "fen": "5Q2/p2r4/6kp/2Nr2p1/1P2K3/2p5/P7/5R2 w - - 3 38",
+    "moves": [
+      "f1f6",
+      "g6h5",
+      "f6h6",
+      "h5g4",
+      "f8f3"
+    ],
+    "rating": 1550,
+    "themes": [
+      "mateIn3",
+      "sacrifice",
+      "middlegame"
+    ],
+    "title": "La torre abre camino",
+    "hint": "Tu torre puede dar jaque en f6 y luego entregarse en h6 para empujar al rey hacia tu dama.",
+    "explanation": "**Tf6+ Rh5** y **Txh6+!**: el rey no puede tomar la torre (lo controla la dama de f8) y tiene que ir a **...Rg4**, donde **Df3#** da mate con la dama protegida por el rey de e4.",
+    "source": "propio"
+  },
+  {
     "id": "mate-042",
     "fen": "4r2k/pp4pp/1q6/3Q2N1/8/8/PP3PPP/6K1 w - - 0 1",
     "moves": [
@@ -752,7 +759,7 @@
     ],
     "rating": 1700,
     "themes": [
-      "mate",
+      "mateIn4",
       "smotheredMate",
       "sacrifice",
       "doubleCheck"
@@ -760,6 +767,52 @@
     "title": "El legado de Philidor",
     "hint": "Jaques continuos: el caballo y la dama trabajan juntos en la diagonal a2-g8.",
     "explanation": "**Cf7+ Rg8 Ch6+** (jaque doble) **Rh8 Dg8+!!** y tras **...Txg8 Cf7#** llega el **mate de la coz**: el rey queda ahogado por su propia torre y sus peones. Es la famosa combinación del «legado de Philidor».",
+    "source": "propio"
+  },
+  {
+    "id": "mate-043",
+    "fen": "1k5r/1p1R3p/pR2r1pb/4Np2/8/2P5/PPB3Pn/1K6 w - - 8 24",
+    "moves": [
+      "b6b7",
+      "b8c8",
+      "d7c7",
+      "c8d8",
+      "e5f7",
+      "d8e8",
+      "b7b8"
+    ],
+    "rating": 1700,
+    "themes": [
+      "mateIn4",
+      "sacrifice",
+      "middlegame"
+    ],
+    "title": "Torres en la séptima",
+    "hint": "Empieza por romper la defensa de b7 con jaque.",
+    "explanation": "**Tbxb7+! Rc8 Tdc7+ Rd8 Cf7+ Re8 Tb8#**: las torres persiguen al rey por la séptima fila, el caballo cubre las casillas de escape y la torre remata en la octava.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-044",
+    "fen": "2br1k2/4R3/2Q2pq1/2P3p1/8/P3P2p/5P1N/6K1 b - - 7 49",
+    "moves": [
+      "d8d1",
+      "h2f1",
+      "h3h2",
+      "g1g2",
+      "h2h1q",
+      "g2g3",
+      "h1h3"
+    ],
+    "rating": 1850,
+    "themes": [
+      "mateIn4",
+      "promotion",
+      "middlegame"
+    ],
+    "title": "El peón de h decide",
+    "hint": "Un jaque de torre obliga al caballo a bloquear, y entonces tu peón de h3 avanza con jaque.",
+    "explanation": "**...Td1+** obliga a **Cf1**, que deja h2 libre. Siguen **...h2+ Rg2 h1=D+ Rg3** y **...Dh3#**: el peón corona con jaque y la nueva dama, apoyada por la de g6, termina el ataque.",
     "source": "propio"
   }
 ]

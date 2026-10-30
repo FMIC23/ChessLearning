@@ -20,6 +20,25 @@
   },
   {
     "id": "linea-002",
+    "fen": "8/2p3pk/p2bp2p/4p2P/PP1pP1Q1/3P1KP1/1R3P2/2q5 b - - 0 49",
+    "moves": [
+      "c1d1",
+      "f3g2",
+      "d1g4"
+    ],
+    "rating": 850,
+    "themes": [
+      "skewer",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Ensartada en diagonal",
+    "hint": "El rey blanco y su dama están en la misma diagonal.",
+    "explanation": "**...Dd1+** es una **ensartada**: la dama da jaque al rey de f3 por la diagonal d1-g4 y, cuando el rey se aparta, captura la dama de g4 que estaba detrás.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-003",
     "fen": "r7/4bp1p/p5p1/3k4/8/P5P1/4BP1P/2R3K1 w - - 0 1",
     "moves": [
       "e2f3"
@@ -36,7 +55,7 @@
     "source": "propio"
   },
   {
-    "id": "linea-003",
+    "id": "linea-004",
     "fen": "8/b7/3kp3/P4p1B/8/R5PK/8/1r6 b - - 2 51",
     "moves": [
       "b1h1",
@@ -55,7 +74,7 @@
     "source": "propio"
   },
   {
-    "id": "linea-004",
+    "id": "linea-005",
     "fen": "2r5/4k1p1/1p3p1p/1Pr1pb2/P1B5/6R1/4KPPP/2R5 b - - 1 32",
     "moves": [
       "c5c4",
@@ -74,7 +93,45 @@
     "source": "propio"
   },
   {
-    "id": "linea-005",
+    "id": "linea-006",
+    "fen": "rnbqk2r/1p2ppbp/2pp2p1/p7/2PPP1n1/2N5/PP2BPPP/R1BQK1NR w KQkq - 0 8",
+    "moves": [
+      "e2g4",
+      "c8g4",
+      "d1g4"
+    ],
+    "rating": 900,
+    "themes": [
+      "xRayAttack",
+      "opening",
+      "advantage"
+    ],
+    "title": "La dama detrás del alfil",
+    "hint": "Tu dama de d1 está en la misma diagonal que tu alfil y el caballo de g4.",
+    "explanation": "El caballo de g4 está atacado por el Ae2 y, por **rayos X**, también por la dama de d1. Solo lo defiende el Ac8. **Axg4 Axg4 Dxg4** gana una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-007",
+    "fen": "3b2k1/R4p2/4p1p1/4P2p/8/4BP1P/5PK1/1r6 w - - 7 44",
+    "moves": [
+      "a7a8",
+      "g8g7",
+      "a8d8"
+    ],
+    "rating": 900,
+    "themes": [
+      "pin",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Clavada en la octava",
+    "hint": "El alfil de d8 y el rey negro están en la misma fila.",
+    "explanation": "**Ta8!** **clava** el Ad8 contra el rey de g8: el alfil no puede moverse y nadie lo defiende. Tras **...Rg7**, que rompe la clavada demasiado tarde, **Txd8** gana la pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-008",
     "fen": "2k5/R1n2p1p/p1N5/8/PPK4P/8/8/4r3 b - - 2 47",
     "moves": [
       "e1c1",
@@ -93,7 +150,7 @@
     "source": "propio"
   },
   {
-    "id": "linea-006",
+    "id": "linea-009",
     "fen": "rnbqkbnr/p3pppp/8/1p6/2pP4/4P3/1P3PPP/RNBQKBNR w KQkq - 0 6",
     "moves": [
       "d1f3"
@@ -111,7 +168,7 @@
     "source": "propio"
   },
   {
-    "id": "linea-007",
+    "id": "linea-010",
     "fen": "8/8/2kBb2p/7R/6PK/8/8/r7 b - - 4 59",
     "moves": [
       "a1h1",
@@ -130,7 +187,7 @@
     "source": "propio"
   },
   {
-    "id": "linea-008",
+    "id": "linea-011",
     "fen": "r3k2r/p1p2p2/2b1qp2/2P4p/8/2Q5/PP3PPP/R1B2RK1 w kq - 0 20",
     "moves": [
       "f1e1",
@@ -149,7 +206,28 @@
     "source": "propio"
   },
   {
-    "id": "linea-009",
+    "id": "linea-012",
+    "fen": "7k/p5p1/p2Q4/2r2b2/6p1/2r5/P1P2R1P/K7 w - - 2 33",
+    "moves": [
+      "d6f8",
+      "h8h7",
+      "f2f5",
+      "c5f5",
+      "f8f5"
+    ],
+    "rating": 1150,
+    "themes": [
+      "xRayAttack",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Dama detrás de la torre",
+    "hint": "Con un jaque, coloca la dama en la columna f, detrás de tu torre.",
+    "explanation": "**Df8+ Rh7** y ahora el Af5 está atacado por la torre y, por **rayos X**, también por la dama. Solo lo defiende la torre de c5, así que **Txf5 Txf5 Dxf5+** gana una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-013",
     "fen": "8/R7/1r6/5pPk/5K2/8/8/8 w - - 5 70",
     "moves": [
       "a7h7",
@@ -171,7 +249,7 @@
     "source": "propio"
   },
   {
-    "id": "linea-010",
+    "id": "linea-014",
     "fen": "r1b1kbnr/pppp1ppp/2n5/4P3/8/2B2N2/PqP1PPPP/RN1QKB1R b KQkq - 1 6",
     "moves": [
       "f8b4"
@@ -188,7 +266,27 @@
     "source": "propio"
   },
   {
-    "id": "linea-011",
+    "id": "linea-015",
+    "fen": "6r1/p3kp2/2R1b3/P3P3/1KP5/8/2P4p/3R4 b - - 1 43",
+    "moves": [
+      "g8g1",
+      "d1g1",
+      "h2g1q"
+    ],
+    "rating": 1300,
+    "themes": [
+      "interference",
+      "promotion",
+      "endgame",
+      "sacrifice"
+    ],
+    "title": "Cortar la primera fila",
+    "hint": "La torre de d1 vigila h1 desde lejos. ¿Puedes interponer algo en esa fila?",
+    "explanation": "**...Tg1!** es una **interferencia**: la torre se coloca entre la torre de d1 y la casilla de coronación. Si **Txg1**, **...hxg1=D**; y si no, **...Txd1** y el peón corona igualmente.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-016",
     "fen": "1k3r2/p3p3/1p1p1bP1/3P4/Q7/1R6/P1q1BP2/5K2 w - - 2 31",
     "moves": [
       "b3b6",
@@ -208,7 +306,7 @@
     "source": "propio"
   },
   {
-    "id": "linea-012",
+    "id": "linea-017",
     "fen": "r4rk1/2pqbppp/p1n1b3/1p1pP3/3Nn3/1BP5/PP3PPP/RNBQR1K1 w - - 5 12",
     "moves": [
       "d4e6",
