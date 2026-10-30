@@ -4,6 +4,8 @@ import { applyTheme, useSettings } from '@/store/settings';
 import { Layout } from './Layout';
 import { HomePage } from '@/features/home/HomePage';
 import { NotFoundPage } from './NotFoundPage';
+import { ProfilePicker } from '@/features/profiles/ProfilePicker';
+import { useProfiles } from '@/store/profiles';
 
 // Las páginas se cargan bajo demanda para que la carga inicial sea ligera.
 const named = <K extends string>(loader: () => Promise<Record<K, React.ComponentType>>, name: K) =>
@@ -19,6 +21,7 @@ const PlayPage = named(() => import('@/features/play/PlayPage'), 'PlayPage');
 const AnalysisPage = named(() => import('@/features/analysis/AnalysisPage'), 'AnalysisPage');
 const ProgressPage = named(() => import('@/features/progress/ProgressPage'), 'ProgressPage');
 const FreeBoardPage = named(() => import('@/features/board/FreeBoardPage'), 'FreeBoardPage');
+const ProfilesPage = named(() => import('@/features/profiles/ProfilesPage'), 'ProfilesPage');
 const SettingsPage = named(() => import('@/features/settings/SettingsPage'), 'SettingsPage');
 
 function Loading() {
@@ -31,6 +34,7 @@ function Loading() {
 
 export function App() {
   const theme = useSettings((s) => s.theme);
+  const mustChoose = useProfiles((s) => s.profiles.length > 1 && !s.chosen);
 
   useEffect(() => {
     applyTheme(theme);
@@ -40,6 +44,8 @@ export function App() {
     media.addEventListener('change', listener);
     return () => media.removeEventListener('change', listener);
   }, [theme]);
+
+  if (mustChoose) return <ProfilePicker />;
 
   return (
     <HashRouter>
@@ -58,6 +64,7 @@ export function App() {
             <Route path="progreso" element={<ProgressPage />} />
             <Route path="tablero" element={<FreeBoardPage />} />
             <Route path="ajustes" element={<SettingsPage />} />
+            <Route path="perfiles" element={<ProfilesPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>

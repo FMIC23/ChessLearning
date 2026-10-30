@@ -1,4 +1,6 @@
 import { useId, type ReactNode } from 'react';
+import { Link } from 'react-router-dom';
+import { InstallCard } from '@/features/pwa/InstallCard';
 import { Card, PageHeader } from '@/components/ui';
 import { useSettings, type ThemePreference } from '@/store/settings';
 
@@ -42,6 +44,12 @@ export function SettingsPage() {
           Desbloquear todos los niveles
         </Toggle>
       </Card>
+      <div className="mt-4">
+        <InstallCard />
+      </div>
+      <p className="mt-4 text-sm">
+        Los ajustes son de tu perfil. <Link to="/perfiles" className="text-brand-600 underline dark:text-brand-100">Gestionar perfiles</Link>
+      </p>
     </div>
   );
 }

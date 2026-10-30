@@ -2,6 +2,8 @@ import { Suspense, useEffect, useRef, useState } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { NAV_ITEMS } from './navigation';
 import { ThemeToggle } from './ThemeToggle';
+import { ProfileMenu } from '@/features/profiles/ProfileMenu';
+import { UpdatePrompt } from '@/features/pwa/UpdatePrompt';
 
 function navClass({ isActive }: { isActive: boolean }) {
   return `flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
@@ -59,6 +61,7 @@ export function Layout() {
             </ul>
           </nav>
           <div className="ml-auto flex items-center gap-1 xl:ml-2">
+            <ProfileMenu />
             <ThemeToggle />
             <button
               type="button"
@@ -92,6 +95,7 @@ export function Layout() {
           <Outlet />
         </Suspense>
       </main>
+      <UpdatePrompt />
       <footer className="mx-auto max-w-7xl px-4 pb-8 text-center text-xs text-slate-500">
         Escuela de Ajedrez · Código abierto (MIT) · Motor de análisis: Stockfish (GPLv3)
       </footer>

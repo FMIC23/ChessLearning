@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Ajedrez" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Aprende ajedrez desde cero hasta nivel experto: lecciones, táctica, aperturas, finales y partidas contra Stockfish." />
     <meta name="theme-color" content="#2559b3" />
@@ -10,7 +13,9 @@
     <script>
       // Evita el parpadeo del tema claro al cargar en modo oscuro.
       try {
-        var s = JSON.parse(localStorage.getItem('ajedrez-ajustes') || '{}').state || {};
+        var perfiles = JSON.parse(localStorage.getItem('ajedrez-perfiles') || '{}');
+        var clave = perfiles.activeId ? 'ajedrez-ajustes:' + perfiles.activeId : 'ajedrez-ajustes';
+        var s = JSON.parse(localStorage.getItem(clave) || '{}').state || {};
         var t = s.theme || 'system';
         if (t === 'dark' || (t === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
           document.documentElement.classList.add('dark');

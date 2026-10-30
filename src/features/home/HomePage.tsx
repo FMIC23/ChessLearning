@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Card } from '@/components/ui';
+import { InstallCard } from '@/features/pwa/InstallCard';
 import { LEVELS } from '@/content/lessons';
 import { combinedRating, ratingCategory } from '@/lib/elo';
 import { currentStreak, nextLesson } from '@/lib/progress';
@@ -77,6 +78,8 @@ export function HomePage() {
           </Link>
         </Card>
       )}
+
+      <InstallCard />
 
       <section aria-labelledby="secciones">
         <h2 id="secciones" className="mb-3 text-xl font-semibold">
