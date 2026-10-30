@@ -25,6 +25,32 @@ export interface PuzzleAttempt {
   rating: number;
 }
 
+export type GameResultCode = '1-0' | '0-1' | '1/2-1/2' | '*';
+
+export interface AnalysisSummary {
+  analyzedAt: string;
+  accuracy: { w: number; b: number };
+  counts: { w: Record<string, number>; b: Record<string, number> };
+  /** Errores e imprecisiones del alumno por fase de la partida. */
+  phaseErrors: Record<string, number>;
+}
+
+export interface SavedGame {
+  id: string;
+  date: string;
+  pgn: string;
+  result: GameResultCode;
+  source: 'ordenador' | 'importada';
+  white: string;
+  black: string;
+  /** Bando del alumno (en partidas importadas, el que elija al analizar). */
+  playerColor?: 'w' | 'b';
+  level?: number;
+  rated?: boolean;
+  ratingChange?: { before: number; after: number };
+  analysis?: AnalysisSummary;
+}
+
 export interface ProgressData {
   lessons: Record<string, LessonRecord>;
   /** Días con actividad (AAAA-MM-DD). */
@@ -35,6 +61,9 @@ export interface ProgressData {
   themeStats: Record<string, ThemeStat>;
   puzzleHistory: PuzzleAttempt[];
   ratingHistory: RatingPoint[];
+  games: SavedGame[];
+  gameRating: number;
+  gameCount: number;
 }
 
 export interface PuzzleResult {
@@ -50,6 +79,12 @@ export interface ProgressState extends ProgressData {
   completeLesson: (lessonId: string, mistakes: number) => void;
   recordActivity: () => void;
   recordPuzzle: (result: PuzzleResult, now?: number) => { before: number; after: number };
+  /** Guarda una partida. Si es puntuable, actualiza la puntuación de partidas. */
+  saveGame: (game: Omit<SavedGame, 'id' | 'date'>, opponentElo?: number) => SavedGame;
+  saveAnalysis: (gameId: string, analysis: AnalysisSummary, playerColor?: 'w' | 'b') => void;
+  deleteGame: (gameId: string) => void;
+  /** Sustituye todo el progreso (importación). */
+  replaceProgress: (data: ProgressData) => void;
   resetProgress: () => void;
 }
 
@@ -62,7 +97,19 @@ export const initialProgress = (): ProgressData => ({
   themeStats: {},
   puzzleHistory: [],
   ratingHistory: [],
+  games: [],
+  gameRating: INITIAL_RATING,
+  gameCount: 0,
 });
+
+const MAX_GAMES = 100;
+
+function gameScore(result: GameResultCode, color: 'w' | 'b'): number | null {
+  if (result === '1/2-1/2') return 0.5;
+  if (result === '1-0') return color === 'w' ? 1 : 0;
+  if (result === '0-1') return color === 'b' ? 1 : 0;
+  return null;
+}
 
 const MAX_HISTORY = 500;
 
@@ -113,6 +160,30 @@ export const useProgress = create<ProgressState>()(
         });
         return { before, after };
       },
+      saveGame: (game, opponentElo) => {
+        const state = get();
+        const date = new Date().toISOString();
+        const saved: SavedGame = { ...game, id: `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`, date };
+        const score = game.playerColor ? gameScore(game.result, game.playerColor) : null;
+        const patch: Partial<ProgressData> = { activityDays: withActivity(state.activityDays) };
+        if (game.rated && score !== null && opponentElo !== undefined) {
+          const before = state.gameRating;
+          const after = updateRating(before, opponentElo, score, state.gameCount);
+          saved.ratingChange = { before, after };
+          patch.gameRating = after;
+          patch.gameCount = state.gameCount + 1;
+          patch.ratingHistory = [...state.ratingHistory, { date, rating: after, source: 'partida' as const }].slice(-MAX_HISTORY);
+        }
+        patch.games = [saved, ...state.games].slice(0, MAX_GAMES);
+        set(patch);
+        return saved;
+      },
+      saveAnalysis: (gameId, analysis, playerColor) =>
+        set((state) => ({
+          games: state.games.map((g) => (g.id === gameId ? { ...g, analysis, playerColor: playerColor ?? g.playerColor } : g)),
+        })),
+      deleteGame: (gameId) => set((state) => ({ games: state.games.filter((g) => g.id !== gameId) })),
+      replaceProgress: (data) => set({ ...initialProgress(), ...data }),
       resetProgress: () => set(initialProgress()),
     }),
     { name: PROGRESS_STORAGE_KEY, version: PROGRESS_VERSION },

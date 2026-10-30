@@ -8,6 +8,10 @@ export interface SettingsState {
   showCoordinates: boolean;
   showLegalMoves: boolean;
   unlockAll: boolean;
+  /** Últimas opciones usadas al jugar contra el ordenador. */
+  playLevel: number;
+  playColor: 'w' | 'b' | 'random';
+  setPlayOptions: (options: { playLevel?: number; playColor?: 'w' | 'b' | 'random' }) => void;
   setTheme: (theme: ThemePreference) => void;
   setShowCoordinates: (value: boolean) => void;
   setShowLegalMoves: (value: boolean) => void;
@@ -21,6 +25,9 @@ export const useSettings = create<SettingsState>()(
       showCoordinates: true,
       showLegalMoves: true,
       unlockAll: false,
+      playLevel: 2,
+      playColor: 'w',
+      setPlayOptions: (options) => set(options),
       setTheme: (theme) => set({ theme }),
       setShowCoordinates: (showCoordinates) => set({ showCoordinates }),
       setShowLegalMoves: (showLegalMoves) => set({ showLegalMoves }),

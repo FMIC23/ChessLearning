@@ -13,7 +13,8 @@ export interface ChessGameState {
   viewIndex: number;
   isViewingLatest: boolean;
   lastMove: { from: string; to: string } | null;
-  move: (move: string | MoveInput) => Move | null;
+  /** Juega una jugada desde la posición mostrada (o desde la última si `fromLatest`). */
+  move: (move: string | MoveInput, fromLatest?: boolean) => Move | null;
   undo: (count?: number) => void;
   reset: (fen?: string) => void;
   goTo: (index: number) => void;
@@ -44,9 +45,9 @@ export function useChessGame(initialFen: string = START_FEN): ChessGameState {
   const shownMove = viewIndex >= 0 ? history[viewIndex] : undefined;
 
   const move = useCallback(
-    (input: string | MoveInput) => {
+    (input: string | MoveInput, fromLatest = false) => {
       // Si se está viendo una posición antigua, se juega desde ahí y se descarta lo posterior.
-      const base = history.slice(0, viewIndex + 1);
+      const base = fromLatest ? history : history.slice(0, viewIndex + 1);
       const game = rebuild(startFen, base);
       const result = tryMove(game, input);
       if (!result) return null;

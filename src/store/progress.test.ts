@@ -26,3 +26,34 @@ describe('store de progreso', () => {
     expect(s.ratingHistory).toHaveLength(2);
   });
 });
+
+describe('partidas guardadas', () => {
+  beforeEach(() => useProgress.getState().resetProgress());
+
+  it('las partidas puntuables actualizan la puntuación de partidas', () => {
+    const saved = useProgress
+      .getState()
+      .saveGame({ pgn: '1. e4 *', result: '1-0', source: 'ordenador', white: 'Tú', black: 'SF', playerColor: 'w', level: 2, rated: true }, 700);
+    expect(saved.ratingChange?.after).toBeGreaterThan(saved.ratingChange!.before);
+    expect(useProgress.getState().gameCount).toBe(1);
+    expect(useProgress.getState().games[0]?.id).toBe(saved.id);
+  });
+
+  it('las partidas no puntuables no cambian la puntuación', () => {
+    useProgress.getState().saveGame({ pgn: '1. e4 *', result: '0-1', source: 'ordenador', white: 'Tú', black: 'SF', playerColor: 'w', rated: false }, 700);
+    expect(useProgress.getState().gameRating).toBe(INITIAL_RATING);
+    expect(useProgress.getState().gameCount).toBe(0);
+  });
+
+  it('guarda el resumen del análisis y permite borrar partidas', () => {
+    const g = useProgress.getState().saveGame({ pgn: '1. e4 *', result: '*', source: 'importada', white: 'A', black: 'B' });
+    useProgress.getState().saveAnalysis(
+      g.id,
+      { analyzedAt: 'x', accuracy: { w: 80, b: 70 }, counts: { w: {}, b: {} }, phaseErrors: { apertura: 1 } },
+      'b',
+    );
+    expect(useProgress.getState().games[0]).toMatchObject({ playerColor: 'b', analysis: { accuracy: { w: 80, b: 70 } } });
+    useProgress.getState().deleteGame(g.id);
+    expect(useProgress.getState().games).toHaveLength(0);
+  });
+});
