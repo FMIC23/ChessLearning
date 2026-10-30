@@ -34,6 +34,22 @@
   },
   {
     "id": "mate-003",
+    "fen": "r3r1k1/p5p1/1pb2p1B/8/8/2P3QP/P1q2PP1/R3R1K1 w - - 0 23",
+    "moves": [
+      "g3g7"
+    ],
+    "rating": 450,
+    "themes": [
+      "mateIn1",
+      "oneMove"
+    ],
+    "title": "Alfil y dama",
+    "hint": "El alfil de h6 ya está apoyando una casilla clave.",
+    "explanation": "**Dxg7#**. La dama entra en g7 protegida por el Ah6 y el rey negro no tiene escapatoria: f8, f7 y h7 quedan controladas por la dama.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-004",
     "fen": "r4rk1/pp3p2/2p3P1/8/8/2q4Q/P4PPP/6K1 w - - 0 1",
     "moves": [
       "h3h7"
@@ -49,7 +65,23 @@
     "source": "propio"
   },
   {
-    "id": "mate-004",
+    "id": "mate-005",
+    "fen": "r4rk1/pp3pp1/2b3q1/8/7Q/P1P5/2P2PPP/R1B2RK1 b - - 0 19",
+    "moves": [
+      "g6g2"
+    ],
+    "rating": 480,
+    "themes": [
+      "mateIn1",
+      "oneMove"
+    ],
+    "title": "La gran diagonal",
+    "hint": "Tu alfil de c6 apunta directamente al enroque blanco.",
+    "explanation": "**...Dxg2#**. La dama captura en g2 protegida por el Ac6, que domina la gran diagonal. El rey no puede tomarla y no tiene casillas libres.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-006",
     "fen": "r4rk1/pp3ppp/2n5/8/3P4/5pPq/PP3P1P/R2Q1RK1 b - - 0 1",
     "moves": [
       "h3g2"
@@ -65,7 +97,40 @@
     "source": "propio"
   },
   {
-    "id": "mate-005",
+    "id": "mate-007",
+    "fen": "8/5pk1/p1B3p1/PP6/2Q1n2q/4P2P/5PK1/2Rr4 b - - 0 39",
+    "moves": [
+      "h4f2"
+    ],
+    "rating": 520,
+    "themes": [
+      "mateIn1",
+      "oneMove"
+    ],
+    "title": "El caballo apoya",
+    "hint": "Busca una captura con jaque protegida por tu caballo.",
+    "explanation": "**...Dxf2#**. La dama captura en f2 protegida por el caballo de e4. El rey blanco no puede tomarla y la torre de d1 le quita la primera fila.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-008",
+    "fen": "1rb1k2r/4ppb1/2pp1p2/p6q/NP2PP2/P2B4/2P1Q1PP/1R3R1K b k - 0 19",
+    "moves": [
+      "h5h2"
+    ],
+    "rating": 520,
+    "themes": [
+      "mateIn1",
+      "xRayAttack",
+      "oneMove"
+    ],
+    "title": "La torre de atrás",
+    "hint": "Tu torre de h8 también mira hacia la columna h.",
+    "explanation": "**...Dxh2#**. La dama captura con jaque y está protegida por la torre de h8 a través de la columna h abierta. El rey blanco no puede tomarla ni escapar a g1.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-009",
     "fen": "2r3k1/pp3ppp/8/8/3qn3/1Q6/PP4PP/R5RK b - - 0 1",
     "moves": [
       "e4f2"
@@ -82,7 +147,57 @@
     "source": "propio"
   },
   {
-    "id": "mate-006",
+    "id": "mate-010",
+    "fen": "r5k1/pb3ppp/1Pq1pn2/2p1p3/2P4N/1QP3PP/4PP2/R4RK1 b - - 0 19",
+    "moves": [
+      "c6h1"
+    ],
+    "rating": 550,
+    "themes": [
+      "mateIn1",
+      "oneMove"
+    ],
+    "title": "Batería en la diagonal",
+    "hint": "Tu dama y tu alfil están en la misma diagonal larga.",
+    "explanation": "**...Dh1#**. La dama baja por la gran diagonal hasta h1 y el Ab7, detrás de ella, la protege. El rey no puede capturar y f1, f2 y h2 están ocupadas por sus propias piezas.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-011",
+    "fen": "1Q1R4/4qrpk/ppp4p/5b2/1P3N2/7P/P5PK/8 w - - 0 35",
+    "moves": [
+      "d8h8"
+    ],
+    "rating": 550,
+    "themes": [
+      "mateIn1",
+      "oneMove"
+    ],
+    "title": "La octava fila",
+    "hint": "Tu dama de b8 controla toda la octava fila.",
+    "explanation": "**Th8#**. La torre da jaque protegida por la dama de b8 y el caballo de f4 controla g6, la única casilla de escape del rey.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-012",
+    "fen": "8/8/2R1pk1p/2P4K/4P1P1/4r3/8/8 b - - 2 49",
+    "moves": [
+      "e3h3"
+    ],
+    "rating": 550,
+    "themes": [
+      "mateIn1",
+      "endgame",
+      "rookEndgame",
+      "oneMove"
+    ],
+    "title": "Rey en la banda",
+    "hint": "El rey blanco está en el borde: tu rey ya le quita casillas.",
+    "explanation": "**...Th3#**. La torre da jaque por la columna h; tu rey de f6 controla g5 y g6, y el peón de g4 tapa la otra salida. Tampoco puede capturar en h6, porque seguiría en la columna de la torre.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-013",
     "fen": "3rkr2/pp4pp/2p5/8/8/8/PPP1QPPP/2R3K1 w - - 0 1",
     "moves": [
       "e2e6"
@@ -98,7 +213,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-007",
+    "id": "mate-014",
     "fen": "5k1r/pp3pp1/2p5/8/8/5n2/PP3P1P/R4R1K b - - 0 1",
     "moves": [
       "h8h2"
@@ -114,7 +229,25 @@
     "source": "propio"
   },
   {
-    "id": "mate-008",
+    "id": "mate-015",
+    "fen": "1k5r/p7/1PR5/3p2p1/3P1pp1/7r/1P3P2/3R2K1 b - - 2 31",
+    "moves": [
+      "h3h1",
+      "g1g2",
+      "h8h2"
+    ],
+    "rating": 750,
+    "themes": [
+      "mateIn2",
+      "endgame"
+    ],
+    "title": "Torres dobladas",
+    "hint": "Las dos torres en la columna h se protegen entre sí.",
+    "explanation": "**...Th1+** no se puede capturar porque la torre de h8 la defiende. Tras **Rg2**, **...T8h2#**: los peones de f4 y g4 controlan g3 y f3, y la torre de h1 cubre la primera fila.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-016",
     "fen": "3r2k1/pp3ppp/2p5/8/Q7/3q4/PP3PPP/3R2K1 b - - 0 1",
     "moves": [
       "d3d1",
@@ -134,7 +267,43 @@
     "source": "propio"
   },
   {
-    "id": "mate-009",
+    "id": "mate-017",
+    "fen": "4n1k1/p1r5/2RB2p1/3Pp2p/Q3Pp1b/5P1P/6P1/1q3B1K b - - 0 34",
+    "moves": [
+      "b1f1",
+      "h1h2",
+      "h4g3"
+    ],
+    "rating": 850,
+    "themes": [
+      "mateIn2",
+      "middlegame"
+    ],
+    "title": "Alfil a g3",
+    "hint": "Captura con jaque y prepara un jaque de alfil protegido por un peón.",
+    "explanation": "**...Dxf1+ Rh2** y **...Ag3#**: el alfil da jaque protegido por el peón de f4, y la dama de f1 controla g1 y h1. El rey blanco queda sin casillas.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-018",
+    "fen": "6k1/p7/1bP3p1/4Q2p/4Pp1P/5P2/6PK/5q2 b - - 16 55",
+    "moves": [
+      "f1g1",
+      "h2h3",
+      "g1h1"
+    ],
+    "rating": 900,
+    "themes": [
+      "mateIn2",
+      "endgame"
+    ],
+    "title": "La red de peones",
+    "hint": "Tu alfil de b6 protege una casilla junto al rey blanco.",
+    "explanation": "**...Dg1+** (protegida por el Ab6) obliga a **Rh3**, y **...Dh1#** remata: los peones negros de f4 y h5 controlan g3 y g4, y el peón de g2 tapa la última salida.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-019",
     "fen": "r2qkbnr/ppp2ppp/2np4/4N3/2B1P3/2N5/PPPP1PPP/R1BbK2R w KQkq - 0 6",
     "moves": [
       "c4f7",
@@ -152,7 +321,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-010",
+    "id": "mate-020",
     "fen": "2kr3r/pp1nbppp/2p1p3/8/3P1Bq1/3B1Q2/PPP2PPP/R4RK1 w - - 0 1",
     "moves": [
       "f3c6",
@@ -171,7 +340,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-011",
+    "id": "mate-021",
     "fen": "rq3rk1/pb3ppp/8/3N3Q/8/3R4/PP3PPP/6K1 w - - 0 1",
     "moves": [
       "d5e7",
@@ -192,7 +361,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-012",
+    "id": "mate-022",
     "fen": "4r2k/pp4pp/1q6/3Q2N1/8/8/PP3PPP/6K1 w - - 0 1",
     "moves": [
       "g5f7",

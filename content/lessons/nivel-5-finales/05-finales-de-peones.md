@@ -16,7 +16,7 @@ Un **peón pasado alejado** es un peón pasado situado lejos del resto de peones
 ```
 
 ```ejercicio
-{ "type": "moves", "fen": "8/5k2/8/p3P3/P7/2K5/8/8 w - - 0 1", "solution": ["c3d3"], "accept": ["c3d4", "c3c4"], "prompt": "Juegan las blancas. Tu peón de e5 está lejos del flanco de dama. ¿Cuál es el plan **ganador**?", "hint": "El peón de e5 es un cebo: el rey negro tiene que ir a por él.", "wrong": { "c3b3": "Demasiado lento: el rey negro captura el peón de e5 y vuelve a tiempo de defender a5." }, "explanation": "**Rd3** (también Rd4 o Rc4): el rey blanco se dirige a ir a b5 para comerse el peón de a5. El rey negro tendrá que elegir entre capturar el peón de e5 y defender su peón de a5: no puede hacer ambas cosas. Así funciona el peón pasado alejado." }
+{ "type": "moves", "fen": "8/5k2/8/p3P3/P7/2K5/8/8 w - - 0 1", "solution": ["c3d3"], "accept": ["c3d4", "c3c4"], "prompt": "Juegan las blancas. Tu peón de e5 está lejos del flanco de dama. ¿Cuál es el plan **ganador**?", "hint": "El peón de e5 es un cebo: el rey negro tiene que ir a por él.", "wrong": { "c3b3": "Demasiado lento: el rey negro captura el peón de e5 y vuelve a tiempo de defender a5." }, "explanation": "**Rd3** (también Rd4 o Rc4): el rey blanco se dirige a b5 para comerse el peón de a5. El rey negro tendrá que elegir entre capturar el peón de e5 y defender su peón de a5: no puede hacer ambas cosas. Así funciona el peón pasado alejado." }
 ```
 
 ## La ruptura de peones

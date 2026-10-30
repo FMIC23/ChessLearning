@@ -1,6 +1,62 @@
 [
   {
+    "id": "final-001",
+    "fen": "8/1p1b1k1P/1B4p1/6P1/8/2K5/8/8 w - - 1 57",
+    "moves": [
+      "h7h8q"
+    ],
+    "rating": 400,
+    "themes": [
+      "endgame",
+      "promotion",
+      "oneMove"
+    ],
+    "title": "Corona",
+    "hint": "¿Puede alguna pieza negra controlar h8?",
+    "explanation": "Ni el rey de f7 ni el Ad7 controlan h8, así que **h8=D** corona sin problemas y las blancas quedan con dama de ventaja.",
+    "source": "propio"
+  },
+  {
     "id": "final-002",
+    "fen": "8/4k3/p3Pp2/P7/2Bb3p/2P5/5p1P/7K w - - 2 52",
+    "moves": [
+      "c3d4",
+      "f2f1r",
+      "c4f1"
+    ],
+    "rating": 800,
+    "themes": [
+      "endgame",
+      "hangingPiece",
+      "advancedPawn"
+    ],
+    "title": "El alfil vigila f1",
+    "hint": "El peón de f2 parece peligroso, pero tu alfil controla su casilla de coronación.",
+    "explanation": "**cxd4** gana el alfil sin miedo: el Ac4 controla f1, así que si **...f1=T+** (o dama) llega **Axf1**. Antes de capturar, comprueba que el peón rival no corona gratis.",
+    "source": "propio"
+  },
+  {
+    "id": "final-003",
+    "fen": "8/1p3k2/5BpP/4p3/6P1/1b6/3K4/8 w - - 2 51",
+    "moves": [
+      "h6h7",
+      "f7f6",
+      "h7h8q"
+    ],
+    "rating": 900,
+    "themes": [
+      "endgame",
+      "promotion",
+      "sacrifice",
+      "advancedPawn"
+    ],
+    "title": "El alfil distrae",
+    "hint": "Tu alfil está atacado. ¿Hace falta salvarlo?",
+    "explanation": "No hay que salvar el alfil: **h7!** y si **...Rxf6**, **h8=D+** corona con jaque. El rey negro no puede atender a la vez el alfil y el peón.",
+    "source": "propio"
+  },
+  {
+    "id": "final-004",
     "fen": "8/4P1q1/3k4/8/8/8/5PPP/6K1 w - - 0 1",
     "moves": [
       "e7e8n",
@@ -19,7 +75,7 @@
     "source": "propio"
   },
   {
-    "id": "final-003",
+    "id": "final-005",
     "fen": "R7/P4k2/8/8/8/8/r4PK1/8 w - - 0 1",
     "moves": [
       "a8h8"
@@ -38,7 +94,7 @@
     "source": "propio"
   },
   {
-    "id": "final-001",
+    "id": "final-006",
     "fen": "6k1/ppp3pp/8/PPP5/8/8/6PP/6K1 w - - 0 1",
     "moves": [
       "b5b6",
@@ -58,6 +114,28 @@
     "title": "La ruptura de los tres peones",
     "hint": "Tres peones contra tres: si sacrificas dos, el tercero corona. Empieza por el del centro.",
     "explanation": "**b6!** es la ruptura clásica: tras **...axb6 c6! bxc6 a6** el peón de a corona porque el rey negro está demasiado lejos (si **...cxb6**, entonces **a6!**). Con peones enfrentados en a5-b5-c5, el golpe siempre empieza por el **peón central**.",
+    "source": "propio"
+  },
+  {
+    "id": "final-007",
+    "fen": "1r6/1P1R1pk1/3P4/5p2/6p1/7p/7P/4K3 b - - 1 41",
+    "moves": [
+      "g4g3",
+      "h2g3",
+      "h3h2",
+      "e1f2",
+      "h2h1q"
+    ],
+    "rating": 1650,
+    "themes": [
+      "endgame",
+      "sacrifice",
+      "promotion",
+      "advancedPawn"
+    ],
+    "title": "Abrir paso al peón",
+    "hint": "Tus peones de g y h están muy avanzados. Sacrifica uno para que el otro pase.",
+    "explanation": "**...g3!** es una **ruptura**: tras **hxg3** el peón de h queda libre y **...h2** ya no se puede parar; después de **Rf2 h1=D** las negras tienen dama. La torre de b8 frena los peones blancos mientras tanto.",
     "source": "propio"
   }
 ]

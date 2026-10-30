@@ -1,0 +1,48 @@
+[
+  {
+    "id": "combi-001",
+    "fen": "4rk2/ppp5/2p5/6p1/2np4/1P6/P1P3P1/2B1R1K1 w - - 0 23",
+    "moves": [
+      "e1e8",
+      "f8e8",
+      "b3c4"
+    ],
+    "rating": 1000,
+    "themes": [
+      "endgame",
+      "zwischenzug",
+      "advantage"
+    ],
+    "title": "Primero, el cambio",
+    "hint": "Puedes capturar el caballo, pero mira antes qué pasa en la primera fila.",
+    "explanation": "Si capturas el caballo de inmediato, **...Txe1+** gana tu torre con jaque. Por eso primero **Txe8+ Rxe8** y luego **bxc4**: el orden de jugadas lo es todo.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-002",
+    "fen": "4q1k1/5p2/p2P2p1/2p1b1Q1/br2B1P1/1p1P1R2/7P/1R5K w - - 3 30",
+    "moves": [
+      "e4d5",
+      "e5f4",
+      "g5g6",
+      "g8f8",
+      "g6h7",
+      "f4d6",
+      "f3f7",
+      "e8f7",
+      "h7f7"
+    ],
+    "rating": 2050,
+    "themes": [
+      "pin",
+      "quietMove",
+      "sacrifice",
+      "mate",
+      "middlegame"
+    ],
+    "title": "Clavar el peón de f7",
+    "hint": "El peón de f7 es el único defensor de g6. ¿Puedes dejarlo inmovilizado?",
+    "explanation": "**Ad5!** clava el peón de f7 contra el rey, así que g6 queda sin defensa real. Tras **...Af4 Dxg6+ Rf8 Dh7** las blancas amenazan mate; si **...Axd6**, la columna f se abre y **Txf7+! Dxf7 Dxf7#** remata gracias al alfil de d5.",
+    "source": "propio"
+  }
+]
