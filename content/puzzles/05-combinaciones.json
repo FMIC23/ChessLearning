@@ -79,6 +79,90 @@
   },
   {
     "id": "combi-005",
+    "fen": "1q3rk1/p2r1p1p/Bp1bp1p1/8/3P4/P3PQP1/1PR3KP/2R5 w - - 4 26",
+    "moves": [
+      "c2c8",
+      "f8c8",
+      "c1c8",
+      "b8c8",
+      "a6c8"
+    ],
+    "rating": 1250,
+    "themes": [
+      "fork",
+      "sacrifice",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "La torre entre dama y torre",
+    "hint": "La dama de b8 y la torre de f8 están en la misma fila, con una casilla libre en medio.",
+    "explanation": "**Tc8!** se planta entre la dama de b8 y la torre de f8, atacando a las dos y protegida por la otra torre y el Aa6. Tras **...Txc8 Txc8+ Dxc8 Axc8** las blancas han ganado la dama por torre.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-006",
+    "fen": "8/Bp1r4/p1b5/4k2p/P1PRP3/4KpP1/8/8 b - - 0 53",
+    "moves": [
+      "f3f2",
+      "d4d1",
+      "d7d1"
+    ],
+    "rating": 1300,
+    "themes": [
+      "overloading",
+      "endgame",
+      "advancedPawn",
+      "advantage"
+    ],
+    "title": "El rey no llega a todo",
+    "hint": "El rey blanco protege su torre de d4. ¿Puede encargarse también de un peón que avanza?",
+    "explanation": "**...f2!** **sobrecarga** al rey blanco: si **Rxf2**, la torre de d4 se queda sin defensa y **...Txd4** la gana. Si la torre vuelve a **Td1** para frenar el peón, **...Txd1** y el peón corona.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-007",
+    "fen": "1r3rk1/pbqn1pp1/1p2p3/6P1/2PPp3/P3Q3/1P2B1P1/R3K1NR w KQ - 4 18",
+    "moves": [
+      "e3h3",
+      "c7g3",
+      "h3g3"
+    ],
+    "rating": 1300,
+    "themes": [
+      "quietMove",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "La columna h abierta",
+    "hint": "Tu torre de h1 ya domina la columna h. Falta que la dama se una al ataque.",
+    "explanation": "**Dh3!** amenaza **Dh7#** y **Dh8#** con el apoyo de la torre de h1, y las negras no pueden cubrir la columna. Para evitar el mate tienen que entregar la dama con **...Dg3+ Dxg3**.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-008",
+    "fen": "r1b2rk1/ppp2ppp/1b2q3/8/3nB3/4BN2/PP3PPP/R2Q1RK1 w - - 2 14",
+    "moves": [
+      "e4h7",
+      "g8h7",
+      "f3g5",
+      "h7g8",
+      "g5e6"
+    ],
+    "rating": 1350,
+    "themes": [
+      "sacrifice",
+      "fork",
+      "attraction",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Sacrificio en h7",
+    "hint": "Si el rey negro llega a h7, tu caballo puede saltar con jaque atacando también a la dama.",
+    "explanation": "**Axh7+!** **atrae** al rey a h7. Tras **...Rxh7 Cg5+** el caballo da jaque y ataca la dama de e6: es una **horquilla**. Después de **...Rg8 Cxe6** las blancas han ganado la dama.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-009",
     "fen": "8/5p1k/8/1q2PPQp/3p4/1P6/6PK/8 w - - 1 44",
     "moves": [
       "f5f6",
@@ -97,7 +181,7 @@
     "source": "propio"
   },
   {
-    "id": "combi-006",
+    "id": "combi-010",
     "fen": "r1bqkb1r/pppn1ppp/5n2/3N2B1/3P4/8/PP2PPPP/R2QKBNR b KQkq - 0 6",
     "moves": [
       "f6d5",
@@ -117,7 +201,7 @@
     "source": "propio"
   },
   {
-    "id": "combi-007",
+    "id": "combi-011",
     "fen": "1qr1r1k1/3b1pp1/1b2p1p1/1p2PnN1/4pB2/1PP4Q/5PPP/3RR1K1 w - - 2 23",
     "moves": [
       "h3h7",
@@ -141,7 +225,7 @@
     "source": "propio"
   },
   {
-    "id": "combi-008",
+    "id": "combi-012",
     "fen": "4q1k1/5p2/p2P2p1/2p1b1Q1/br2B1P1/1p1P1R2/7P/1R5K w - - 3 30",
     "moves": [
       "e4d5",

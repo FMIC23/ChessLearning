@@ -522,6 +522,24 @@
   },
   {
     "id": "mate-031",
+    "fen": "8/8/3Q4/p7/6k1/Pnr1p3/6r1/4K3 b - - 4 45",
+    "moves": [
+      "g2g1",
+      "e1e2",
+      "b3c1"
+    ],
+    "rating": 950,
+    "themes": [
+      "mateIn2",
+      "endgame"
+    ],
+    "title": "El caballo cierra la red",
+    "hint": "Tras un jaque de torre, el rey blanco irá a e2. ¿Qué pieza puede rematar allí?",
+    "explanation": "**...Tg1+ Re2** y **...Cc1#**: el caballo da jaque y las torres y el peón de e3 controlan todas las casillas de escape del rey.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-032",
     "fen": "2Q5/1pp2kpp/2p5/p3p3/N3Pn2/1P1P2KP/P1q3P1/8 b - - 11 31",
     "moves": [
       "c2g2",
@@ -539,7 +557,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-032",
+    "id": "mate-033",
     "fen": "2r4k/1p4p1/2bR3p/P7/8/5QPq/5P1P/4R1K1 b - - 0 39",
     "moves": [
       "c6f3",
@@ -559,7 +577,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-033",
+    "id": "mate-034",
     "fen": "r2qkbnr/ppp2ppp/2np4/4N3/2B1P3/2N5/PPPP1PPP/R1BbK2R w KQkq - 0 6",
     "moves": [
       "c4f7",
@@ -577,7 +595,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-034",
+    "id": "mate-035",
     "fen": "r4r1k/pp4pB/2p2q2/3b4/2pP4/6PP/PP1Q1P2/R4RK1 b - - 3 23",
     "moves": [
       "f6f3",
@@ -596,7 +614,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-035",
+    "id": "mate-036",
     "fen": "1r1q1r1k/p3np2/1p3b1p/2p1pPB1/P2pP3/3P1B1P/1PPQ2R1/5RK1 w - - 0 22",
     "moves": [
       "g5f6",
@@ -617,7 +635,7 @@
     "source": "propio"
   },
   {
-    "id": "mate-036",
+    "id": "mate-037",
     "fen": "2kr3r/pp1nbppp/2p1p3/8/3P1Bq1/3B1Q2/PPP2PPP/R4RK1 w - - 0 1",
     "moves": [
       "f3c6",
@@ -636,7 +654,29 @@
     "source": "propio"
   },
   {
-    "id": "mate-037",
+    "id": "mate-038",
+    "fen": "4r3/2p3pk/5p1p/N4b2/Pp1P1b2/1Q3PPq/RP5P/5RK1 b - - 2 29",
+    "moves": [
+      "e8e2",
+      "f1f2",
+      "e2e1",
+      "f2f1",
+      "e1f1"
+    ],
+    "rating": 1400,
+    "themes": [
+      "mateIn3",
+      "quietMove",
+      "backRankMate",
+      "middlegame"
+    ],
+    "title": "La torre se cuela",
+    "hint": "Tu dama ya domina h2 y la segunda fila es débil. Busca una jugada tranquila de torre.",
+    "explanation": "**...Te2!** amenaza **...Dxh2#**, con la torre apoyando a la dama por la segunda fila. La única defensa es **Tf2**, pero entonces **...Te1+ Tf1 Txf1#**: la torre negra, apoyada por la dama, remata en la primera fila (el rey no puede capturar en f1 porque la dama de h3 controla esa casilla).",
+    "source": "propio"
+  },
+  {
+    "id": "mate-039",
     "fen": "rq3rk1/pb3ppp/8/3N3Q/8/3R4/PP3PPP/6K1 w - - 0 1",
     "moves": [
       "d5e7",
@@ -657,7 +697,49 @@
     "source": "propio"
   },
   {
-    "id": "mate-038",
+    "id": "mate-040",
+    "fen": "2r1k1r1/p6p/B1bbpn2/5p2/P7/2P5/5PPP/RNB2RK1 b - - 3 22",
+    "moves": [
+      "g8g2",
+      "g1h1",
+      "g2h2",
+      "h1g1",
+      "h2h1"
+    ],
+    "rating": 1500,
+    "themes": [
+      "mateIn3",
+      "sacrifice",
+      "doubleCheck",
+      "middlegame"
+    ],
+    "title": "El molino de los alfiles",
+    "hint": "Tus dos alfiles apuntan al enroque blanco. Empieza abriendo la columna g.",
+    "explanation": "**...Txg2+** abre el enroque (la torre está protegida por el Ac6). Tras **Rh1**, **...Txh2+** es un **jaque doble** de la torre y del alfil de c6, y después de **Rg1** llega **...Th1#**: la torre está protegida por el alfil y el Ad6 controla h2.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-041",
+    "fen": "5k2/2Q5/1p6/p2qn1p1/PP1p4/5PPp/8/4BK2 b - - 8 45",
+    "moves": [
+      "d5f3",
+      "e1f2",
+      "f3d3",
+      "f1e1",
+      "e5f3"
+    ],
+    "rating": 1550,
+    "themes": [
+      "mateIn3",
+      "endgame"
+    ],
+    "title": "Dama y caballo cazan al rey",
+    "hint": "Captura con jaque en f3 y después busca un jaque que empuje al rey hacia la casilla donde saltará el caballo.",
+    "explanation": "**...Dxf3+ Af2** y **...Dd3+!** obliga a **Re1**. Entonces **...Cf3#**: el caballo da jaque y la dama controla e2, d2 y f1, sin que el alfil pueda ayudar.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-042",
     "fen": "4r2k/pp4pp/1q6/3Q2N1/8/8/PP3PPP/6K1 w - - 0 1",
     "moves": [
       "g5f7",

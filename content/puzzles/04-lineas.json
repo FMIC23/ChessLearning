@@ -37,6 +37,44 @@
   },
   {
     "id": "linea-003",
+    "fen": "8/b7/3kp3/P4p1B/8/R5PK/8/1r6 b - - 2 51",
+    "moves": [
+      "b1h1",
+      "h3g2",
+      "h1h5"
+    ],
+    "rating": 850,
+    "themes": [
+      "skewer",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Torre a h1",
+    "hint": "El rey blanco y su alfil están en la misma columna.",
+    "explanation": "**...Th1+** es una **ensartada**: el rey de h3 tiene que salir de la columna h y el Ah5, que estaba detrás, queda indefenso. Tras **Rg2 Txh5** las negras ganan una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-004",
+    "fen": "2r5/4k1p1/1p3p1p/1Pr1pb2/P1B5/6R1/4KPPP/2R5 b - - 1 32",
+    "moves": [
+      "c5c4",
+      "c1c4",
+      "c8c4"
+    ],
+    "rating": 900,
+    "themes": [
+      "pin",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Dos torres contra una",
+    "hint": "El alfil de c4 está en la columna c, justo delante de la torre blanca.",
+    "explanation": "El Ac4 está atacado por las dos torres negras dobladas en la columna c y solo lo defiende la torre de c1. **...Txc4 Txc4 Txc4** gana una pieza limpia.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-005",
     "fen": "2k5/R1n2p1p/p1N5/8/PPK4P/8/8/4r3 b - - 2 47",
     "moves": [
       "e1c1",
@@ -55,7 +93,25 @@
     "source": "propio"
   },
   {
-    "id": "linea-004",
+    "id": "linea-006",
+    "fen": "rnbqkbnr/p3pppp/8/1p6/2pP4/4P3/1P3PPP/RNBQKBNR w KQkq - 0 6",
+    "moves": [
+      "d1f3"
+    ],
+    "rating": 1000,
+    "themes": [
+      "pin",
+      "opening",
+      "oneMove",
+      "advantage"
+    ],
+    "title": "Dama a la gran diagonal",
+    "hint": "La torre de a8 está en una diagonal larga y muy abierta.",
+    "explanation": "**Df3!** ataca la torre de a8 por la gran diagonal y las negras no tienen una buena defensa: si se interponen con **...Cc6**, **Dxc6+**; si con **...Ab7**, **Dxb7**, porque la pieza que tapa queda clavada y sin defensa suficiente. Las negras pierden material en cualquier caso.",
+    "source": "propio"
+  },
+  {
+    "id": "linea-007",
     "fen": "8/8/2kBb2p/7R/6PK/8/8/r7 b - - 4 59",
     "moves": [
       "a1h1",
@@ -74,7 +130,7 @@
     "source": "propio"
   },
   {
-    "id": "linea-005",
+    "id": "linea-008",
     "fen": "r3k2r/p1p2p2/2b1qp2/2P4p/8/2Q5/PP3PPP/R1B2RK1 w kq - 0 20",
     "moves": [
       "f1e1",
@@ -93,7 +149,7 @@
     "source": "propio"
   },
   {
-    "id": "linea-006",
+    "id": "linea-009",
     "fen": "8/R7/1r6/5pPk/5K2/8/8/8 w - - 5 70",
     "moves": [
       "a7h7",
@@ -115,7 +171,7 @@
     "source": "propio"
   },
   {
-    "id": "linea-007",
+    "id": "linea-010",
     "fen": "r1b1kbnr/pppp1ppp/2n5/4P3/8/2B2N2/PqP1PPPP/RN1QKB1R b KQkq - 1 6",
     "moves": [
       "f8b4"
@@ -132,7 +188,7 @@
     "source": "propio"
   },
   {
-    "id": "linea-008",
+    "id": "linea-011",
     "fen": "1k3r2/p3p3/1p1p1bP1/3P4/Q7/1R6/P1q1BP2/5K2 w - - 2 31",
     "moves": [
       "b3b6",
@@ -152,7 +208,7 @@
     "source": "propio"
   },
   {
-    "id": "linea-009",
+    "id": "linea-012",
     "fen": "r4rk1/2pqbppp/p1n1b3/1p1pP3/3Nn3/1BP5/PP3PPP/RNBQR1K1 w - - 5 12",
     "moves": [
       "d4e6",

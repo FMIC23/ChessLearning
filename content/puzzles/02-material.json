@@ -193,6 +193,24 @@
   },
   {
     "id": "material-012",
+    "fen": "1rr3k1/5pp1/7p/4p3/4P1QP/3p2P1/R1q2PK1/R7 w - - 0 43",
+    "moves": [
+      "a2c2",
+      "d3c2",
+      "a1c1"
+    ],
+    "rating": 800,
+    "themes": [
+      "middlegame",
+      "advantage"
+    ],
+    "title": "La dama en la segunda",
+    "hint": "La dama negra está en la segunda fila, al alcance de tu torre.",
+    "explanation": "**Txc2!** gana la dama a cambio de una torre. Tras **...dxc2** el peón parece peligroso, pero **Tc1** lo frena y las blancas quedan con dama contra torre.",
+    "source": "propio"
+  },
+  {
+    "id": "material-013",
     "fen": "8/5p2/1k2p3/8/1r4Pp/6bP/6Q1/7K b - - 9 52",
     "moves": [
       "b4b1",
@@ -210,7 +228,7 @@
     "source": "propio"
   },
   {
-    "id": "material-013",
+    "id": "material-014",
     "fen": "8/1p1n1pk1/6p1/1P6/nB2p1N1/4P2P/5PPK/8 b - - 4 32",
     "moves": [
       "f7f5",
@@ -229,7 +247,7 @@
     "source": "propio"
   },
   {
-    "id": "material-014",
+    "id": "material-015",
     "fen": "1r1q1rk1/p1p1bpp1/2p2n1p/3pP3/5Bb1/2NB4/PPP2PPP/1R1Q1RK1 w - - 1 13",
     "moves": [
       "f2f3",
