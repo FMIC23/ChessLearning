@@ -46,3 +46,11 @@
 .prose-lesson table { @apply my-4 w-full border-collapse text-sm; }
 .prose-lesson th, .prose-lesson td { @apply border border-slate-300 px-2 py-1 text-left dark:border-slate-700; }
 .prose-lesson a { @apply text-brand-600 underline dark:text-brand-100; }
+
+/* Contraste AA para el texto secundario en ambos temas */
+.text-slate-500 {
+  color: var(--color-slate-600);
+}
+.dark .text-slate-500 {
+  color: var(--color-slate-400);
+}

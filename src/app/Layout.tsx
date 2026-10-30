@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Suspense, useEffect, useRef, useState } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { NAV_ITEMS } from './navigation';
 import { ThemeToggle } from './ThemeToggle';
@@ -20,6 +20,17 @@ export function Layout() {
     setPrevPath(location.pathname);
     setMenuOpen(false);
   }
+  // Al cambiar de página, el foco va al contenido principal (útil con lector de pantalla y teclado).
+  const main = useRef<HTMLElement>(null);
+  const first = useRef(true);
+  useEffect(() => {
+    if (first.current) {
+      first.current = false;
+      return;
+    }
+    main.current?.focus({ preventScroll: true });
+    window.scrollTo({ top: 0 });
+  }, [location.pathname]);
 
   return (
     <div className="min-h-screen">
@@ -76,8 +87,10 @@ export function Layout() {
           </nav>
         )}
       </header>
-      <main id="contenido" className="mx-auto max-w-7xl px-4 py-6" tabIndex={-1}>
-        <Outlet />
+      <main ref={main} id="contenido" className="mx-auto max-w-7xl px-4 py-6 focus:outline-none" tabIndex={-1}>
+        <Suspense fallback={<p className="py-10 text-center text-slate-500" role="status">Cargando…</p>}>
+          <Outlet />
+        </Suspense>
       </main>
       <footer className="mx-auto max-w-7xl px-4 pb-8 text-center text-xs text-slate-500">
         Escuela de Ajedrez · Código abierto (MIT) · Motor de análisis: Stockfish (GPLv3)

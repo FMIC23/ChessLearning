@@ -1,6 +1,6 @@
-import { useCallback, useId, useMemo, useState, type CSSProperties } from 'react';
+import { useCallback, useEffect, useId, useMemo, useRef, useState, type CSSProperties } from 'react';
 import { Chessboard, type Arrow } from 'react-chessboard';
-import { createGame, findKing, legalTargets, needsPromotion, type MoveInput } from '@/lib/chess';
+import { createGame, findKing, legalTargets, needsPromotion, PIECE_NAMES, type MoveInput } from '@/lib/chess';
 import { useSettings } from '@/store/settings';
 import { PromotionDialog } from './PromotionDialog';
 import { MoveTextInput } from './MoveTextInput';
@@ -62,6 +62,25 @@ export function ChessBoard({
   }
 
   const game = useMemo(() => createGame(fen), [fen]);
+  const container = useRef<HTMLDivElement>(null);
+
+  // Las piezas arrastrables de react-chessboard no tienen nombre accesible: se lo añadimos.
+  useEffect(() => {
+    const root = container.current;
+    if (!root) return;
+    const prefix = `${boardId}-square-`;
+    root.querySelectorAll<HTMLElement>('[aria-roledescription="draggable"]').forEach((el) => {
+      const square = el.closest<HTMLElement>(`[id^="${prefix}"]`)?.id.slice(prefix.length);
+      const piece = square ? game.get(square as never) : undefined;
+      if (square && piece) {
+        const feminine = piece.type === 'q' || piece.type === 'r';
+        const color = piece.color === 'w' ? (feminine ? 'blanca' : 'blanco') : feminine ? 'negra' : 'negro';
+        el.setAttribute('aria-label', `${PIECE_NAMES[piece.type]} ${color} en ${square}`);
+      } else {
+        el.setAttribute('aria-label', 'Pieza');
+      }
+    });
+  });
   const turn = game.turn();
 
   const canMoveColor = useCallback(
@@ -157,7 +176,7 @@ export function ChessBoard({
 
   return (
     <div className="w-full">
-      <div className="relative w-full select-none" role="img" aria-label={`${label}. Posición FEN: ${fen}`}>
+      <div ref={container} className="relative w-full select-none" role="group" aria-label={`${label}. Posición FEN: ${fen}`}>
         <Chessboard options={options} />
         {pendingPromotion && (
           <PromotionDialog
