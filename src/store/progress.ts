@@ -3,6 +3,7 @@ import { persist } from 'zustand/middleware';
 import { dayKey, type LessonRecord } from '@/lib/progress';
 import { review, type ReviewGrade, type SrsCard } from '@/lib/srs';
 import { INITIAL_RATING, updateRating } from '@/lib/elo';
+import { updateLineStat, type OpeningStat } from '@/lib/openings/trainer';
 
 export const PROGRESS_STORAGE_KEY = 'ajedrez-progreso';
 export const PROGRESS_VERSION = 1;
@@ -64,6 +65,7 @@ export interface ProgressData {
   games: SavedGame[];
   gameRating: number;
   gameCount: number;
+  openings: Record<string, OpeningStat>;
 }
 
 export interface PuzzleResult {
@@ -83,6 +85,8 @@ export interface ProgressState extends ProgressData {
   saveGame: (game: Omit<SavedGame, 'id' | 'date'>, opponentElo?: number) => SavedGame;
   saveAnalysis: (gameId: string, analysis: AnalysisSummary, playerColor?: 'w' | 'b') => void;
   deleteGame: (gameId: string) => void;
+  recordOpeningLine: (openingId: string, lineIndex: number, perfect: boolean) => void;
+  markOpeningStudied: (openingId: string) => void;
   /** Sustituye todo el progreso (importación). */
   replaceProgress: (data: ProgressData) => void;
   resetProgress: () => void;
@@ -100,6 +104,7 @@ export const initialProgress = (): ProgressData => ({
   games: [],
   gameRating: INITIAL_RATING,
   gameCount: 0,
+  openings: {},
 });
 
 const MAX_GAMES = 100;
@@ -181,6 +186,22 @@ export const useProgress = create<ProgressState>()(
       saveAnalysis: (gameId, analysis, playerColor) =>
         set((state) => ({
           games: state.games.map((g) => (g.id === gameId ? { ...g, analysis, playerColor: playerColor ?? g.playerColor } : g)),
+        })),
+      recordOpeningLine: (openingId, lineIndex, perfect) =>
+        set((state) => {
+          const stat = state.openings[openingId] ?? { lines: {} };
+          return {
+            openings: {
+              ...state.openings,
+              [openingId]: { ...stat, lines: { ...stat.lines, [String(lineIndex)]: updateLineStat(stat.lines[String(lineIndex)], perfect) } },
+            },
+            activityDays: withActivity(state.activityDays),
+          };
+        }),
+      markOpeningStudied: (openingId) =>
+        set((state) => ({
+          openings: { ...state.openings, [openingId]: { lines: {}, ...state.openings[openingId], studiedAt: new Date().toISOString() } },
+          activityDays: withActivity(state.activityDays),
         })),
       deleteGame: (gameId) => set((state) => ({ games: state.games.filter((g) => g.id !== gameId) })),
       replaceProgress: (data) => set({ ...initialProgress(), ...data }),

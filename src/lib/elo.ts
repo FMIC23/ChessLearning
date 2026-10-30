@@ -41,9 +41,9 @@ export function combinedRating({ puzzleRating, puzzleCount, gameRating, gameCoun
 
 /** Nombre orientativo de la categoría según el Elo. */
 export function ratingCategory(rating: number): string {
-  if (rating < 800) return 'Principiante';
-  if (rating < 1200) return 'Aficionado';
-  if (rating < 1600) return 'Jugador de club';
+  if (rating < 1000) return 'Principiante';
+  if (rating < 1400) return 'Aficionado';
+  if (rating < 1800) return 'Jugador de club';
   if (rating < 2000) return 'Club avanzado';
   if (rating < 2200) return 'Experto';
   return 'Maestro';

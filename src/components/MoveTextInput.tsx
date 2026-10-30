@@ -21,13 +21,10 @@ export function MoveTextInput({ fen, disabled, onMove }: MoveTextInputProps) {
       setError(`«${text}» no es una jugada legal en esta posición.`);
       return;
     }
-    const accepted = onMove({ from: move.from, to: move.to, promotion: move.promotion });
-    if (accepted) {
-      setText('');
-      setError(null);
-    } else {
-      setError('Jugada no aceptada.');
-    }
+    // Si la jugada es legal pero el ejercicio la rechaza, la propia página explica el motivo.
+    onMove({ from: move.from, to: move.to, promotion: move.promotion });
+    setText('');
+    setError(null);
   };
 
   return (

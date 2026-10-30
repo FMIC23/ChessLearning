@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import type { Puzzle } from '@/types/puzzle';
 import { loadPuzzles } from '@/content/puzzles';
 import { ChessBoard } from '@/components/ChessBoard';
@@ -15,7 +16,9 @@ import { usePuzzleSession, type PuzzleOutcome } from './usePuzzleSession';
 export function TacticsPage() {
   const [puzzles, setPuzzles] = useState<Puzzle[] | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [theme, setTheme] = useState('');
+  const [params, setParams] = useSearchParams();
+  const theme = params.get('tema') ?? '';
+  const setTheme = (value: string) => setParams(value ? { tema: value } : {}, { replace: true });
   const [current, setCurrent] = useState<{ puzzle: Puzzle; reason: SelectionReason } | null>(null);
   const [round, setRound] = useState(0);
   const cards = useProgress((s) => s.puzzleCards);

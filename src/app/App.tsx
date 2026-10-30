@@ -11,6 +11,9 @@ import { LessonPage } from '@/features/lessons/LessonPage';
 import { TacticsPage } from '@/features/tactics/TacticsPage';
 import { PlayPage } from '@/features/play/PlayPage';
 import { AnalysisPage } from '@/features/analysis/AnalysisPage';
+import { OpeningsPage } from '@/features/openings/OpeningsPage';
+import { OpeningPage } from '@/features/openings/OpeningPage';
+import { ProgressPage } from '@/features/progress/ProgressPage';
 import { SettingsPage } from '@/features/settings/SettingsPage';
 
 export function App() {
@@ -34,8 +37,11 @@ export function App() {
           <Route path="aprender/:levelId" element={<LevelPage />} />
           <Route path="aprender/:levelId/:slug" element={<LessonPage />} />
           <Route path="tactica" element={<TacticsPage />} />
+          <Route path="aperturas" element={<OpeningsPage />} />
+          <Route path="aperturas/:openingId" element={<OpeningPage />} />
           <Route path="jugar" element={<PlayPage />} />
           <Route path="analisis" element={<AnalysisPage />} />
+          <Route path="progreso" element={<ProgressPage />} />
           <Route path="tablero" element={<FreeBoardPage />} />
           <Route path="ajustes" element={<SettingsPage />} />
           <Route path="*" element={<NotFoundPage />} />

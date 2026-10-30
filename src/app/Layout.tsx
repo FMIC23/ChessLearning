@@ -35,7 +35,7 @@ export function Layout() {
             <span aria-hidden="true" className="text-2xl">♞</span>
             <span>Escuela de Ajedrez</span>
           </NavLink>
-          <nav aria-label="Principal" className="ml-auto hidden lg:block">
+          <nav aria-label="Principal" className="ml-auto hidden xl:block">
             <ul className="flex gap-1">
               {NAV_ITEMS.map((item) => (
                 <li key={item.to}>
@@ -47,11 +47,11 @@ export function Layout() {
               ))}
             </ul>
           </nav>
-          <div className="ml-auto flex items-center gap-1 lg:ml-2">
+          <div className="ml-auto flex items-center gap-1 xl:ml-2">
             <ThemeToggle />
             <button
               type="button"
-              className="rounded-lg p-2 lg:hidden hover:bg-slate-200 dark:hover:bg-slate-800"
+              className="rounded-lg p-2 xl:hidden hover:bg-slate-200 dark:hover:bg-slate-800"
               aria-expanded={menuOpen}
               aria-controls="menu-movil"
               aria-label={menuOpen ? 'Cerrar menú' : 'Abrir menú'}
@@ -62,7 +62,7 @@ export function Layout() {
           </div>
         </div>
         {menuOpen && (
-          <nav id="menu-movil" aria-label="Principal (móvil)" className="border-t border-slate-200 px-4 py-2 lg:hidden dark:border-slate-800">
+          <nav id="menu-movil" aria-label="Principal (móvil)" className="border-t border-slate-200 px-4 py-2 xl:hidden dark:border-slate-800">
             <ul className="grid grid-cols-2 gap-1 sm:grid-cols-3">
               {NAV_ITEMS.map((item) => (
                 <li key={item.to}>
