@@ -21,6 +21,7 @@ const PlayPage = named(() => import('@/features/play/PlayPage'), 'PlayPage');
 const AnalysisPage = named(() => import('@/features/analysis/AnalysisPage'), 'AnalysisPage');
 const ProgressPage = named(() => import('@/features/progress/ProgressPage'), 'ProgressPage');
 const FreeBoardPage = named(() => import('@/features/board/FreeBoardPage'), 'FreeBoardPage');
+const AnticipationPage = named(() => import('@/features/anticipation/AnticipationPage'), 'AnticipationPage');
 const ProfilesPage = named(() => import('@/features/profiles/ProfilesPage'), 'ProfilesPage');
 const SettingsPage = named(() => import('@/features/settings/SettingsPage'), 'SettingsPage');
 
@@ -57,6 +58,7 @@ export function App() {
             <Route path="aprender/:levelId" element={<LevelPage />} />
             <Route path="aprender/:levelId/:slug" element={<LessonPage />} />
             <Route path="tactica" element={<TacticsPage />} />
+            <Route path="anticipacion" element={<AnticipationPage />} />
             <Route path="aperturas" element={<OpeningsPage />} />
             <Route path="aperturas/:openingId" element={<OpeningPage />} />
             <Route path="jugar" element={<PlayPage />} />

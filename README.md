@@ -12,10 +12,13 @@ Aplicación web para **aprender ajedrez desde cero hasta nivel experto**: una ru
 |---|---|
 | 📚 **Ruta de aprendizaje** | 7 niveles desbloqueables (Fundamentos, Principiante, Táctica, Aperturas, Estrategia, Finales y Avanzado) con lecciones cortas: teoría, diagramas y ejercicios interactivos (jugar jugadas, marcar casillas, test y práctica contra el ordenador). |
 | ⚔️ **Táctica** | Banco de problemas con dificultad progresiva adaptada a tu puntuación, pistas en dos niveles, solución paso a paso y explicación del motivo táctico. **Repetición espaciada** (SM-2): los problemas fallados vuelven a aparecer con más frecuencia. Importación de la base abierta de Lichess. |
-| 🤖 **Jugar contra el ordenador** | Stockfish 18 (WebAssembly, en un Web Worker) con 8 niveles, de ~400 a ~2500 Elo. Deshacer, pistas y abandono. |
+| 🧠 **Anticipación** | **Visualización**: calcula sin mover las piezas (se muestran las jugadas solo escritas y hay que encontrar el golpe final). **¿Qué amenaza el rival?**: ponte en su lugar y descubre su golpe. |
+| 🤖 **Jugar contra el ordenador** | Stockfish 18 (WebAssembly, en un Web Worker) con 8 niveles, de ~400 a ~2500 Elo. Deshacer, pistas, botón **«¿Qué amenaza?»** (muestra lo que quiere hacer el rival) y modo **«Adivina la jugada del ordenador»** con estadística de aciertos. |
 | 📈 **Análisis de partidas** | Precisión, imprecisiones, errores y errores graves (umbrales de Lichess), mejor jugada con variante, gráfica de evaluación interactiva y momentos clave. Importa tus partidas en PGN. |
 | 📖 **Entrenador de aperturas** | Repertorio completo explicado con ideas. **Modo estudio** (árbol de variantes comentado) y **modo test** (la app juega el rival y te pregunta tus jugadas). |
 | 📊 **Progreso** | Elo estimado (problemas + partidas), racha de días, calendario de actividad, evolución de la puntuación, **puntos débiles detectados** con enlaces para practicarlos y exportación/importación del progreso en JSON. |
+
+Al seleccionar o arrastrar una pieza, sus casillas posibles se sombrean en **gris** y las capturas en **rojo**; tocando una pieza rival se ve también su alcance.
 
 Además: interfaz en español de España, diseño adaptable a móvil y escritorio, **modo oscuro**, navegación por teclado (jugadas escritas en notación española o inglesa, flechas para recorrer partidas) y buen contraste.
 

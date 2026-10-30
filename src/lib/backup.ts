@@ -34,7 +34,7 @@ export function parseBackup(text: string, defaults: ProgressData): Backup {
   if (!isObject(data.progress)) throw new BackupError('La copia de seguridad no contiene datos de progreso.');
   const p = data.progress;
   const progress: ProgressData = { ...defaults };
-  const objectKeys = ['lessons', 'puzzleCards', 'themeStats', 'openings'] as const;
+  const objectKeys = ['lessons', 'puzzleCards', 'themeStats', 'openings', 'anticipation'] as const;
   const arrayKeys = ['activityDays', 'puzzleHistory', 'ratingHistory', 'games'] as const;
   const numberKeys = ['puzzleRating', 'puzzleCount', 'gameRating', 'gameCount'] as const;
   for (const key of objectKeys) {

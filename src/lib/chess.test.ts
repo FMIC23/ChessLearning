@@ -9,6 +9,7 @@ import {
   needsPromotion,
   parseUci,
   parseUserMove,
+  pieceMoves,
   sameMove,
   START_FEN,
   toSpanishSan,
@@ -81,5 +82,28 @@ describe('utilidades de ajedrez', () => {
     expect(formatLine(START_FEN, san)).toBe('1. e4 e5 2. Cf3');
     const blackFen = 'rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1';
     expect(formatLine(blackFen, ['c5', 'Nf3'])).toBe('1... c5 2. Cf3');
+  });
+});
+
+describe('pieceMoves', () => {
+  it('distingue movimientos y capturas, también de la pieza rival', () => {
+    const fen = 'rnbqkbnr/ppp1pppp/8/3p4/4P3/8/PPPP1PPP/RNBQKBNR w KQkq d6 0 2';
+    expect(pieceMoves(fen, 'e4')).toEqual([
+      { to: 'd5', capture: true },
+      { to: 'e5', capture: false },
+    ]);
+    // Pieza negra aunque juegan blancas
+    expect(pieceMoves(fen, 'd5')).toEqual([
+      { to: 'd4', capture: false },
+      { to: 'e4', capture: true },
+    ]);
+    expect(pieceMoves(fen, 'e3')).toEqual([]);
+  });
+
+  it('marca la captura al paso como captura', () => {
+    expect(pieceMoves('4k3/8/8/3pP3/8/8/8/4K3 w - d6 0 2', 'e5')).toEqual([
+      { to: 'd6', capture: true },
+      { to: 'e6', capture: false },
+    ]);
   });
 });

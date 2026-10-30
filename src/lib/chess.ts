@@ -75,6 +75,38 @@ export function needsPromotion(fen: string, from: string, to: string): boolean {
   return moves.some((m) => m.to === to && m.promotion !== undefined);
 }
 
+export interface PieceMove {
+  to: string;
+  /** La jugada captura una pieza (incluida la captura al paso). */
+  capture: boolean;
+}
+
+/**
+ * Jugadas legales de la pieza de una casilla, aunque no sea su turno
+ * (útil para ver hasta dónde llega una pieza rival).
+ */
+export function pieceMoves(fen: string, square: string): PieceMove[] {
+  const probe = createGame(fen);
+  const piece = probe.get(square as Square);
+  if (!piece) return [];
+  const parts = fen.split(' ');
+  if (parts[1] !== piece.color) {
+    parts[1] = piece.color;
+    parts[3] = '-';
+  }
+  let game: Chess;
+  try {
+    game = createGame(parts.join(' '));
+  } catch {
+    return [];
+  }
+  const seen = new Map<string, PieceMove>();
+  for (const m of game.moves({ square: square as Square, verbose: true })) {
+    seen.set(m.to, { to: m.to, capture: m.isCapture() || m.isEnPassant() });
+  }
+  return [...seen.values()].sort((a, b) => a.to.localeCompare(b.to));
+}
+
 /** Casillas destino legales para la pieza de una casilla. */
 export function legalTargets(fen: string, square: string): string[] {
   const game = createGame(fen);

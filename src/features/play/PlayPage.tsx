@@ -5,7 +5,9 @@ import { MoveList } from '@/components/MoveList';
 import { Badge, Button, Card, Feedback, PageHeader } from '@/components/ui';
 import { ENGINE_LEVELS, chooseMove, getLevel } from '@/engine/levels';
 import { useEngine } from '@/engine/useEngine';
-import { getStatus, parseUci, type GameResult } from '@/lib/chess';
+import { applyMove, getStatus, parseUci, toSpanishSan, toUci, type GameResult } from '@/lib/chess';
+import { nullMoveFen } from '@/lib/anticipation';
+import { scoreToCp } from '@/engine/uci';
 import { buildPgn } from '@/lib/pgn';
 import { useChessGame } from '@/lib/useChessGame';
 import { useBoardKeyboardNavigation } from '@/lib/useBoardKeyboardNavigation';
@@ -122,7 +124,20 @@ function GameView({ color, level, onNewGame, onRematch }: { color: 'w' | 'b'; le
   const [resigned, setResigned] = useState(false);
   const [saved, setSaved] = useState<SavedGame | null>(null);
   const saveGame = useProgress((s) => s.saveGame);
+  const recordAnticipation = useProgress((s) => s.recordAnticipation);
+  const predictMode = useSettings((s) => s.playPredict);
+  const setPlayOptions = useSettings((s) => s.setPlayOptions);
+  /** Jugada ya decidida por el ordenador, a la espera de que el alumno intente adivinarla. */
+  const [pending, setPending] = useState<string | null>(null);
+  const [prediction, setPrediction] = useState<{ hit: boolean; text: string } | null>(null);
+  const [predictions, setPredictions] = useState({ hits: 0, total: 0 });
+  const [threat, setThreat] = useState<{ from: string; to: string; text: string } | null>(null);
+  const [threatLoading, setThreatLoading] = useState(false);
   const token = useRef(0);
+  const predictRef = useRef(predictMode);
+  useEffect(() => {
+    predictRef.current = predictMode;
+  });
 
   useBoardKeyboardNavigation(game.viewIndex, game.history.length, game.goTo);
 
@@ -153,7 +168,12 @@ function GameView({ color, level, onNewGame, onRematch }: { color: 'w' | 'b'; le
         const delay = Math.max(0, 450 - (Date.now() - started));
         setTimeout(() => {
           if (myToken !== token.current) return;
-          if (choice) moveRef.current(parseUci(choice), true);
+          if (choice && predictRef.current) {
+            // Modo adivinanza: la jugada espera a que el alumno haga su predicción.
+            setPending(choice);
+          } else if (choice) {
+            moveRef.current(parseUci(choice), true);
+          }
           setThinking(false);
         }, delay);
       })
@@ -192,20 +212,90 @@ function GameView({ color, level, onNewGame, onRematch }: { color: 'w' | 'b'; le
     );
   }, [color, game.history, hints, level, levelInfo, over, result, saveGame, saved, undos]);
 
+  const playPending = useCallback(
+    (uci: string) => {
+      setPending(null);
+      moveRef.current(parseUci(uci), true);
+    },
+    [],
+  );
+
   const onMove = useCallback(
     (m: { from: string; to: string; promotion?: string }) => {
+      if (pending) {
+        // Predicción de la jugada del ordenador.
+        const guess = applyMove(game.currentFen, m);
+        if (!guess) return false;
+        const actual = applyMove(game.currentFen, pending);
+        const hit = toUci(guess.move) === pending;
+        recordAnticipation('predictions', hit);
+        setPredictions((p) => ({ hits: p.hits + (hit ? 1 : 0), total: p.total + 1 }));
+        setPrediction({
+          hit,
+          text: hit
+            ? `¡Acertaste! El ordenador ha jugado ${toSpanishSan(guess.move.san)}.`
+            : `El ordenador ha jugado ${toSpanishSan(actual?.move.san ?? pending)}; tú esperabas ${toSpanishSan(guess.move.san)}.`,
+        });
+        playPending(pending);
+        return false;
+      }
       if (over || engineTurn || thinking) return false;
       setHint(null);
+      setThreat(null);
+      setPrediction(null);
       return game.move(m) !== null;
     },
-    [engineTurn, game, over, thinking],
+    [engineTurn, game, over, pending, playPending, recordAnticipation, thinking],
   );
+
+  // Si se desactiva el modo adivinanza con una jugada pendiente, se juega directamente.
+  useEffect(() => {
+    if (!predictMode && pending) playPending(pending);
+  }, [pending, playPending, predictMode]);
+
+  /** «¿Qué amenaza?»: qué jugaría el rival si fuera su turno (jugada nula). */
+  const askThreat = async () => {
+    if (!engine || engineTurn || over) return;
+    const fen = nullMoveFen(game.currentFen);
+    if (!fen) {
+      setThreat({ from: '', to: '', text: 'Estás en jaque: lo urgente es salir del jaque.' });
+      return;
+    }
+    setThreatLoading(true);
+    try {
+      const [now, ifPass] = await Promise.all([
+        engine.analyze(game.currentFen, { depth: 12 }, 'full'),
+        engine.analyze(fen, { depth: 12 }, 'full'),
+      ]);
+      const move = ifPass.bestMove ? applyMove(fen, ifPass.bestMove) : null;
+      if (!move || !ifPass.bestMove) return;
+      // Ventaja del rival si «pasáramos» comparada con la situación actual (desde su punto de vista).
+      const rivalIfPass = ifPass.lines[0] ? scoreToCp(ifPass.lines[0].score) : 0;
+      const rivalNow = now.lines[0] ? -scoreToCp(now.lines[0].score) : 0;
+      const gain = rivalIfPass - rivalNow;
+      const san = toSpanishSan(move.move.san);
+      const text =
+        rivalIfPass > 5000
+          ? `¡Cuidado! Tu rival amenaza dar mate empezando con ${san}.`
+          : gain >= 150
+            ? `¡Amenaza seria! Si no haces nada, tu rival jugaría ${san} y ganaría ventaja.`
+            : `No hay amenazas graves. Si pudiera, tu rival jugaría ${san} para mejorar su posición.`;
+      const m = parseUci(ifPass.bestMove);
+      setThreat({ from: m.from, to: m.to, text });
+      setHints((h) => h + 1);
+    } finally {
+      setThreatLoading(false);
+    }
+  };
 
   const undo = () => {
     engine?.cancelAll();
     token.current++;
     setThinking(false);
     setHint(null);
+    setThreat(null);
+    setPending(null);
+    setPrediction(null);
     // Si le toca al alumno, se deshacen su última jugada y la respuesta del ordenador.
     const count = turn === color ? 2 : 1;
     if (game.history.length === 0) return;
@@ -245,11 +335,14 @@ function GameView({ color, level, onNewGame, onRematch }: { color: 'w' | 'b'; le
         <ChessBoard
           fen={game.fen}
           orientation={color === 'w' ? 'white' : 'black'}
-          interactive={!over && !engineTurn && game.isViewingLatest}
-          movableColor={color}
+          interactive={(!over && !engineTurn && game.isViewingLatest) || !!pending}
+          movableColor={pending ? (color === 'w' ? 'b' : 'w') : color}
           onMove={onMove}
           lastMove={game.lastMove}
-          arrows={hint ? [{ startSquare: hint.from, endSquare: hint.to, color: 'rgba(22,163,74,0.85)' }] : []}
+          arrows={[
+            ...(hint ? [{ startSquare: hint.from, endSquare: hint.to, color: 'rgba(22,163,74,0.85)' }] : []),
+            ...(threat?.from ? [{ startSquare: threat.from, endSquare: threat.to, color: 'rgba(220,38,38,0.85)' }] : []),
+          ]}
           keyboardInput
           label="Tablero de la partida"
         />
@@ -265,7 +358,7 @@ function GameView({ color, level, onNewGame, onRematch }: { color: 'w' | 'b'; le
                   Puntuación de partidas: {saved.ratingChange.before} → <strong>{saved.ratingChange.after}</strong>
                 </p>
               ) : (
-                <p className="mt-2 text-xs text-slate-500">Partida no puntuable (has usado deshacer o pistas, o fue muy corta).</p>
+                <p className="mt-2 text-xs text-slate-500">Partida no puntuable (has usado deshacer, pistas o «¿Qué amenaza?», o fue muy corta).</p>
               )}
               <div className="mt-4 flex flex-wrap justify-center gap-2">
                 {saved && (
@@ -282,7 +375,9 @@ function GameView({ color, level, onNewGame, onRematch }: { color: 'w' | 'b'; le
           ) : (
             <Card>
               <p className="mb-3" aria-live="polite">
-                {thinking ? (
+                {pending ? (
+                  <strong>🔮 ¿Qué jugará el ordenador? Mueve una pieza suya para adivinarlo.</strong>
+                ) : thinking ? (
                   <span className="inline-flex items-center gap-2">
                     <span className="h-2 w-2 animate-pulse rounded-full bg-brand-500" /> El ordenador está pensando…
                   </span>
@@ -302,6 +397,14 @@ function GameView({ color, level, onNewGame, onRematch }: { color: 'w' | 'b'; le
                 <Button onClick={askHint} disabled={engineTurn || hintLoading || !engine}>
                   {hintLoading ? 'Pensando…' : '💡 Pista'}
                 </Button>
+                <Button onClick={() => void askThreat()} disabled={engineTurn || threatLoading || !engine}>
+                  {threatLoading ? 'Pensando…' : '⚠️ ¿Qué amenaza?'}
+                </Button>
+                {pending && (
+                  <Button variant="ghost" onClick={() => playPending(pending)}>
+                    Saltar predicción
+                  </Button>
+                )}
                 <Button
                   variant="danger"
                   onClick={() => {
@@ -315,7 +418,31 @@ function GameView({ color, level, onNewGame, onRematch }: { color: 'w' | 'b'; le
                   Abandonar
                 </Button>
               </div>
-              <div className="mt-3 flex gap-2 text-xs">
+              {threat && (
+                <div className="mt-3">
+                  <Feedback tone="info">{threat.text}</Feedback>
+                </div>
+              )}
+              {prediction && (
+                <div className="mt-3">
+                  <Feedback tone={prediction.hit ? 'success' : 'info'}>{prediction.text}</Feedback>
+                </div>
+              )}
+              <label className="mt-3 flex items-center gap-2 text-sm">
+                <input
+                  type="checkbox"
+                  className="accent-brand-600"
+                  checked={predictMode}
+                  onChange={(e) => setPlayOptions({ playPredict: e.target.checked })}
+                />
+                🔮 Adivina la jugada del ordenador antes de que la haga
+              </label>
+              <div className="mt-3 flex flex-wrap gap-2 text-xs">
+                {predictions.total > 0 && (
+                  <Badge tone="blue">
+                    Predicciones: {predictions.hits}/{predictions.total}
+                  </Badge>
+                )}
                 {hints > 0 && <Badge tone="amber">Pistas: {hints}</Badge>}
                 {undos > 0 && <Badge tone="amber">Deshacer: {undos}</Badge>}
               </div>
