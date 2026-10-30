@@ -6,5 +6,7 @@ export interface NavItem {
 
 export const NAV_ITEMS: NavItem[] = [
   { to: '/', label: 'Inicio', icon: '🏠' },
+  { to: '/aprender', label: 'Aprender', icon: '📚' },
   { to: '/tablero', label: 'Tablero', icon: '♟️' },
+  { to: '/ajustes', label: 'Ajustes', icon: '⚙️' },
 ];

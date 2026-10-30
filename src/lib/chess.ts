@@ -1,4 +1,4 @@
-import { Chess, type Move, type Square, type PieceSymbol, type Color } from 'chess.js';
+import { Chess, validateFen, type Move, type Square, type PieceSymbol, type Color } from 'chess.js';
 
 export type { Move, Square, PieceSymbol, Color };
 
@@ -22,22 +22,30 @@ export function toUci(move: Pick<Move, 'from' | 'to' | 'promotion'>): string {
   return `${move.from}${move.to}${move.promotion ?? ''}`;
 }
 
-/** Crea una partida desde un FEN; lanza un error con mensaje claro si no es válido. */
+/**
+ * Crea una partida desde un FEN; lanza un error con mensaje claro si no es válido.
+ * Se admiten posiciones didácticas sin reyes (p. ej. una torre sola para enseñar su movimiento).
+ */
 export function createGame(fen: string = START_FEN): Chess {
-  try {
-    return new Chess(fen);
-  } catch (error) {
-    throw new Error(`FEN no válido: ${fen} (${(error as Error).message})`);
+  const check = validateFen(fen);
+  if (check.ok) return new Chess(fen);
+  if (/king/i.test(check.error ?? '') && !/too many/i.test(check.error ?? '')) {
+    return new Chess(fen, { skipValidation: true });
   }
+  throw new Error(`FEN no válido: ${fen} (${check.error ?? 'error desconocido'})`);
 }
 
-export function isValidFen(fen: string): boolean {
-  try {
-    new Chess(fen);
-    return true;
-  } catch {
-    return false;
+/** Valida un FEN. Con `allowMissingKings` se aceptan posiciones didácticas sin reyes. */
+export function isValidFen(fen: string, { allowMissingKings = false } = {}): boolean {
+  if (allowMissingKings) {
+    try {
+      createGame(fen);
+      return true;
+    } catch {
+      return false;
+    }
   }
+  return validateFen(fen).ok;
 }
 
 /** Intenta hacer una jugada (UCI, SAN u objeto). Devuelve null si es ilegal, sin lanzar errores. */

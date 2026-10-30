@@ -5,6 +5,10 @@ import { Layout } from './Layout';
 import { HomePage } from '@/features/home/HomePage';
 import { FreeBoardPage } from '@/features/board/FreeBoardPage';
 import { NotFoundPage } from './NotFoundPage';
+import { LearnPage } from '@/features/lessons/LearnPage';
+import { LevelPage } from '@/features/lessons/LevelPage';
+import { LessonPage } from '@/features/lessons/LessonPage';
+import { SettingsPage } from '@/features/settings/SettingsPage';
 
 export function App() {
   const theme = useSettings((s) => s.theme);
@@ -23,7 +27,11 @@ export function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<HomePage />} />
+          <Route path="aprender" element={<LearnPage />} />
+          <Route path="aprender/:levelId" element={<LevelPage />} />
+          <Route path="aprender/:levelId/:slug" element={<LessonPage />} />
           <Route path="tablero" element={<FreeBoardPage />} />
+          <Route path="ajustes" element={<SettingsPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
