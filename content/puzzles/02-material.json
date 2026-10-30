@@ -190,5 +190,61 @@
     "hint": "Cuenta cuántas piezas atacan el Ae6 y cuántas lo defienden.",
     "explanation": "El Ae6 está atacado dos veces (dama y torre en la columna e) y defendido solo una (la dama de d7). **Dxe6+ Dxe6 Txe6** gana una pieza. Contar atacantes y defensores es la base de la táctica.",
     "source": "propio"
+  },
+  {
+    "id": "material-012",
+    "fen": "8/5p2/1k2p3/8/1r4Pp/6bP/6Q1/7K b - - 9 52",
+    "moves": [
+      "b4b1",
+      "g2f1",
+      "b1f1"
+    ],
+    "rating": 850,
+    "themes": [
+      "endgame",
+      "advantage"
+    ],
+    "title": "Jaque que gana la dama",
+    "hint": "El rey blanco no tiene casillas: el Ag3 controla h2.",
+    "explanation": "**...Tb1+** y el rey no puede moverse (el Ag3 controla h2), así que la dama tiene que interponerse: **Df1 Txf1+** y las negras ganan la dama por la torre.",
+    "source": "propio"
+  },
+  {
+    "id": "material-013",
+    "fen": "8/1p1n1pk1/6p1/1P6/nB2p1N1/4P2P/5PPK/8 b - - 4 32",
+    "moves": [
+      "f7f5",
+      "h2g3",
+      "f5g4"
+    ],
+    "rating": 1050,
+    "themes": [
+      "trappedPiece",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Caballo sin casillas",
+    "hint": "Revisa las casillas a las que puede ir el caballo de g4.",
+    "explanation": "El caballo de g4 no tiene casillas seguras: e5 lo controla tu caballo de d7, f6 y h6 tu rey, y f2, h2 y e3 están ocupadas. **...f5!** lo ataca y queda **atrapado**: tras **Rg3 fxg4** las negras ganan una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "material-014",
+    "fen": "1r1q1rk1/p1p1bpp1/2p2n1p/3pP3/5Bb1/2NB4/PPP2PPP/1R1Q1RK1 w - - 1 13",
+    "moves": [
+      "f2f3",
+      "g4c8",
+      "e5f6"
+    ],
+    "rating": 1100,
+    "themes": [
+      "zwischenzug",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Primero, echa al alfil",
+    "hint": "El caballo de f6 está atacado por tu peón, pero si lo capturas ya, pierdes la dama.",
+    "explanation": "Si **exf6?** directamente, **...Axd1** se lleva la dama. Por eso primero **f3!** ataca al Ag4; tras **...Ac8** (o cualquier retirada) llega **exf6** y las blancas ganan una pieza.",
+    "source": "propio"
   }
 ]

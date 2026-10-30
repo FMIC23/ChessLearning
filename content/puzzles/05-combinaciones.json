@@ -1,6 +1,25 @@
 [
   {
     "id": "combi-001",
+    "fen": "2r5/2p3k1/3p2b1/p2P3B/4nB1K/1PP5/6P1/4R3 w - - 10 41",
+    "moves": [
+      "h5g6",
+      "g7g6",
+      "e1e4"
+    ],
+    "rating": 900,
+    "themes": [
+      "capturingDefender",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Quita al defensor",
+    "hint": "¿Qué pieza negra protege al caballo de e4?",
+    "explanation": "El caballo de e4 solo está defendido por el Ag6. **Axg6!** elimina al defensor y, tras **...Rxg6**, **Txe4** gana el caballo.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-002",
     "fen": "4rk2/ppp5/2p5/6p1/2np4/1P6/P1P3P1/2B1R1K1 w - - 0 23",
     "moves": [
       "e1e8",
@@ -19,7 +38,110 @@
     "source": "propio"
   },
   {
-    "id": "combi-002",
+    "id": "combi-003",
+    "fen": "2kr4/pp2n2p/2b4B/4P3/2Q5/P2R4/1q4PP/4KR2 b - - 0 32",
+    "moves": [
+      "b2b1",
+      "e1e2",
+      "b1d3",
+      "c4d3",
+      "d8d3"
+    ],
+    "rating": 1100,
+    "themes": [
+      "middlegame",
+      "advantage",
+      "exposedKing"
+    ],
+    "title": "Jaque y torre de d3",
+    "hint": "La torre de d3 solo está defendida por la dama. Un jaque puede preparar su captura.",
+    "explanation": "**...Db1+** obliga al rey a **Re2**, y ahora **...Dxd3+!** aprovecha que la torre de d3 está atacada dos veces (dama y torre de d8) y defendida solo por la dama. Tras **Dxd3 Txd3** las negras ganan una torre.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-004",
+    "fen": "5rk1/1p4bp/r1pNq1p1/p1P5/5nQ1/P6P/1P3P2/R1BR2K1 b - - 2 24",
+    "moves": [
+      "f4h3",
+      "g4h3",
+      "e6h3"
+    ],
+    "rating": 1150,
+    "themes": [
+      "zwischenzug",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Mejor que cambiar damas",
+    "hint": "Antes de cambiar damas, busca un jaque que cambie el panorama.",
+    "explanation": "En vez de cambiar damas, **...Cxh3+!** se come un peón con jaque. Si **Dxh3**, la dama ha abandonado g4 y queda en la diagonal de la tuya: **...Dxh3** la gana. Y si el rey se mueve, **...Dxg4** gana la dama directamente.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-005",
+    "fen": "8/5p1k/8/1q2PPQp/3p4/1P6/6PK/8 w - - 1 44",
+    "moves": [
+      "f5f6",
+      "b5e5",
+      "g5e5"
+    ],
+    "rating": 1350,
+    "themes": [
+      "quietMove",
+      "endgame",
+      "advantage"
+    ],
+    "title": "La amenaza de g7",
+    "hint": "Un simple avance de peón puede preparar un mate imparable.",
+    "explanation": "**f6!** amenaza **Dg7#** y las negras no tienen buena defensa. Lo único que evita el mate es entregar la dama: **...Dxe5+ Dxe5**, y las blancas quedan con dama contra nada.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-006",
+    "fen": "r1bqkb1r/pppn1ppp/5n2/3N2B1/3P4/8/PP2PPPP/R2QKBNR b KQkq - 0 6",
+    "moves": [
+      "f6d5",
+      "g5d8",
+      "f8b4"
+    ],
+    "rating": 1450,
+    "themes": [
+      "zwischenzug",
+      "sacrifice",
+      "opening",
+      "advantage"
+    ],
+    "title": "La trampa del elefante",
+    "hint": "No temas por tu dama: ¿hay algún jaque que cambie las cuentas?",
+    "explanation": "**...Cxd5!** entrega la dama: tras **Axd8** llega la **jugada intermedia** **...Ab4+**, y las blancas tienen que dar su propia dama con **Dd2 Axd2+ Rxd2 Rxd8**. Al final las negras quedan con una pieza de ventaja.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-007",
+    "fen": "1qr1r1k1/3b1pp1/1b2p1p1/1p2PnN1/4pB2/1PP4Q/5PPP/3RR1K1 w - - 2 23",
+    "moves": [
+      "h3h7",
+      "g8f8",
+      "d1d7",
+      "f5h6",
+      "h7h8",
+      "h6g8",
+      "d7f7"
+    ],
+    "rating": 1850,
+    "themes": [
+      "mate",
+      "attraction",
+      "capturingDefender",
+      "middlegame"
+    ],
+    "title": "Asalto a f7",
+    "hint": "Empieza con un jaque de dama apoyado por el caballo y después mira qué pieza defiende f7.",
+    "explanation": "**Dh7+ Rf8** y **Txd7!** elimina un defensor y amenaza **Txf7#**. Tras **...Ch6 Dh8+ Cg8** el caballo negro tapa el jaque pero deja f7 sin protección: **Txf7#**, con la torre apoyada por el Cg5.",
+    "source": "propio"
+  },
+  {
+    "id": "combi-008",
     "fen": "4q1k1/5p2/p2P2p1/2p1b1Q1/br2B1P1/1p1P1R2/7P/1R5K w - - 3 30",
     "moves": [
       "e4d5",

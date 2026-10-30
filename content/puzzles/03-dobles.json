@@ -1,6 +1,83 @@
 [
   {
     "id": "doble-001",
+    "fen": "2r3k1/1p1r1bp1/1n1p1p2/5N1p/P7/2B2P1P/1P2R1P1/4R1K1 w - - 0 35",
+    "moves": [
+      "f5e7",
+      "g8f8",
+      "e7c8"
+    ],
+    "rating": 600,
+    "themes": [
+      "fork",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Horquilla en e7",
+    "hint": "Busca un salto de caballo con jaque.",
+    "explanation": "**Ce7+** es una **horquilla**: el caballo da jaque al rey de g8 y ataca la torre de c8. Tras **...Rf8 Cxc8** las blancas ganan la calidad.",
+    "source": "propio"
+  },
+  {
+    "id": "doble-002",
+    "fen": "8/7p/k1bp4/P4K1P/8/3N4/8/8 w - - 3 68",
+    "moves": [
+      "d3b4",
+      "a6b5",
+      "b4c6"
+    ],
+    "rating": 600,
+    "themes": [
+      "fork",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Caballo al ataque",
+    "hint": "Busca un jaque de caballo que ataque a la vez el alfil.",
+    "explanation": "**Cb4+** es una **horquilla**: el caballo da jaque al rey de a6 y ataca el Ac6. Tras **...Rb5 Cxc6** las blancas ganan el alfil.",
+    "source": "propio"
+  },
+  {
+    "id": "doble-003",
+    "fen": "rnbqkb1r/pppp1ppp/5n2/4N3/8/8/PPPPQPPP/RNB1KB1R w KQkq - 2 5",
+    "moves": [
+      "e5c6",
+      "f8e7",
+      "c6d8"
+    ],
+    "rating": 650,
+    "themes": [
+      "discoveredAttack",
+      "opening",
+      "advantage"
+    ],
+    "title": "Jaque descubierto en la Petrov",
+    "hint": "Tu dama y el rey negro están en la misma columna. Mueve el caballo que hay en medio.",
+    "explanation": "**Cc6+** es un **jaque descubierto**: la dama de e2 da jaque y el caballo ataca la dama de d8. Tras **...Ae7 Cxd8** las blancas ganan la dama.",
+    "source": "propio"
+  },
+  {
+    "id": "doble-004",
+    "fen": "8/1n2kPpp/8/r4P2/3R4/P5PP/1KP5/8 w - - 1 48",
+    "moves": [
+      "d4d7",
+      "e7f8",
+      "d7b7"
+    ],
+    "rating": 650,
+    "themes": [
+      "fork",
+      "endgame",
+      "rookEndgame",
+      "advantage"
+    ],
+    "title": "Torre a la séptima",
+    "hint": "Busca un jaque de torre que ataque también al caballo.",
+    "explanation": "**Td7+** da jaque al rey de e7 y ataca al caballo de b7 por la séptima fila. Tras **...Rf8 Txb7** las blancas ganan una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "doble-005",
     "fen": "3r4/1p3kp1/p4p2/1bB2q2/8/2P1QP1P/P5P1/R5K1 w - - 2 30",
     "moves": [
       "e3e7",
@@ -18,7 +95,7 @@
     "source": "propio"
   },
   {
-    "id": "doble-002",
+    "id": "doble-006",
     "fen": "6k1/pp3p2/5p2/2b1r1Pp/8/5PP1/PP1B2K1/7R b - - 2 31",
     "moves": [
       "e5e2",
@@ -37,7 +114,45 @@
     "source": "propio"
   },
   {
-    "id": "doble-003",
+    "id": "doble-007",
+    "fen": "6k1/1pp1n2p/2p5/p3p1pQ/N3P3/1P1P3P/P1q3PK/8 w - - 0 27",
+    "moves": [
+      "h5e8",
+      "g8g7",
+      "e8e7"
+    ],
+    "rating": 700,
+    "themes": [
+      "fork",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Dama en e8",
+    "hint": "Un jaque de dama puede atacar también al caballo.",
+    "explanation": "**De8+** da jaque y ataca al caballo de e7, que no tiene defensa. Tras **...Rg7 Dxe7+** las blancas ganan una pieza con un **ataque doble**.",
+    "source": "propio"
+  },
+  {
+    "id": "doble-008",
+    "fen": "5k2/1p2r3/3Q4/3P4/p6r/P7/3K3P/8 w - - 3 46",
+    "moves": [
+      "d6f6",
+      "f8e8",
+      "f6h4"
+    ],
+    "rating": 700,
+    "themes": [
+      "fork",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Dama en f6",
+    "hint": "Busca un jaque de dama que ataque también la torre de h4.",
+    "explanation": "**Df6+** da jaque y ataca la torre de h4 por la diagonal. Tras **...Re8 Dxh4** las blancas ganan una torre: un **ataque doble** clásico de la dama.",
+    "source": "propio"
+  },
+  {
+    "id": "doble-009",
     "fen": "8/1pk5/1p1nBP2/2r4p/8/8/4K3/3R4 b - - 2 59",
     "moves": [
       "c5e5",
@@ -56,7 +171,83 @@
     "source": "propio"
   },
   {
-    "id": "doble-004",
+    "id": "doble-010",
+    "fen": "5rk1/2p2rp1/7p/1p1qp2P/1P2N1Q1/4R1P1/3B2K1/8 b - - 19 44",
+    "moves": [
+      "f7f2",
+      "g2h3",
+      "f2d2"
+    ],
+    "rating": 750,
+    "themes": [
+      "fork",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "La séptima baja a la segunda",
+    "hint": "Tu torre puede dar jaque y atacar al alfil a la vez, protegida por la otra torre.",
+    "explanation": "**...Tf2+** da jaque al rey de g2 y ataca el Ad2; la torre está protegida por su compañera de f8. Tras **Rh3 Txd2** las negras ganan una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "doble-011",
+    "fen": "2kr4/2p5/p3p2p/1p6/1b2N1nP/6P1/PPP1RP2/2B3K1 b - - 0 23",
+    "moves": [
+      "d8d1",
+      "g1g2",
+      "d1c1"
+    ],
+    "rating": 750,
+    "themes": [
+      "fork",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Jaque en la primera",
+    "hint": "Tu torre puede bajar a la primera fila con jaque.",
+    "explanation": "**...Td1+** da jaque por la primera fila y a la vez ataca el Ac1, que no tiene defensa. Tras **Rg2 Txc1** las negras ganan una pieza.",
+    "source": "propio"
+  },
+  {
+    "id": "doble-012",
+    "fen": "3r2k1/1p4q1/5rpp/p2n2N1/4Q3/8/5PPP/R3R1K1 w - - 2 30",
+    "moves": [
+      "g5e6",
+      "g7e7",
+      "e6d8"
+    ],
+    "rating": 800,
+    "themes": [
+      "fork",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Salto a e6",
+    "hint": "Hay una casilla protegida por tu dama desde la que el caballo ataca dos piezas.",
+    "explanation": "**Ce6!** es una **horquilla**: ataca la dama de g7 y la torre de d8, y está protegido por la dama de e4. Tras **...De7 Cxd8** las blancas ganan la calidad.",
+    "source": "propio"
+  },
+  {
+    "id": "doble-013",
+    "fen": "2knr3/3r3p/8/p2p3N/P1p3pR/2P5/1P4P1/5RK1 w - - 0 32",
+    "moves": [
+      "h5f6",
+      "e8e5",
+      "f6d7"
+    ],
+    "rating": 850,
+    "themes": [
+      "fork",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "Dos torres en el punto de mira",
+    "hint": "Hay una casilla desde la que tu caballo ataca las dos torres negras.",
+    "explanation": "**Cf6!** es una **horquilla**: el caballo ataca la torre de d7 y la de e8 a la vez. Las negras salvan una (**...Te5**) pero pierden la otra: **Cxd7**.",
+    "source": "propio"
+  },
+  {
+    "id": "doble-014",
     "fen": "r2r2k1/1p3pp1/p1n1b1qp/2b1p3/2B1P3/1QP2P2/PP4PP/RNB2R1K b - - 2 18",
     "moves": [
       "c6a5",
@@ -75,7 +266,27 @@
     "source": "propio"
   },
   {
-    "id": "doble-005",
+    "id": "doble-015",
+    "fen": "8/7k/4BQ2/1p3p1p/3P2qP/8/7K/8 w - - 0 64",
+    "moves": [
+      "e6f5",
+      "g4f5",
+      "f6f5"
+    ],
+    "rating": 900,
+    "themes": [
+      "fork",
+      "sacrifice",
+      "endgame",
+      "advantage"
+    ],
+    "title": "Alfil con jaque",
+    "hint": "Un jaque de alfil puede atacar también a la dama negra.",
+    "explanation": "**Axf5+!** da jaque y ataca a la dama de g4 al mismo tiempo. Si **...Dxf5**, **Dxf5+** y las blancas ganan la dama por el alfil, con un final de dama contra peones totalmente ganado.",
+    "source": "propio"
+  },
+  {
+    "id": "doble-016",
     "fen": "6k1/p1p2R2/3b3p/3B4/3pp3/P7/2P1K1P1/1r6 w - - 0 30",
     "moves": [
       "f7f1",
@@ -91,6 +302,26 @@
     "title": "Jaque descubierto",
     "hint": "Tu torre está tapando la diagonal de tu alfil hacia el rey negro.",
     "explanation": "Al mover la torre se descubre el jaque del Ad5 por la diagonal a2-g8. **Tf1+** aprovecha para atacar a la vez la torre de b1: tras **...Rg7 Txb1** las blancas ganan una torre. Es un **ataque descubierto** típico.",
+    "source": "propio"
+  },
+  {
+    "id": "doble-017",
+    "fen": "7r/3pkppp/2p5/Q1bqP3/8/6P1/P1B2P1P/1R4K1 b - - 0 27",
+    "moves": [
+      "c5f2",
+      "g1f2",
+      "d5a5"
+    ],
+    "rating": 1150,
+    "themes": [
+      "discoveredAttack",
+      "sacrifice",
+      "middlegame",
+      "advantage"
+    ],
+    "title": "El alfil estorba",
+    "hint": "Tu alfil de c5 se interpone entre tu dama y la dama blanca.",
+    "explanation": "El Ac5 tapa la fila entre las dos damas. **...Axf2+!** se aparta con jaque (**ataque descubierto**) y, tras **Rxf2**, **...Dxa5** gana la dama blanca a cambio del alfil.",
     "source": "propio"
   }
 ]

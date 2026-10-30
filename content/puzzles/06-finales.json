@@ -1,23 +1,6 @@
 [
   {
     "id": "final-001",
-    "fen": "8/1p1b1k1P/1B4p1/6P1/8/2K5/8/8 w - - 1 57",
-    "moves": [
-      "h7h8q"
-    ],
-    "rating": 400,
-    "themes": [
-      "endgame",
-      "promotion",
-      "oneMove"
-    ],
-    "title": "Corona",
-    "hint": "¿Puede alguna pieza negra controlar h8?",
-    "explanation": "Ni el rey de f7 ni el Ad7 controlan h8, así que **h8=D** corona sin problemas y las blancas quedan con dama de ventaja.",
-    "source": "propio"
-  },
-  {
-    "id": "final-002",
     "fen": "8/4k3/p3Pp2/P7/2Bb3p/2P5/5p1P/7K w - - 2 52",
     "moves": [
       "c3d4",
@@ -36,7 +19,48 @@
     "source": "propio"
   },
   {
+    "id": "final-002",
+    "fen": "8/8/1K4p1/P7/4p3/2k5/8/8 w - - 1 53",
+    "moves": [
+      "a5a6",
+      "c3d3",
+      "a6a7",
+      "e4e3",
+      "a7a8q"
+    ],
+    "rating": 800,
+    "themes": [
+      "endgame",
+      "pawnEndgame",
+      "promotion",
+      "advancedPawn"
+    ],
+    "title": "Carrera de peones",
+    "hint": "Cuenta cuántas jugadas necesita cada peón para coronar.",
+    "explanation": "El peón de a está más avanzado: **a6 Rd3 a7 e3 a8=D** corona antes que el peón negro, que todavía está en e3: dama contra peón es una victoria fácil. En las carreras de peones, cuenta las jugadas antes de mover.",
+    "source": "propio"
+  },
+  {
     "id": "final-003",
+    "fen": "8/5P2/4B1k1/6P1/8/3b2K1/2r5/1r5R w - - 0 50",
+    "moves": [
+      "f7f8q",
+      "b1g1",
+      "h1g1"
+    ],
+    "rating": 850,
+    "themes": [
+      "endgame",
+      "promotion",
+      "advantage"
+    ],
+    "title": "Corona sin miedo",
+    "hint": "Las torres negras amenazan jaques, pero tu torre de h1 vigila la primera fila.",
+    "explanation": "**f8=D** corona ya, porque el rey negro no controla f8; y tras **...Tg1+**, **Txg1** elimina la torre. Las negras se quedan sin contrajuego y con una dama menos.",
+    "source": "propio"
+  },
+  {
+    "id": "final-004",
     "fen": "8/1p3k2/5BpP/4p3/6P1/1b6/3K4/8 w - - 2 51",
     "moves": [
       "h6h7",
@@ -56,7 +80,116 @@
     "source": "propio"
   },
   {
-    "id": "final-004",
+    "id": "final-005",
+    "fen": "8/p4k1p/PpP5/8/5pP1/B4p1P/2P2P1K/1r6 w - - 1 39",
+    "moves": [
+      "c6c7"
+    ],
+    "rating": 900,
+    "themes": [
+      "endgame",
+      "promotion",
+      "advancedPawn",
+      "oneMove"
+    ],
+    "title": "La torre llega tarde",
+    "hint": "¿Puede la torre de b1 ponerse delante del peón de c6?",
+    "explanation": "**c7!** y el peón ya no se puede parar: la torre no puede ir a b8 porque su propio peón de b6 le cierra el paso, ni frenarlo desde c1 porque el peón blanco de c2 tapa la columna. En la jugada siguiente llega **c8=D**.",
+    "source": "propio"
+  },
+  {
+    "id": "final-006",
+    "fen": "3k4/8/8/5K2/3P4/8/8/8 w - - 0 60",
+    "moves": [
+      "f5e6"
+    ],
+    "rating": 900,
+    "themes": [
+      "endgame",
+      "pawnEndgame",
+      "oneMove"
+    ],
+    "title": "El rey primero",
+    "hint": "Antes de avanzar el peón, coloca tu rey lo más adelante posible.",
+    "explanation": "**Re6!** lleva el rey a la sexta fila, delante del peón. Desde ahí controla las casillas por las que pasará el peón y gana sin problemas. Si empujas el peón demasiado pronto, el rey negro se planta delante y son tablas.",
+    "source": "propio"
+  },
+  {
+    "id": "final-007",
+    "fen": "8/8/5k2/8/3K4/4P3/8/8 w - - 0 60",
+    "moves": [
+      "d4d5",
+      "f6e7",
+      "d5e5"
+    ],
+    "rating": 1050,
+    "themes": [
+      "endgame",
+      "pawnEndgame"
+    ],
+    "title": "Casillas clave",
+    "hint": "Con el peón en e3, tu rey quiere llegar a la quinta fila delante de él.",
+    "explanation": "**Rd5!** pisa una **casilla clave** del peón (d5, e5 o f5). Tras **...Re7 Re5** el rey blanco toma la **oposición** y ya nada impide que el peón avance escoltado hasta coronar.",
+    "source": "propio"
+  },
+  {
+    "id": "final-008",
+    "fen": "8/2k5/8/8/1P1K4/8/8/8 w - - 0 60",
+    "moves": [
+      "d4c5",
+      "c7b7",
+      "c5b5"
+    ],
+    "rating": 1100,
+    "themes": [
+      "endgame",
+      "pawnEndgame"
+    ],
+    "title": "Frente a frente",
+    "hint": "Tu rey debe ponerse delante del peón y ganar la oposición.",
+    "explanation": "**Rc5!** y tras **...Rb7**, **Rb5** toma la **oposición**. El rey negro tendrá que apartarse y el rey blanco entrará en a6, b6 o c6, las casillas clave del peón de b4.",
+    "source": "propio"
+  },
+  {
+    "id": "final-009",
+    "fen": "8/8/2k5/8/8/3P1K2/8/8 w - - 0 60",
+    "moves": [
+      "f3e4",
+      "c6d6",
+      "e4d4"
+    ],
+    "rating": 1200,
+    "themes": [
+      "endgame",
+      "pawnEndgame"
+    ],
+    "title": "La oposición",
+    "hint": "Los reyes van a quedar frente a frente: procura que sea el negro quien tenga que ceder.",
+    "explanation": "**Re4!** y tras **...Rd6**, **Rd4** toma la **oposición**: los reyes quedan enfrentados con una casilla en medio y le toca mover al negro, que tiene que ceder el paso. Así el rey blanco llega a las casillas clave c5, d5 o e5.",
+    "source": "propio"
+  },
+  {
+    "id": "final-010",
+    "fen": "8/1k6/8/8/1K2P3/8/8/8 w - - 0 60",
+    "moves": [
+      "b4b5",
+      "b7c8",
+      "b5c6",
+      "c8d8",
+      "c6d6"
+    ],
+    "rating": 1250,
+    "themes": [
+      "endgame",
+      "pawnEndgame"
+    ],
+    "title": "El rey se adelanta",
+    "hint": "No muevas el peón: lleva el rey hacia la sexta fila.",
+    "explanation": "**Rb5! Rc8 Rc6 Rd8 Rd6**: el rey blanco avanza en diagonal hacia las **casillas clave** del peón de e4 (d6, e6 y f6). Con el rey en d6 el peón coronará escoltado; avanzar el peón antes habría permitido al rey negro bloquearlo.",
+    "source": "propio"
+  },
+  {
+    "id": "final-011",
     "fen": "8/4P1q1/3k4/8/8/8/5PPP/6K1 w - - 0 1",
     "moves": [
       "e7e8n",
@@ -75,7 +208,7 @@
     "source": "propio"
   },
   {
-    "id": "final-005",
+    "id": "final-012",
     "fen": "R7/P4k2/8/8/8/8/r4PK1/8 w - - 0 1",
     "moves": [
       "a8h8"
@@ -94,7 +227,7 @@
     "source": "propio"
   },
   {
-    "id": "final-006",
+    "id": "final-013",
     "fen": "6k1/ppp3pp/8/PPP5/8/8/6PP/6K1 w - - 0 1",
     "moves": [
       "b5b6",
@@ -117,7 +250,26 @@
     "source": "propio"
   },
   {
-    "id": "final-007",
+    "id": "final-014",
+    "fen": "rnbqk1nr/ppp2ppp/8/4P3/1BP5/4p3/PP3PPP/RN1QKBNR b KQkq - 0 6",
+    "moves": [
+      "e3f2",
+      "e1e2",
+      "f2g1n"
+    ],
+    "rating": 1600,
+    "themes": [
+      "underPromotion",
+      "opening",
+      "advantage"
+    ],
+    "title": "La trampa de Lasker",
+    "hint": "Tu peón llega a la última fila. ¿Qué pieza conviene elegir?",
+    "explanation": "**...exf2+ Re2** y ahora **...fxg1=C+!**: una **subpromoción** con jaque. Si coronas dama, **Txg1** y las blancas se salvan; con el caballo das jaque, ganas tiempo y te quedas con una pieza de más.",
+    "source": "propio"
+  },
+  {
+    "id": "final-015",
     "fen": "1r6/1P1R1pk1/3P4/5p2/6p1/7p/7P/4K3 b - - 1 41",
     "moves": [
       "g4g3",
