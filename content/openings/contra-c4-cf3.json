@@ -1,0 +1,142 @@
+{
+  "id": "contra-c4-cf3",
+  "name": "Contra 1.c4 y 1.Cf3",
+  "eco": "A04–A15",
+  "color": "black",
+  "group": "Con negras: otras aperturas",
+  "summary": "Contra la Inglesa (1.c4) y la Reti (1.Cf3) jugamos con ...Cf6, ...e6 y ...d5: la misma estructura del Gambito de Dama Rehusado. Si las blancas juegan d4, transponemos a terreno conocido.",
+  "ideas": [
+    "**Economía de estudio:** con ...Cf6, ...e6, ...d5, ...Ae7 y ...O-O llegamos muchas veces al **Gambito de Dama Rehusado** o al **Catalán** que ya conocemos.",
+    "Contra **1.Cf3** jugamos **1...d5**: ocupamos el centro. Si 2.d4, seguimos con ...Cf6 y llegamos al GDR o al Londres (con ...c5).",
+    "Si las blancas evitan d4 y hacen un **fianchetto (g3, Ag2)**, nuestro centro con peones en d5 y e6 es sólido; el plan es **...c5, ...Cc6** y ganar espacio.",
+    "Contra el ataque **1.c4 Cf6 2.Cc3 e6 3.e4** respondemos **3...d5**: el contraataque en el centro. Tras 4.e5 d4 la partida se vuelve táctica pero con buen juego para las negras.",
+    "Contra el **Ataque Indio de Rey (g3, Ag2, d3, Cbd2, e4)**, cuando las blancas jueguen e4, mantenemos el centro con ...c5 y ...Cc6 y ganamos espacio en el flanco de dama con ...b5."
+  ],
+  "plans": "**Estructura de GDR.** Si las blancas juegan d4 en algún momento, la posición será un Gambito de Dama Rehusado o un Catalán: aplicamos los planes de esa apertura (...Ce4 de Lasker, ...dxc4 seguido de ...c5, etc.).\n\n**Estructuras de Inglesa/Reti sin d4.** Las blancas presionan d5 con c4 y el alfil de g2. Nosotros mantenemos el peón de d5 con ...e6 y ...c6 o ganamos espacio con **...c5 y ...Cc6**. Si cambian en d5, recapturamos con el peón de e y nuestro alfil de c8 queda libre. El alfil de dama suele ir a **b7** (tras ...b6) para neutralizar el de g2.\n\n**Errores comunes.** Empujar ...d4 sin apoyo (el peón se convierte en blanco de e3 o b4), dejar el peón de b7 sin defensa contra el alfil de g2 tras ...dxc4, y olvidar el desarrollo por querer ganar espacio con peones."
+  ,
+  "lines": [
+    {
+      "name": "1.c4 Cf6 2.Cc3 e6 3.d4 d5: GDR",
+      "moves": "c4 Nf6 Nc3 e6 d4 d5 Bg5 Be7",
+      "comments": {
+        "1": "La Apertura Inglesa: las blancas controlan d5 desde el flanco.",
+        "2": "Desarrollo flexible: el caballo controla e4 y d5.",
+        "3": "Las blancas refuerzan d5.",
+        "4": "Preparamos ...d5 con apoyo.",
+        "5": "Las blancas juegan d4.",
+        "6": "¡Ya estamos en el Gambito de Dama Rehusado!",
+        "8": "Desclavamos como en el GDR: luego ...O-O, ...h6 y ...Ce4."
+      }
+    },
+    {
+      "name": "1.c4 Cf6 2.Cc3 e6 3.Cf3 d5 4.d4 Ae7",
+      "moves": "c4 Nf6 Nc3 e6 Nf3 d5 d4 Be7 Bf4 O-O e3 c5",
+      "comments": {
+        "5": "Las blancas siguen desarrollándose sin jugar d4.",
+        "6": "Ocupamos el centro.",
+        "7": "Transposición al GDR.",
+        "8": "Desarrollo y preparación del enroque.",
+        "9": "El sistema con Af4.",
+        "10": "Rey seguro.",
+        "12": "Igual que en el GDR: contra Af4, atacamos el centro con ...c5."
+      }
+    },
+    {
+      "name": "1.c4 Cf6 2.Cc3 e6 3.e4 d5",
+      "moves": "c4 Nf6 Nc3 e6 e4 d5 e5 d4 exf6 dxc3 bxc3 Qxf6 d4 c5 Nf3 cxd4 cxd4 Bb4+",
+      "comments": {
+        "5": "Las blancas intentan ocupar el centro con dos peones.",
+        "6": "¡Contraataque central! Atacamos e4.",
+        "7": "Las blancas avanzan atacando nuestro caballo.",
+        "8": "Respondemos atacando el caballo de c3.",
+        "9": "Las blancas capturan el caballo.",
+        "10": "Y nosotros el suyo.",
+        "11": "Las blancas recapturan.",
+        "12": "Recuperamos el peón: material igualado y la dama activa.",
+        "13": "Las blancas forman un centro.",
+        "14": "Atacamos el centro blanco de inmediato.",
+        "16": "Cambiamos para dejar a las blancas con un peón de d4 que hay que vigilar.",
+        "18": "Jaque y desarrollo: las blancas no pueden enrocar con facilidad. Juego cómodo para las negras."
+      }
+    },
+    {
+      "name": "1.c4 Cf6 2.g3 e6: estructura Catalana",
+      "moves": "c4 Nf6 g3 e6 Bg2 d5 Nf3 Be7 O-O O-O b3 c5",
+      "comments": {
+        "3": "Las blancas preparan el fianchetto.",
+        "4": "Preparamos ...d5 con apoyo.",
+        "5": "El alfil en g2 mira a la gran diagonal y a d5.",
+        "6": "Ocupamos el centro.",
+        "8": "Desarrollo sólido.",
+        "10": "Rey seguro.",
+        "11": "Las blancas preparan Ab2, sin jugar d4.",
+        "12": "Ganamos espacio en el centro. Luego ...Cc6, ...b6 y ...Ab7 para neutralizar el alfil de g2."
+      }
+    },
+    {
+      "name": "1.c4 Cf6 2.Cf3: Catalán por transposición",
+      "moves": "c4 Nf6 Nf3 e6 g3 d5 Bg2 Be7 O-O O-O d4 dxc4",
+      "comments": {
+        "3": "Desarrollo del caballo.",
+        "4": "La estructura de siempre.",
+        "6": "Ocupamos el centro.",
+        "8": "Desarrollo sólido.",
+        "10": "Rey seguro.",
+        "11": "Las blancas juegan d4: estamos en el Catalán.",
+        "12": "Como en el Catalán del GDR: tomamos en c4 y luego ...a6 y ...b5 o ...c5."
+      }
+    },
+    {
+      "name": "1.Cf3 d5 2.d4 Cf6 3.c4 e6: GDR",
+      "moves": "Nf3 d5 d4 Nf6 c4 e6 Nc3 Be7",
+      "comments": {
+        "1": "La Apertura Reti: desarrollo flexible que no compromete el centro.",
+        "2": "Ocupamos el centro.",
+        "3": "Las blancas ocupan d4.",
+        "4": "Desarrollo natural.",
+        "5": "Las blancas juegan el Gambito de Dama.",
+        "6": "Defendemos d5: Gambito de Dama Rehusado.",
+        "8": "Seguimos con nuestro repertorio: ...O-O y, contra Ag5, ...h6 y ...Ce4."
+      }
+    },
+    {
+      "name": "1.Cf3 d5 2.d4 Cf6 3.Af4 c5: Londres",
+      "moves": "Nf3 d5 d4 Nf6 Bf4 c5 e3 Nc6 c3 Qb6",
+      "comments": {
+        "5": "Las blancas eligen el Sistema Londres.",
+        "6": "La receta contra el Londres: atacamos d4 de inmediato.",
+        "8": "Más presión sobre d4.",
+        "10": "La dama ataca b2: continuamos como en el repertorio contra el Londres."
+      }
+    },
+    {
+      "name": "1.Cf3 d5 2.g3: Ataque Indio de Rey",
+      "moves": "Nf3 d5 g3 Nf6 Bg2 e6 O-O Be7 d3 O-O Nbd2 c5 e4 Nc6",
+      "comments": {
+        "3": "Las blancas preparan el fianchetto.",
+        "4": "Desarrollo natural.",
+        "6": "Peones en d5 y e6: centro sólido.",
+        "8": "Desarrollo y preparación del enroque.",
+        "9": "El Ataque Indio de Rey: las blancas preparan e4.",
+        "10": "Rey seguro.",
+        "11": "Las blancas apoyan e4.",
+        "12": "Ganamos espacio en el flanco de dama.",
+        "13": "Las blancas atacan nuestro centro.",
+        "14": "Desarrollo y control de d4. Plan: ...b5, ...Ab7 y ...Dc7; si e5, el caballo de f6 irá a d7."
+      }
+    },
+    {
+      "name": "1.Cf3 d5 2.c4 e6: Reti",
+      "moves": "Nf3 d5 c4 e6 g3 Nf6 Bg2 Be7 O-O O-O b3 c5",
+      "comments": {
+        "3": "Las blancas atacan d5 desde el flanco.",
+        "4": "Defendemos d5 con un peón, igual que en el GDR.",
+        "6": "Desarrollo natural.",
+        "8": "Preparamos el enroque.",
+        "10": "Rey seguro.",
+        "11": "Las blancas preparan Ab2.",
+        "12": "Ganamos espacio en el centro: hemos llegado a la misma posición que con 1.c4 Cf6 2.g3."
+      }
+    }
+  ]
+}

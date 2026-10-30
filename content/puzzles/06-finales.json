@@ -1,0 +1,63 @@
+[
+  {
+    "id": "final-002",
+    "fen": "8/4P1q1/3k4/8/8/8/5PPP/6K1 w - - 0 1",
+    "moves": [
+      "e7e8n",
+      "d6d5",
+      "e8g7"
+    ],
+    "rating": 1400,
+    "themes": [
+      "endgame",
+      "underPromotion",
+      "fork"
+    ],
+    "title": "No siempre dama",
+    "hint": "Coronar dama no da jaque... pero hay otra pieza que sí.",
+    "explanation": "**e8=C+!** es una **subpromoción**: el nuevo caballo da jaque al rey de d6 y ataca a la dama de g7 a la vez. Tras **...Rd5 Cxg7** las blancas se quedan con pieza y tres peones de ventaja.",
+    "source": "propio"
+  },
+  {
+    "id": "final-003",
+    "fen": "R7/P4k2/8/8/8/8/r4PK1/8 w - - 0 1",
+    "moves": [
+      "a8h8"
+    ],
+    "rating": 1500,
+    "themes": [
+      "endgame",
+      "rookEndgame",
+      "skewer",
+      "promotion",
+      "oneMove"
+    ],
+    "title": "La torre se aparta",
+    "hint": "Tu torre estorba a su propio peón. ¿A dónde puede ir para que, si la negra captura el peón, haya una sorpresa?",
+    "explanation": "**Th8!** deja libre la casilla a8. Si **...Txa7**, **Th7+** ensarta al rey y gana la torre; y si las negras no capturan, **a8=D** corona. Es la ensartada típica de los finales de torre con peón en a7.",
+    "source": "propio"
+  },
+  {
+    "id": "final-001",
+    "fen": "6k1/ppp3pp/8/PPP5/8/8/6PP/6K1 w - - 0 1",
+    "moves": [
+      "b5b6",
+      "a7b6",
+      "c5c6",
+      "b7c6",
+      "a5a6"
+    ],
+    "rating": 1550,
+    "themes": [
+      "endgame",
+      "pawnEndgame",
+      "advancedPawn",
+      "sacrifice",
+      "promotion"
+    ],
+    "title": "La ruptura de los tres peones",
+    "hint": "Tres peones contra tres: si sacrificas dos, el tercero corona. Empieza por el del centro.",
+    "explanation": "**b6!** es la ruptura clásica: tras **...axb6 c6! bxc6 a6** el peón de a corona porque el rey negro está demasiado lejos (si **...cxb6**, entonces **a6!**). Con peones enfrentados en a5-b5-c5, el golpe siempre empieza por el **peón central**.",
+    "source": "propio"
+  }
+]

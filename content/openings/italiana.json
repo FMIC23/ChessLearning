@@ -1,0 +1,134 @@
+{
+  "id": "italiana",
+  "name": "Apertura Italiana",
+  "eco": "C50–C55",
+  "color": "white",
+  "group": "Con blancas: 1.e4",
+  "summary": "Desarrollo rápido, enroque temprano y presión sobre f7. Con c3 preparamos d4 para quedarnos con el centro, o lo jugamos con calma con d3 y maniobras de piezas (Giuoco Pianissimo).",
+  "ideas": [
+    "El alfil de **c4** apunta a **f7**, el punto más débil de las negras al principio: solo lo defiende el rey.",
+    "**c3** es la jugada clave: prepara **d4** para levantar un centro de peones (e4 + d4) y abre a la dama la diagonal d1–a4.",
+    "Contra 3...Ac5 4.c3 Cf6 jugamos **5.d3** (Giuoco Pianissimo): partida lenta y maniobrera en la que el caballo viaja **Cbd2–f1–g3** y la ruptura **d4** llega más tarde, cuando estamos preparados.",
+    "Contra la Defensa de los Dos Caballos (3...Cf6) recomendamos **4.d3**: defiende e4 y nos lleva a estructuras parecidas a las del Pianissimo. 4.Cg5 es más ambiciosa pero exige memorizar mucha teoría.",
+    "Si las negras retroceden el alfil de c5 o juegan ...d6 pronto, el plan **c3 + d4** gana espacio con tempo.",
+    "En casi todas las líneas: **enroque corto, Te1, Ab3** (para que el alfil no sufra ataques con ...d5 o ...Ca5) y **h3** para quitar la casilla g4 al alfil y al caballo negros."
+  ],
+  "plans": "**Estructura del Pianissimo (peones en c3, d3 y e4).** Es una estructura sólida: nadie tiene debilidades y gana quien maniobre mejor. El plan típico es Te1, Ab3 (o Ac2 si las negras amenazan ...Ca5), Cbd2–f1–g3 para vigilar f5 y h5, h3 y, cuando todo esté listo, la ruptura **d3–d4**. A veces también se gana espacio en el flanco de dama con a4 y b4.\n\n**Estructura con centro (peones en d4 y e4).** Si las negras permiten c3 y d4 con cambio en d4 y recaptura cxd4, tenemos dos peones centrales magníficos. El plan es mantenerlos (Cc3, Ae3) y avanzar **d5** o **e5** cuando haga daño. Las negras intentarán romperlos con ...d5.\n\n**Errores comunes.** Lanzar Cg5 o Dh5 sin preparación (las negras se defienden y nos quedamos atrasados en desarrollo), olvidar que el alfil de c4 puede ser atacado con ...d5 o ...Ca5, y jugar d4 sin c3 dejando que las negras cambien en d4 y nos quiten el centro. Con un peón en d3, cuidado también con la clavada ...Ag4 sobre el caballo de f3: h3 la evita.",
+  "lines": [
+    {
+      "name": "Giuoco Pianissimo: 4.c3 Cf6 5.d3 d6",
+      "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d3 d6 O-O O-O h3 a6 Re1 Ba7 Bb3 Be6 Nbd2",
+      "comments": {
+        "1": "Ocupamos el centro y abrimos diagonales a la dama y al alfil de f1.",
+        "3": "Desarrollamos con amenaza: el caballo ataca el peón de e5.",
+        "4": "Las negras defienden e5 desarrollando una pieza.",
+        "5": "El alfil apunta a f7, el punto débil de las negras.",
+        "6": "Las negras copian la idea: su alfil apunta a f2.",
+        "7": "La jugada típica de la Italiana: prepara d4 y abre la diagonal d1–a4 para la dama.",
+        "8": "Las negras atacan e4 y amenazan cogerlo.",
+        "9": "Giuoco Pianissimo: defendemos e4 con un peón y dejamos d4 para más adelante. Partida sólida y sin riesgos.",
+        "10": "Las negras también refuerzan su centro.",
+        "13": "Antes de mover la torre quitamos la casilla g4: así ...Cg4, que atacaría f2 junto al alfil de c5, deja de ser una molestia.",
+        "14": "Las negras preparan ...Aa7 para conservar el alfil si jugamos d4 o b4.",
+        "15": "Ahora sí, la torre se coloca detrás del peón de e4 y prepara una futura ruptura d4.",
+        "17": "Retiramos el alfil antes de que ...b5, ...d5 o ...Ca5 lo molesten. Desde b3 sigue apuntando a f7.",
+        "18": "Las negras ofrecen cambiar alfiles para neutralizar nuestro alfil de b3.",
+        "19": "El caballo de dama no puede ir a c3 (ahí está el peón), así que inicia la maniobra Cbd2–f1–g3, desde donde vigilará f5 y h5. Si ...Axb3, recapturamos con la dama o el peón a."
+      }
+    },
+    {
+      "name": "Giuoco Pianissimo: 5...O-O y la ruptura ...d5",
+      "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d3 O-O O-O d5 exd5 Nxd5 a4 a6 Re1",
+      "comments": {
+        "10": "Las negras enrocan primero y se preparan para liberar el juego con ...d5.",
+        "11": "Enrocamos también: el rey a salvo antes de abrir el centro.",
+        "12": "La ruptura activa: las negras quieren cambiar el peón de e4 y abrir líneas.",
+        "13": "Cambiamos para abrir la columna e, donde pronto colocaremos la torre contra el peón de e5.",
+        "14": "El caballo negro se centraliza, pero en d5 puede ser objetivo de nuestras piezas.",
+        "15": "Ganamos espacio en el flanco de dama y preparamos a5 o Ca3–c2, a la vez que damos al alfil la casilla a2.",
+        "16": "Las negras evitan Ab5 y que avancemos a5 con comodidad.",
+        "17": "La torre presiona el peón de e5, que solo está defendido por el caballo. Posición equilibrada con juego cómodo."
+      }
+    },
+    {
+      "name": "Giuoco Piano: 4...d6 5.d4 con centro",
+      "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5 c3 d6 d4 exd4 cxd4 Bb6 h3 Nf6 Nc3 O-O O-O",
+      "comments": {
+        "8": "Con ...d6 las negras no atacan e4, así que podemos ir directamente a por el centro.",
+        "9": "¡Ahora sí! Como no hay presión sobre e4, d4 gana el centro con tempo sobre el peón de e5.",
+        "10": "Las negras ceden el centro: si no cambian, d5 ganaría todavía más espacio.",
+        "11": "Recapturamos con el peón: tenemos el centro ideal con peones en d4 y e4.",
+        "12": "El alfil se retira a b6, donde presiona d4.",
+        "13": "Quitamos la casilla g4 al alfil negro, que quería clavar nuestro caballo y presionar d4.",
+        "15": "Defendemos e4 desarrollando. Nuestro centro está bien protegido.",
+        "17": "Rey a salvo. Con el centro de peones tenemos más espacio; el plan es Ae3, Te1 y, en el momento oportuno, d5 o e5."
+      }
+    },
+    {
+      "name": "Defensa de los Dos Caballos: 4.d3 Ae7",
+      "moves": "e4 e5 Nf3 Nc6 Bc4 Nf6 d3 Be7 O-O O-O Re1 d6 c3 Na5 Bb5 a6 Ba4 b5 Bc2",
+      "comments": {
+        "6": "Defensa de los Dos Caballos: las negras atacan e4 en lugar de desarrollar el alfil.",
+        "7": "Nuestra recomendación: defendemos e4 con calma. La alternativa 4.Cg5 ataca f7 y lleva a líneas muy afiladas tras 4...d5 5.exd5 Ca5; es teoría para más adelante.",
+        "8": "Desarrollo modesto y sólido de las negras.",
+        "11": "La torre defiende e4 y nos permite usar más tarde el caballo de f3 con libertad.",
+        "13": "La c3 de siempre: prepara d4 y da una casilla de retirada al alfil en c2.",
+        "14": "Las negras atacan el alfil para cambiarlo, ya que es nuestra pieza más peligrosa.",
+        "15": "El alfil se aparta del caballo de a5 sin dejarse cambiar y, de paso, clava al peón de d7 y provoca ...a6.",
+        "16": "Las negras echan al alfil y ganan espacio.",
+        "17": "Seguimos retirando el alfil por la diagonal a4–e8 sin perder material.",
+        "19": "El alfil llega a c2: a salvo de cambios y apuntando al flanco de rey. Ahora el plan es Cbd2–f1–g3 y d4."
+      }
+    },
+    {
+      "name": "Dos Caballos: 4.d3 Ac5 (transposición al Pianissimo)",
+      "moves": "e4 e5 Nf3 Nc6 Bc4 Nf6 d3 Bc5 c3 d6 O-O O-O h3",
+      "comments": {
+        "8": "Las negras sacan el alfil a c5 y la posición se parece mucho al Giuoco Pianissimo.",
+        "9": "Con c3 llegamos exactamente a la posición del Pianissimo: el mismo plan sirve en las dos aperturas.",
+        "10": "Las negras refuerzan e5.",
+        "11": "Enroque antes de nada.",
+        "13": "Como en el Pianissimo: primero h3 (fuera ...Cg4 y ...Ag4), luego Te1, Ab3, Cbd2–f1–g3 y, al final, d4."
+      }
+    },
+    {
+      "name": "Defensa Húngara: 3...Ae7 4.d4 d6 5.d5",
+      "moves": "e4 e5 Nf3 Nc6 Bc4 Be7 d4 d6 d5 Nb8 Bd3 Nf6 c4 O-O Nc3",
+      "comments": {
+        "6": "Defensa Húngara: muy sólida pero pasiva. El alfil en e7 no presiona nada.",
+        "7": "Contra una defensa pasiva tomamos el centro de inmediato.",
+        "8": "Las negras mantienen el peón de e5.",
+        "9": "Ganamos espacio con tempo sobre el caballo de c6.",
+        "10": "El caballo tiene que retroceder: las negras han perdido tiempo.",
+        "11": "El alfil se retira para defender e4 y dejar libre c4 al peón.",
+        "13": "Con c4 fijamos la cadena de peones d5–c4 y nos quedamos con mucho espacio, como en una India de Rey al revés.",
+        "15": "Desarrollo natural. Plan: h3, Ae3, y avance en el flanco de dama con b4 y c5."
+      }
+    },
+    {
+      "name": "Defensa Húngara: 4...exd4 5.Cxd4",
+      "moves": "e4 e5 Nf3 Nc6 Bc4 Be7 d4 exd4 Nxd4 Nf6 Nc3 O-O O-O",
+      "comments": {
+        "8": "Las negras cambian en d4 y ceden el centro.",
+        "9": "Recuperamos el peón: tenemos el peón de e4 contra ninguno de las negras en el centro.",
+        "10": "Las negras atacan e4. Si 6...Cxe4 7.Cxe4 d5, el golpe se resuelve bien para nosotros.",
+        "11": "Defendemos e4 desarrollando.",
+        "13": "Enroque y ventaja de espacio. Plan: Ae3, f4 o Te1, aprovechando el peón central."
+      }
+    },
+    {
+      "name": "Rara: 3...Cd4 y el golpe Axf7+",
+      "moves": "e4 e5 Nf3 Nc6 Bc4 Nd4 Nxd4 exd4 O-O Bc5 Bxf7+ Kxf7 Qh5+ g6 Qxc5",
+      "comments": {
+        "6": "Una jugada tramposa: si 4.Cxe5? Dg5! ataca el caballo y g2 a la vez, y las negras ganan material.",
+        "7": "Lo más sencillo: cambiamos el caballo y no picamos el anzuelo del peón de e5.",
+        "8": "Las negras tienen un peón doblado en d4 que nos estorba un poco.",
+        "9": "Enroque. Ahora c3 eliminaría el peón de d4.",
+        "10": "Parece natural defender d4, pero el alfil de c5 queda sin protección...",
+        "11": "¡Golpe táctico! Sacrificamos el alfil para descubrir un jaque doble de dama.",
+        "13": "La dama da jaque y, a la vez, ataca el alfil de c5, que no tiene defensa.",
+        "15": "Recuperamos la pieza y ganamos un peón; además el rey negro ha perdido el enroque."
+      }
+    }
+  ]
+}

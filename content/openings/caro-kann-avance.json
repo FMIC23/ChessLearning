@@ -1,0 +1,102 @@
+{
+  "id": "caro-kann-avance",
+  "name": "Caro-Kann: Variante del Avance (3.e5)",
+  "eco": "B12",
+  "color": "white",
+  "group": "Con blancas: 1.e4",
+  "summary": "Contra la Caro-Kann avanzamos 3.e5 y jugamos el sistema tranquilo Cf3, Ae2 y O-O (variante Short). Ganamos espacio, desarrollamos sin riesgo y vigilamos el alfil negro de f5.",
+  "ideas": [
+    "**3.e5** gana espacio y quita la casilla f6 al caballo negro. A diferencia de la Francesa, el alfil de c8 negro sale fuera de la cadena (a f5) antes de ...e6.",
+    "Sistema **Cf3, Ae2, O-O**: desarrollo sencillo y sólido. Más tarde, **c3** o **c4**, **Cbd2–b3** y **Ae3** según lo que hagan las negras.",
+    "El alfil de **f5** es un buen objetivo: **Ch4** permite cambiarlo; y si las negras lo retiran a g6, h4–h5 puede molestarlo.",
+    "Contra **...c5** con el centro aún abierto, a veces conviene **dxc5** y jugar contra el peón aislado o recuperar material con piezas, en vez de sostener d4 a toda costa.",
+    "Contra **3...c5** jugamos **4.dxc5**: las negras tienen que gastar tiempo para recuperar el peón y nosotros desarrollamos con Cf3, Ad3 y Af4 controlando la casilla e5.",
+    "La casilla **d4** es clave: si cae el peón, un caballo blanco en d4 es una pieza magnífica."
+  ],
+  "plans": "**Estructura con e5 y d4.** Es parecida a la Francesa del Avance, pero las negras no tienen el alfil encerrado. Por eso no hay que precipitarse: completamos el desarrollo (Cf3, Ae2, O-O, Cbd2, c3) y buscamos jugar en el flanco de rey (Ch4 contra el alfil, f4–f5 en algunos casos) o ganar espacio en el de dama con c4 o b4.\n\n**Contra ...c5.** Las negras atacan d4 como en la Francesa. Muchas veces la mejor respuesta es **Ae3** y aceptar que el peón de d4 se cambie: recapturamos con el caballo (Cxd4), que se queda centralizado. Si tenemos peón en c5 tras dxc5, Af4 y Ad3 controlan la casilla e5 y el peón de c5 frena el desarrollo negro.\n\n**Errores comunes.** Lanzar g4 y h4 sin preparación (debilita nuestro rey y, si las negras aguantan, nuestra posición se cae), dejar e5 sin defensa cuando las negras juegan ...f6 o ...Cd7, y olvidar que tras ...Db6 el peón de b2 puede estar colgando.",
+  "lines": [
+    {
+      "name": "Sistema Short: 5...Cd7 6.O-O h6",
+      "moves": "e4 c6 d4 d5 e5 Bf5 Nf3 e6 Be2 Nd7 O-O h6 Nbd2 Ne7 Nb3",
+      "comments": {
+        "2": "La Caro-Kann: las negras preparan ...d5 sin encerrar su alfil de c8.",
+        "3": "Ocupamos el centro.",
+        "4": "Las negras atacan e4.",
+        "5": "Avance: ganamos espacio y quitamos la casilla f6 al caballo negro.",
+        "6": "El alfil sale antes de ...e6: esa es la gran ventaja de la Caro-Kann frente a la Francesa.",
+        "7": "Desarrollo tranquilo del sistema Short.",
+        "8": "Las negras cierran su cadena de peones.",
+        "9": "Preparamos el enroque y mantenemos todo protegido.",
+        "10": "El caballo defiende la ruptura ...c5 y vigila e5.",
+        "11": "Rey a salvo.",
+        "12": "Las negras dan una casilla de retirada al alfil por si jugamos Ch4.",
+        "13": "El caballo va hacia b3, desde donde controla c5 y d4.",
+        "15": "El caballo en b3 frena ...c5. Plan: Ad2, c3 o c4 y juego en el flanco de dama."
+      }
+    },
+    {
+      "name": "Sistema Short: 5...c5 6.Ae3",
+      "moves": "e4 c6 d4 d5 e5 Bf5 Nf3 e6 Be2 c5 Be3 cxd4 Nxd4 Ne7 O-O Nbc6 c3",
+      "comments": {
+        "10": "Las negras atacan d4 de inmediato: la ruptura típica.",
+        "11": "El alfil defiende d4. Si cae el peón, recuperaremos con el caballo.",
+        "12": "Las negras cambian.",
+        "13": "El caballo se centraliza en d4 y ataca al alfil de f5.",
+        "14": "Las negras desarrollan; ...Cbc6 vendrá después para cambiar nuestro caballo fuerte.",
+        "15": "Enroque.",
+        "17": "Reforzamos d4: si ...Cxd4, recapturamos con el peón o con el alfil. Posición sólida con espacio en el centro."
+      }
+    },
+    {
+      "name": "Sistema Short: 5...Ce7 6.O-O c5 y 8.dxc5",
+      "moves": "e4 c6 d4 d5 e5 Bf5 Nf3 e6 Be2 Ne7 O-O c5 c3 Nbc6 dxc5 Ng6 b4",
+      "comments": {
+        "10": "El caballo va a e7 para luego saltar a c6 o g6.",
+        "11": "Enroque: la posición sigue siendo cerrada.",
+        "12": "Las negras atacan d4.",
+        "13": "Defendemos d4 con un peón.",
+        "14": "Más presión sobre d4.",
+        "15": "¡Ahora cogemos el peón! Con c3 ya jugado, podremos sostenerlo con b4; las negras tienen desarrollo lento para recuperarlo.",
+        "16": "El caballo ataca e5, que ahora solo defiende el caballo de f3.",
+        "17": "Defendemos c5 con el peón. Si ...Cgxe5, Cd4 ataca el alfil de f5 y tenemos espacio en el flanco de dama."
+      }
+    },
+    {
+      "name": "Sistema Short: 6...Ce7 7.Cbd2 Ag6 8.Ch4",
+      "moves": "e4 c6 d4 d5 e5 Bf5 Nf3 e6 Be2 Nd7 O-O Ne7 Nbd2 Bg6 Nh4",
+      "comments": {
+        "12": "El caballo de e7 quiere ir a f5 o g6.",
+        "13": "El caballo va a d2 en lugar de c3 para poder jugar c3 o c4 más tarde.",
+        "14": "Las negras retiran el alfil para no ser atacadas por Ch4 o g4.",
+        "15": "Atacamos el alfil de g6 para conseguir la pareja de alfiles. Tras Cxg6 las negras recapturan con un peón y su estructura queda menos flexible."
+      }
+    },
+    {
+      "name": "3...c5 4.dxc5 e6",
+      "moves": "e4 c6 d4 d5 e5 c5 dxc5 e6 Nf3 Bxc5 Bd3 Ne7 O-O Nbc6 Bf4",
+      "comments": {
+        "6": "Las negras juegan ...c5 en dos tiempos, sin miedo a perder un tiempo, porque nuestro e5 ha quitado la casilla f6.",
+        "7": "Cogemos el peón: las negras tienen que gastar tiempo en recuperarlo.",
+        "8": "Las negras abren la diagonal del alfil para recuperar el peón.",
+        "9": "Desarrollo y defensa de e5.",
+        "10": "Las negras recuperan el peón.",
+        "11": "El alfil apunta al flanco de rey negro y controla f5.",
+        "13": "Enroque.",
+        "15": "Defendemos e5 por segunda vez y controlamos la casilla d6. Tenemos espacio y un desarrollo cómodo."
+      }
+    },
+    {
+      "name": "3...c5 4.dxc5 Cc6 5.Ab5",
+      "moves": "e4 c6 d4 d5 e5 c5 dxc5 Nc6 Bb5 e6 Be3 Ne7 c3 Bd7 Bxc6 Nxc6 f4",
+      "comments": {
+        "8": "Las negras atacan e5 antes de recuperar el peón.",
+        "9": "Clavamos el caballo, que defiende el centro.",
+        "10": "Las negras abren la diagonal de su alfil para recuperar c5.",
+        "11": "Defendemos el peón de c5 por el momento y desarrollamos.",
+        "13": "Defendemos el peón de c5 de forma estable con b4 si hiciera falta.",
+        "15": "Cambiamos en c6 para controlar la casilla d4 y debilitar el control negro de e5.",
+        "17": "Defendemos e5 con un peón: el caballo de g1 irá a f3 después. Controlamos d4 y e5 y el peón de c5 frena el alfil negro."
+      }
+    }
+  ]
+}

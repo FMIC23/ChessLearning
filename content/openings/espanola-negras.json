@@ -1,0 +1,120 @@
+{
+  "id": "espanola-negras",
+  "name": "Española con negras",
+  "eco": "C68–C99",
+  "color": "black",
+  "group": "Con negras: contra 1.e4",
+  "summary": "Contra la Apertura Española jugamos la Defensa Morphy (3...a6) con ...Cf6, ...Ae7, ...b5, ...d6 y ...O-O: el sistema cerrado clásico. También aprendemos a afrontar la variante del cambio.",
+  "ideas": [
+    "**3...a6** pregunta al alfil desde el principio. Si se retira a a4, siempre tenemos ...b5 para echarlo cuando nos convenga.",
+    "La Española amenaza a largo plazo con **Axc6 y Cxe5**; mientras e4 no esté defendido o el peón de e5 tenga apoyo, esa amenaza no funciona. Por eso jugamos **...Ae7, ...b5 y ...d6** en el momento justo.",
+    "Elegimos **7...d6** en vez de 7...O-O: así evitamos el Anti-Marshall y las líneas de gambito, con una posición sólida y clara.",
+    "Sistema cerrado (Chigorin): **...O-O, ...Ca5** para echar el alfil de b3 y **...c5** para ganar espacio en el flanco de dama; la dama suele ir a **c7**.",
+    "En la **variante del cambio (4.Axc6 dxc6)** tenemos la pareja de alfiles a cambio de una estructura de peones peor en el flanco de dama. Defendemos e5 con **...f6** o recuperamos actividad con ...Ag4 y ...Ad6; evitamos finales simplificados sin plan.",
+    "Si las blancas cambian en c6 más tarde (6.Axc6), recapturamos con el peón de d y **ya no hay amenaza real sobre e5** si defendemos con ...Cd7 o ...Ad6."
+  ],
+  "plans": "**El sistema cerrado.** Tras ...a6, ...Cf6, ...Ae7, ...b5, ...d6 y ...O-O, las blancas juegan c3, h3 y d4. Nuestra estructura con peones en e5 y d6 es muy sólida. El plan clásico es **...Ca5** (atacando el alfil de b3), **...c5** y **...Dc7**: ganamos espacio en el flanco de dama y presionamos d4. Si las blancas cierran con d5, el juego se traslada a los flancos: nosotros con ...c4 y ...Cb7–c5, o con la ruptura ...f5 tras ...Ce8; ellos con Cbd2–f1–g3 y ataque en el flanco de rey.\n\n**Variante del cambio.** La estructura blanca de 4 contra 3 en el flanco de rey le da buenas perspectivas en el final; nosotros tenemos la pareja de alfiles y columnas abiertas. Por eso **no cambiamos piezas sin motivo**: buscamos juego activo con los alfiles y, si llegamos a un final, centralizamos el rey rápido.\n\n**Errores comunes.** Cambiar en e4 con ...Cxe4 cuando la columna e está abierta y la torre blanca está en e1; olvidar que tras ...b5 el alfil de b3 mira a f7 (cuidado con Cg5); y jugar ...Ca5 sin tener luego ...c5 o ...Cc4 preparados, dejando al caballo fuera de juego.",
+  "lines": [
+    {
+      "name": "Cerrada: 9.h3 Ca5 10.Ac2 c5 (Chigorin)",
+      "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 O-O h3 Na5 Bc2 c5",
+      "comments": {
+        "5": "La Apertura Española: el alfil ataca al defensor de e5.",
+        "6": "Defensa Morphy: preguntamos al alfil de inmediato.",
+        "7": "El alfil mantiene la clavada a distancia.",
+        "8": "Desarrollo con ataque al peón de e4.",
+        "9": "Las blancas enrocan: Cxe4 es posible, pero las blancas recuperarían el peón con Te1.",
+        "10": "Desarrollo sólido y preparación del enroque.",
+        "11": "Ahora e4 está defendido y las blancas amenazan Axc6 seguido de Cxe5.",
+        "12": "Echamos el alfil y la amenaza desaparece.",
+        "13": "El alfil se coloca en b3, apuntando a f7.",
+        "14": "Defendemos e5 con un peón y abrimos el alfil de c8. Evitamos así el gambito Marshall y el Anti-Marshall.",
+        "15": "Las blancas preparan d4 y dan al alfil la retirada c2.",
+        "16": "Enroque.",
+        "17": "Las blancas evitan ...Ag4, que clavaría el caballo de f3.",
+        "18": "Atacamos el alfil de b3, la mejor pieza blanca.",
+        "19": "El alfil se retira a c2, donde sigue apuntando al flanco de rey.",
+        "20": "Ganamos espacio en el flanco de dama y presionamos d4. Luego ...Dc7 y ...Cc6 o ...Ad7."
+      }
+    },
+    {
+      "name": "Cerrada: 9.d4 Ag4",
+      "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 O-O d4 Bg4",
+      "comments": {
+        "17": "Las blancas juegan d4 sin preparar con h3.",
+        "18": "¡Clavamos el caballo de f3, que defiende d4! Presionamos el centro blanco de inmediato."
+      }
+    },
+    {
+      "name": "Cerrada: 9.d3 Ca5 (Española lenta)",
+      "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 c3 O-O d3 Na5 Bc2 c5",
+      "comments": {
+        "17": "Las blancas juegan con calma: defienden e4 con un peón.",
+        "18": "Mismo plan que en la línea principal: echamos el alfil de b3.",
+        "19": "El alfil se retira para conservarse.",
+        "20": "Espacio en el flanco de dama. Más tarde ...Cc6, ...Te8 y ...Af8: posición cómoda."
+      }
+    },
+    {
+      "name": "Anti-Marshall tardío: 8.a4 Ad7",
+      "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Re1 b5 Bb3 d6 a4 Bd7 c3 O-O",
+      "comments": {
+        "15": "Las blancas atacan nuestro peón de b5 por el flanco.",
+        "16": "Desarrollamos el alfil y conectamos la dama con la torre de a8: si axb5 axb5 Txa8 Dxa8, controlamos la columna a. El peón de b5 se puede sostener con ...Tb8 o ...Ca5.",
+        "17": "Las blancas vuelven al plan con d4.",
+        "18": "Enroque. Posición sólida: luego ...Ca5 o ...Te8."
+      }
+    },
+    {
+      "name": "5.d3: Española moderna",
+      "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 d3 b5 Bb3 Be7 O-O d6 c3 O-O",
+      "comments": {
+        "9": "Las blancas defienden e4 con un peón: nada de Cxe4.",
+        "10": "Echamos el alfil antes de que se instale.",
+        "11": "El alfil se coloca en b3, apuntando a f7.",
+        "12": "Desarrollo sólido.",
+        "14": "Reforzamos e5 y abrimos la diagonal del alfil de c8.",
+        "16": "Rey seguro. Plan: ...Ca5 contra el alfil de b3 y ...c5, como en el sistema cerrado."
+      }
+    },
+    {
+      "name": "Cambio retrasado: 6.Axc6",
+      "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Ba4 Nf6 O-O Be7 Bxc6 dxc6 d3 Nd7",
+      "comments": {
+        "11": "Las blancas cambian el caballo que defiende e5 y amenazan Cxe5.",
+        "12": "Recapturamos hacia el centro: abrimos la dama y el alfil de c8.",
+        "13": "Las blancas defienden e4 (que atacaba nuestro caballo de f6).",
+        "14": "El caballo defiende e5 y puede ir a c5. Tenemos la pareja de alfiles."
+      }
+    },
+    {
+      "name": "Variante del cambio: 4.Axc6 dxc6 5.O-O f6",
+      "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 O-O f6 d4 exd4 Nxd4 c5 Nb3 Qxd1 Rxd1 Bg4 f3 Be6",
+      "comments": {
+        "7": "La variante del cambio: las blancas ceden el alfil para dañar nuestra estructura.",
+        "8": "Recapturamos hacia el centro para abrir la dama y el alfil.",
+        "9": "Ahora sí hay amenaza Cxe5, porque e4 está defendido.",
+        "10": "Defendemos e5 con un peón. Es la forma más sólida.",
+        "11": "Las blancas abren el centro.",
+        "12": "Cambiamos.",
+        "13": "Las blancas recapturan con el caballo, centralizado.",
+        "14": "Echamos el caballo del centro.",
+        "16": "Cambiamos damas: la posición queda más simple.",
+        "18": "Desarrollo con tempo sobre la torre de d1.",
+        "19": "Las blancas atacan el alfil.",
+        "20": "El alfil se retira a e6, donde ataca el caballo de b3 por c4. Tenemos la pareja de alfiles y buena actividad."
+      }
+    },
+    {
+      "name": "Variante del cambio: 5.d4 exd4",
+      "moves": "e4 e5 Nf3 Nc6 Bb5 a6 Bxc6 dxc6 d4 exd4 Qxd4 Qxd4 Nxd4 Bd7",
+      "comments": {
+        "9": "Las blancas abren el centro de inmediato.",
+        "10": "Cambiamos.",
+        "11": "La dama recaptura y ofrece el cambio de damas.",
+        "12": "Aceptamos el final: la pareja de alfiles compensa nuestra estructura.",
+        "14": "Desarrollo y preparación de ...O-O-O: así ponemos la torre en la columna d abierta."
+      }
+    }
+  ]
+}

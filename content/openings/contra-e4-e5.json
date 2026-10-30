@@ -1,0 +1,190 @@
+{
+  "id": "contra-e4-e5",
+  "name": "1.e4 e5 con negras",
+  "eco": "C20–C55",
+  "color": "black",
+  "group": "Con negras: contra 1.e4",
+  "summary": "Respondemos a 1.e4 con 1...e5 y a 2.Cf3 con 2...Cc6: juego abierto y clásico. Aquí están las respuestas a la Italiana, la Escocesa, el Gambito de Rey y la Vienesa.",
+  "ideas": [
+    "**1...e5** lucha por el centro desde el principio y abre diagonales a la dama y al alfil de f8. Las piezas salen rápido: Cc6, Cf6, Ac5 o Ae7 y enroque.",
+    "Contra la **Italiana (3.Ac4)** jugamos **3...Ac5**: el alfil apunta a f2 igual que el blanco a f7. La alternativa 3...Cf6 (Dos Caballos) es más afilada; en este repertorio la estructura de ...Cf6 y ...d6 llega igualmente con 4.d3 Cf6.",
+    "Si las blancas juegan **c3 y d4**, cambiamos en d4 y damos jaque en b4: luego la ruptura **...d5** rompe su centro. Contra el lento **d3**, jugamos ...d6, ...a6 y ...Aa7 para conservar nuestro alfil.",
+    "Contra la **Escocesa (3.d4)** cambiamos en d4 y desarrollamos el alfil a **c5** con presión sobre el caballo de d4.",
+    "Contra el **Gambito de Rey (2.f4)** lo aceptamos y devolvemos el peón con **...d5**: abrimos el centro, desarrollamos rápido y el rey blanco queda expuesto.",
+    "Contra la **Vienesa (2.Cc3)** jugamos **2...Cf6**, y si 3.f4, la respuesta central **3...d5**: un contraataque en el centro es la mejor defensa contra un ataque en el flanco."
+  ],
+  "plans": "**Estructuras abiertas.** Con 1...e5 la partida suele abrirse pronto. Lo más importante es el desarrollo: ninguna pieza dos veces sin motivo, enroque rápido y vigilancia de f7, nuestro punto débil. La ruptura **...d5** es la gran liberadora: cuando la podemos jugar sin perder material, solemos igualar.\n\n**Contra la Italiana lenta (c3 + d3).** Es una posición de maniobras. Nuestro alfil de c5 retrocede a a7 para no ser atacado por b4 o d4; jugamos ...O-O, ...h6 (para evitar Ag5), ...Te8 y a veces ...Ae6 para cambiar el alfil de b3. La ruptura ...d5 llega cuando todo está preparado.\n\n**Errores comunes.** Jugar ...h6 o ...a6 en lugar de desarrollar, dejar el alfil de c5 sin retirada (b4 y d4 lo atrapan), y olvidar el truco Axf7+ seguido de Cg5+ o Dh5+. En el Gambito de Rey, no intentar defender el peón de f4 a toda costa: devolverlo con ...d5 es lo más sano."
+  ,
+  "lines": [
+    {
+      "name": "Italiana: 4.c3 Cf6 5.d4 exd4 6.cxd4 Ab4+ 7.Ad2",
+      "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Bd2 Bxd2+ Nbxd2 d5 exd5 Nxd5 Qb3 Nce7",
+      "comments": {
+        "2": "Respondemos en el centro: el peón de e5 abre la diagonal al alfil y a la dama.",
+        "3": "Las blancas atacan e5.",
+        "4": "Defendemos e5 desarrollando una pieza.",
+        "5": "La Italiana: el alfil blanco apunta a f7.",
+        "6": "Copiamos la idea: nuestro alfil apunta a f2 y controla d4.",
+        "7": "Las blancas preparan d4 para quedarse con el centro.",
+        "8": "Atacamos e4 al momento, antes de que las blancas jueguen d4 con todo protegido.",
+        "9": "Las blancas atacan nuestro alfil y e5 a la vez.",
+        "10": "Cambiamos: no podemos mantener e5.",
+        "11": "Las blancas tienen dos peones centrales.",
+        "12": "¡Jaque! El alfil tenía que moverse y lo hace ganando un tiempo.",
+        "14": "Cambiamos alfiles: menos piezas atacando a nuestro rey.",
+        "16": "¡La ruptura liberadora! Atacamos el centro blanco: e4 y el alfil de c4.",
+        "17": "Las blancas cambian para no quedar con un peón débil en e4.",
+        "18": "El caballo se centraliza en d5. Las blancas tienen un peón aislado en d4.",
+        "19": "La dama ataca el caballo de d5 y b7.",
+        "20": "Defendemos d5 con el otro caballo. Igualdad: luego ...O-O, ...c6 y presión sobre el peón aislado de d4."
+      }
+    },
+    {
+      "name": "Italiana: 7.Cc3 Cxe4",
+      "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Nc3 Nxe4 O-O Bxc3 d5 Bf6",
+      "comments": {
+        "13": "Las blancas sacrifican el peón de e4 por desarrollo y ataque.",
+        "14": "¡Lo cogemos! El caballo en e4 ataca c3.",
+        "15": "Las blancas enrocan y amenazan Te1 contra nuestro caballo clavado en la columna e.",
+        "16": "Cambiamos el caballo de c3, que defendía e4 y molestaba.",
+        "17": "Las blancas atacan el caballo de c6 en lugar de recapturar.",
+        "18": "El alfil se retira a f6, defendiendo el flanco de rey. Tras Te1 Ce7 Txe4 d6, tenemos un peón de más y una posición sólida."
+      }
+    },
+    {
+      "name": "Italiana lenta: 4.c3 Cf6 5.d3 d6",
+      "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d3 d6 O-O a6 Re1 Ba7 Bb3 O-O",
+      "comments": {
+        "9": "El Giuoco Pianissimo: las blancas defienden e4 y no buscan complicaciones.",
+        "10": "Reforzamos e5 y abrimos la diagonal del alfil de c8.",
+        "11": "Enroque blanco.",
+        "12": "Damos una casilla al alfil (a7) por si las blancas juegan b4 o d4.",
+        "13": "La torre prepara la ruptura d4.",
+        "14": "El alfil se retira antes de que lo ataquen: desde a7 sigue apuntando a f2.",
+        "16": "Rey seguro. Plan: ...h6, ...Te8 y ...Ae6 para cambiar el alfil de b3."
+      }
+    },
+    {
+      "name": "Italiana: 4.d3 Cf6 (transposición)",
+      "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5 d3 Nf6 O-O d6 c3 a6 Re1 Ba7",
+      "comments": {
+        "7": "Las blancas defienden e4 con un peón y van a jugar con calma.",
+        "8": "La estructura de los Dos Caballos con el alfil ya fuera: atacamos e4 y desarrollamos.",
+        "10": "Defendemos e5 y abrimos el alfil de c8.",
+        "11": "Con c3 llegamos al Giuoco Pianissimo.",
+        "12": "Preparamos ...Aa7, como siempre en esta estructura.",
+        "14": "Hemos llegado a la misma posición que en la línea 4.c3 Cf6 5.d3: el mismo plan sirve."
+      }
+    },
+    {
+      "name": "Gambito Evans: 4.b4 Axb4 5.c3 Ae7",
+      "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5 b4 Bxb4 c3 Be7 d4 Na5 Nxe5 Nxc4 Nxc4 d5",
+      "comments": {
+        "7": "El Gambito Evans: las blancas ofrecen un peón para ganar tiempo con c3 y d4.",
+        "8": "Aceptamos: el peón es gratis y el alfil se va con tempo.",
+        "9": "Las blancas atacan el alfil y preparan d4.",
+        "10": "Retirada sólida a e7: el alfil defiende el flanco de rey y no puede ser atacado con d4.",
+        "11": "Las blancas ocupan el centro.",
+        "12": "Atacamos el peligroso alfil de c4: así eliminamos la pieza que apunta a f7.",
+        "13": "Las blancas recuperan el peón de e5.",
+        "14": "Cambiamos el alfil de c4.",
+        "16": "Rompemos el centro y desarrollamos el alfil de c8 con tempo. Tenemos la pareja de alfiles y una posición sana."
+      }
+    },
+    {
+      "name": "Escocesa: 4...Ac5 5.Ae3",
+      "moves": "e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Bc5 Be3 Qf6 c3 Nge7 Bc4 Ne5 Be2 Qg6",
+      "comments": {
+        "5": "La Escocesa: las blancas abren el centro de inmediato.",
+        "6": "Cambiamos: no podemos mantener e5 sin perder tiempo.",
+        "7": "Las blancas recapturan con el caballo, que queda muy centralizado.",
+        "8": "Desarrollo con ataque al caballo de d4.",
+        "9": "Las blancas defienden el caballo con el alfil.",
+        "10": "Más presión sobre d4 y la dama vigila f2.",
+        "11": "Las blancas defienden d4 con un peón.",
+        "12": "Desarrollamos el caballo a e7, desde donde no se bloquea el peón de f.",
+        "13": "Desarrollo blanco hacia f7.",
+        "14": "El caballo ataca el alfil de c4 y se centraliza.",
+        "16": "La dama ataca e4 y g2 a la vez. Juego activo para las negras."
+      }
+    },
+    {
+      "name": "Escocesa: 5.Cxc6 Df6",
+      "moves": "e4 e5 Nf3 Nc6 d4 exd4 Nxd4 Bc5 Nxc6 Qf6 Qd2 dxc6 Nc3 Be6",
+      "comments": {
+        "9": "Las blancas cambian el caballo para evitar la presión.",
+        "10": "¡Intermedia! Antes de recapturar amenazamos mate en f2 con la dama y el alfil.",
+        "11": "La dama defiende f2.",
+        "12": "Recapturamos hacia el centro: abrimos la diagonal del alfil de c8 y la columna d.",
+        "14": "Desarrollamos y preparamos el enroque largo. Las piezas negras están muy activas."
+      }
+    },
+    {
+      "name": "Gambito Escocés: 4.Ac4 Ac5 5.c3 Cf6",
+      "moves": "e4 e5 Nf3 Nc6 d4 exd4 Bc4 Bc5 c3 Nf6 cxd4 Bb4+",
+      "comments": {
+        "7": "El Gambito Escocés: las blancas no recuperan el peón y desarrollan hacia f7.",
+        "8": "Desarrollo con defensa del peón de d4.",
+        "9": "Las blancas ofrecen otro peón.",
+        "10": "No aceptamos el segundo peón: atacamos e4 y desarrollamos.",
+        "11": "Las blancas recuperan el peón.",
+        "12": "Jaque: hemos llegado a la misma posición que en la Italiana con 4.c3 Cf6 5.d4. ¡Una línea menos que memorizar!"
+      }
+    },
+    {
+      "name": "Gambito de Rey aceptado: 3.Cf3 d5 4.exd5 Cf6 5.Ac4",
+      "moves": "e4 e5 f4 exf4 Nf3 d5 exd5 Nf6 Bc4 Nxd5 O-O Be7 d4 O-O",
+      "comments": {
+        "3": "El Gambito de Rey: las blancas ofrecen un peón para abrir la columna f y tomar el centro con d4.",
+        "4": "Aceptamos: ahora el peón de f4 molesta al alfil de c1 blanco.",
+        "5": "Las blancas desarrollan y evitan ...Dh4+.",
+        "6": "La reacción central: devolvemos el peón para abrir el juego y desarrollar rápido.",
+        "8": "No recapturamos con la dama: desarrollamos el caballo, que recuperará el peón.",
+        "9": "Las blancas defienden el peón de d5.",
+        "10": "Recuperamos el peón con un caballo centralizado.",
+        "12": "Desarrollo y preparación del enroque.",
+        "14": "Rey a salvo. Tenemos el peón de f4 de más por ahora y una posición sana."
+      }
+    },
+    {
+      "name": "Gambito de Rey: 5.Ab5+",
+      "moves": "e4 e5 f4 exf4 Nf3 d5 exd5 Nf6 Bb5+ c6 dxc6 Nxc6 d4 Bd6",
+      "comments": {
+        "9": "Jaque para complicar nuestro desarrollo.",
+        "10": "Interponemos el peón: ofrecemos devolver el peón a cambio de un desarrollo rapidísimo.",
+        "11": "Las blancas cogen el peón.",
+        "12": "Recapturamos con el caballo: piezas activas y la columna d abierta.",
+        "13": "Las blancas ocupan el centro.",
+        "14": "El alfil defiende el peón de f4 y prepara el enroque. Juego activo para las negras."
+      }
+    },
+    {
+      "name": "Vienesa: 3.f4 d5",
+      "moves": "e4 e5 Nc3 Nf6 f4 d5 fxe5 Nxe4 Nf3 Be7 d4 O-O Bd3 f5",
+      "comments": {
+        "3": "La Vienesa: las blancas protegen e4 y preparan f4.",
+        "4": "Desarrollo con ataque al peón de e4.",
+        "5": "Las blancas atacan e5 como en un Gambito de Rey.",
+        "6": "¡Contraataque en el centro! La mejor respuesta a un ataque en el flanco.",
+        "7": "Las blancas toman en e5.",
+        "8": "El caballo se instala en e4, una casilla excelente.",
+        "10": "Desarrollo y enroque rápido.",
+        "12": "Rey seguro.",
+        "13": "Las blancas atacan el caballo de e4.",
+        "14": "Lo defendemos con un peón: el caballo de e4 es muy fuerte y no se puede echar con facilidad."
+      }
+    },
+    {
+      "name": "Vienesa: 3.Ac4 Cc6",
+      "moves": "e4 e5 Nc3 Nf6 Bc4 Nc6 d3 Bc5 f4 d6 Nf3 a6",
+      "comments": {
+        "5": "Las blancas desarrollan el alfil hacia f7.",
+        "6": "Desarrollo sencillo que defiende e5.",
+        "8": "El alfil apunta a f2 e impide el enroque corto blanco con comodidad.",
+        "9": "Las blancas buscan atacar con f4, como en un Gambito de Rey.",
+        "10": "Sostenemos e5 con un peón.",
+        "12": "Damos casilla al alfil (a7) por si Ca4. Posición equilibrada; luego ...Ag4 o ...O-O."
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "londres-blancas",
+  "name": "Sistema Londres con blancas",
+  "eco": "D02, A46, A48",
+  "color": "white",
+  "group": "Con blancas: 1.d4",
+  "summary": "Una alternativa sencilla a 1.e4: d4, Af4, e3, Cf3, c3, Ad3 y Cbd2 contra casi todo. Poca teoría, una estructura sólida y planes que se repiten de partida en partida.",
+  "ideas": [
+    "El Londres es un **sistema**: colocamos las piezas casi siempre igual (**d4, Af4, e3, Cf3 o Cd2, c3, Ad3, O-O**) y el plan se aprende una vez.",
+    "El alfil sale a **f4 antes de e3** para no quedar encerrado. Si las negras lo quieren cambiar con ...Ad6, lo retiramos a **g3**: si cambian en g3, recapturamos con el peón de h y abrimos la columna h.",
+    "La pirámide **c3–d4–e3** es muy sólida. Su punto débil es **b2**, que pierde a su defensor al salir el alfil: contra ...Db6, **Db3** lo protege y ofrece el cambio de damas.",
+    "Contra **...c5 y ...Cc6** jugamos **Cd2** antes de Cgf3 cuando conviene evitar ...Ch5 o ...Db6 incómodos, y mantenemos el centro con c3.",
+    "Planes de ataque: **Ce5** apoyado por f4 o Cdf3, **Dc2 o Df3** con el alfil de d3 contra h7, y la ruptura **e4** cuando las negras se descuidan.",
+    "Contra los esquemas indios (...g6, ...Ag7, ...d6) jugamos **h3** para conservar el alfil de f4 de ...Ch5 y ...Cg4 y desarrollamos con Ae2 y O-O."
+  ],
+  "plans": "**La estructura.** Peones en c3, d4 y e3; alfiles en f4 (o g3) y d3; caballos en f3 y d2. Si las negras juegan ...d5, la casilla **e5** es nuestro gran puesto avanzado: un caballo allí, apoyado por f4 (tras Ag3) o por el Cd2–f3, es muy molesto. La ruptura **e3–e4** abre el juego cuando estamos mejor desarrollados.\n\n**Contra ...c5.** Las negras presionan d4 y b2. Mantenemos d4 con c3 y e3, y defendemos b2 con Db3 o Dc2. Si cierran con ...c4, el alfil de d3 pierde su casilla: lo desarrollamos en e2 y preparamos b3 para abrir la columna b o la ruptura e4.\n\n**Errores comunes.** Jugar Cd2 cuando el peón de d4 solo lo defiende la dama (¡...cxd4 exd4 Cxd4!), olvidar el peón de b2 frente a ...Db6, y dejar que ...Ch5 cambie nuestro alfil de f4 sin compensación. Y no jugar con el piloto automático: el sistema es sencillo, pero hay que mirar las amenazas del rival.",
+  "lines": [
+    {
+      "name": "2...Cf6 3.e3 c5 4.c3 Cc6 5.Cd2",
+      "moves": "d4 d5 Bf4 Nf6 e3 c5 c3 Nc6 Nd2 e6 Ngf3 Bd6 Bg3 O-O Bd3",
+      "comments": {
+        "1": "Ocupamos el centro y abrimos la diagonal del alfil de c1.",
+        "3": "El Londres: el alfil sale antes de jugar e3.",
+        "5": "Abrimos el alfil de f1 y apoyamos d4.",
+        "6": "Las negras atacan d4.",
+        "7": "La pirámide c3–d4–e3: d4 queda muy sólido.",
+        "8": "Más presión sobre d4.",
+        "9": "El caballo va a d2: controla e4 y c4 (útil si las negras juegan ...c4) y deja f3 libre para el otro caballo. Aquí no hay problema con ...cxd4, porque recapturamos con el peón de c3 o de e3.",
+        "10": "Las negras cierran con ...e6.",
+        "11": "Desarrollo natural.",
+        "12": "Las negras ofrecen cambiar nuestro buen alfil.",
+        "13": "Retiramos el alfil a g3: si ...Axg3, hxg3 y la columna h abierta nos ayudará a atacar.",
+        "15": "El alfil apunta a h7. Plan: O-O, De2 o Dc2, Ce5 y, si se puede, e4."
+      }
+    },
+    {
+      "name": "2...Cf6 3.e3 e6 4.Cf3 Ad6",
+      "moves": "d4 d5 Bf4 Nf6 e3 e6 Nf3 Bd6 Bg3 O-O Bd3 c5 c3 Nc6 Nbd2",
+      "comments": {
+        "6": "Las negras juegan con calma.",
+        "7": "Desarrollo y control de e5.",
+        "8": "Las negras ofrecen el cambio de alfiles.",
+        "9": "Mantenemos el alfil; si cambian, recapturamos con el peón de h.",
+        "11": "El alfil a d3, mirando a h7.",
+        "12": "Las negras atacan d4.",
+        "13": "Defendemos d4 con un peón: la pirámide.",
+        "15": "Desarrollo completo y misma posición que en la línea anterior. Plan: O-O, Ce5, f4 o e4."
+      }
+    },
+    {
+      "name": "2...c5 3.e3 Cc6 4.c3 Db6 5.Db3",
+      "moves": "d4 d5 Bf4 c5 e3 Nc6 c3 Qb6 Qb3 c4 Qc2 Nf6 b3 cxb3 axb3",
+      "comments": {
+        "4": "Las negras atacan d4 sin perder tiempo.",
+        "5": "Apoyamos d4 y abrimos el alfil.",
+        "7": "La pirámide: d4 queda bien defendido.",
+        "8": "La dama ataca b2, que el alfil de f4 ya no defiende.",
+        "9": "Defendemos b2 ofreciendo el cambio de damas: si ...Dxb3, axb3 y abrimos la columna a.",
+        "10": "Las negras evitan el cambio y ganan espacio.",
+        "11": "La dama se retira a c2. ¡Ojo! Si ahora ...Af5?, cogemos el alfil con Dxf5: tras ...Dxb2 Dxd5 Dxa1 las negras ganan la torre, pero nosotros tenemos alfil y dos peones y un fuerte ataque.",
+        "12": "Las negras desarrollan y defienden d5, preparando ...Af5.",
+        "13": "Atacamos la cadena negra por la base: queremos abrir la columna b o la a.",
+        "15": "Recapturamos hacia el centro y abrimos la columna a para la torre. Plan: Cd2, Ad3 y Cgf3."
+      }
+    },
+    {
+      "name": "2...c5 3.e3 cxd4 4.exd4",
+      "moves": "d4 d5 Bf4 c5 e3 cxd4 exd4 Nc6 c3 Qb6 Qb3",
+      "comments": {
+        "6": "Las negras cambian en d4 en seguida.",
+        "7": "Recapturamos con el peón: la columna e queda abierta y el alfil de f1 tiene buena diagonal.",
+        "8": "Las negras presionan d4.",
+        "9": "Defendemos d4 con un peón: es una estructura tipo Defensa Eslava al revés, muy sólida.",
+        "10": "La dama ataca b2 y d4.",
+        "11": "Defendemos b2 ofreciendo el cambio de damas. Si ...Dxb3 axb3, nuestra torre gana la columna a."
+      }
+    },
+    {
+      "name": "2...Cf6 3.e3 Af5 4.c4",
+      "moves": "d4 d5 Bf4 Nf6 e3 Bf5 c4 e6 Nc3 Bb4 Nf3",
+      "comments": {
+        "6": "Las negras sacan su alfil a f5, copiando nuestro sistema.",
+        "7": "Ahora que el alfil negro ha salido, el peón de b7 queda sin defensa: c4 prepara Db3 para atacarlo.",
+        "8": "Las negras refuerzan d5.",
+        "9": "Desarrollo y presión sobre d5.",
+        "10": "Las negras clavan el caballo.",
+        "11": "Desarrollo y preparación del enroque. Plan: Ae2, O-O y Db3 contra b7 y d5."
+      }
+    },
+    {
+      "name": "1...Cf6 2.Af4 g6: contra la India de Rey",
+      "moves": "d4 Nf6 Bf4 g6 e3 Bg7 Nf3 O-O Be2 d6 h3",
+      "comments": {
+        "2": "Las negras empiezan con el caballo.",
+        "3": "Nuestro sistema funciona igual contra 1...Cf6.",
+        "4": "Las negras preparan el fianchetto, como en la India de Rey.",
+        "5": "Seguimos con el esquema.",
+        "7": "Desarrollo.",
+        "9": "Contra el fianchetto, el alfil va a e2: en d3 chocaría con un futuro ...e5–e4.",
+        "10": "Las negras preparan ...e5.",
+        "11": "Le damos una casilla de retirada al alfil de f4 (h2) y evitamos ...Ch5 y ...Cg4. Luego O-O, c3 y Cbd2."
+      }
+    },
+    {
+      "name": "1...Cf6 2.Af4 e6 3.e3 c5 4.c3 Cc6 5.Cd2 d5",
+      "moves": "d4 Nf6 Bf4 e6 e3 c5 c3 Nc6 Nd2 d5 Ngf3 Bd6 Bg3 O-O Bd3",
+      "comments": {
+        "4": "Las negras dejan abiertas varias opciones.",
+        "5": "Seguimos el esquema.",
+        "6": "Presión sobre d4.",
+        "7": "La pirámide.",
+        "9": "El caballo de dama a d2.",
+        "10": "Las negras juegan ...d5 y llegamos a la línea principal por otro orden.",
+        "11": "Desarrollo natural.",
+        "13": "El alfil se retira a g3, como siempre frente a ...Ad6.",
+        "15": "Posición típica del Londres: O-O, De2 y Ce5 son los siguientes pasos."
+      }
+    }
+  ]
+}

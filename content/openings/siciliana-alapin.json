@@ -1,0 +1,150 @@
+{
+  "id": "siciliana-alapin",
+  "name": "Siciliana Alapin (2.c3)",
+  "eco": "B22",
+  "color": "white",
+  "group": "Con blancas: 1.e4",
+  "summary": "Contra la Siciliana jugamos 2.c3 para construir el centro con d4 y evitar la enorme teoría de las Sicilianas abiertas. Planes claros y posiciones de juego sano.",
+  "ideas": [
+    "**2.c3** prepara **d4**: si las negras cambian en d4, recapturamos con el peón de c3 y tenemos dos peones centrales.",
+    "Contra **2...d5** la dama negra sale pronto, pero no podemos atacarla con Cc3 porque el peón está en c3. Desarrollamos con calma: d4, Cf3, Ae2, O-O y Ae3.",
+    "Contra **2...Cf6** avanzamos **e5**: el caballo se va a d5 y luego d4 nos da mucho espacio. El caballo negro de d5 puede ser molestado con c4 o Ac4.",
+    "Contra **2...e6** jugamos **d4** y si ...d5, **exd5**: una estructura de peón aislado o simétrica en la que tenemos desarrollo cómodo.",
+    "Con un **peón aislado en d4** (muy típico en la Alapin) nuestras piezas son activas: Ad3, Dc2/De2, Te1 y ataque en el flanco de rey. Las negras intentarán bloquearlo en d5.",
+    "Ojo con el caballo de b1: con el peón en c3 su casilla natural suele ser **d2** o, tras cxd4, **c3**."
+  ],
+  "plans": "**Centro c3–d4–e4.** Si las negras nos dejan, la estructura ideal es peones en d4 y e4 con apoyo de c3. Normalmente las negras cambian ...cxd4 y recapturamos cxd4: el caballo de b1 gana la casilla c3 y tenemos un centro móvil.\n\n**Peón aislado de dama.** Muchas líneas (2...d5 y 2...e6) terminan con nuestro peón en d4 aislado. No es una debilidad mientras haya piezas: da espacio, controla e5 y c5 y permite un ataque contra el enroque negro (Ad3, De2, Te1, Ce5). Las negras quieren cambiar piezas y bloquear el peón en d5; nosotros intentaremos mantener piezas y, si hace falta, avanzar d5 para liberarlo.\n\n**Errores comunes.** Jugar Cc3 antes de tiempo (choca con el peón de c3), olvidar que tras 2...d5 3.exd5 Dxd5 la dama negra mira a g2 y a nuestro caballo de f3, y en la línea de 2...Cf6 dejar el peón de e5 sin defensa.",
+  "lines": [
+    {
+      "name": "2...d5: 4...Cf6 con ...Ag4",
+      "moves": "e4 c5 c3 d5 exd5 Qxd5 d4 Nf6 Nf3 Bg4 Be2 e6 O-O Nc6 Be3 cxd4 cxd4 Be7 Nc3",
+      "comments": {
+        "2": "La Defensa Siciliana: las negras luchan por d4 desde el flanco.",
+        "3": "La Alapin: preparamos d4 para tener el centro con peones.",
+        "4": "Las negras atacan e4 de inmediato.",
+        "5": "Cambiamos: la dama negra se verá obligada a salir pronto.",
+        "6": "La dama está activa en el centro, pero no podemos molestarla con Cc3 porque el peón ocupa c3.",
+        "7": "Ocupamos el centro.",
+        "9": "Desarrollo natural.",
+        "10": "Las negras clavan el caballo y presionan d4.",
+        "11": "Desclavamos y preparamos el enroque.",
+        "13": "Enroque: rey seguro antes de abrir el centro.",
+        "15": "El alfil defiende d4, que está atacado por la dama, el caballo y el peón de c5.",
+        "16": "Las negras cambian en d4 para dejarnos un peón aislado.",
+        "17": "Recapturamos: tenemos un peón aislado en d4, pero nuestras piezas estarán muy activas.",
+        "19": "Ahora sí, Cc3 con tempo sobre la dama. Estamos mejor desarrollados y el peón de d4 controla e5 y c5."
+      }
+    },
+    {
+      "name": "2...d5: 4...Cc6",
+      "moves": "e4 c5 c3 d5 exd5 Qxd5 d4 Nc6 Nf3 Bg4 Be2 cxd4 cxd4 e6 Nc3 Qd6 O-O Nf6 Be3",
+      "comments": {
+        "8": "Las negras presionan d4 con el caballo.",
+        "9": "Defendemos d4 desarrollando.",
+        "10": "Nueva presión sobre d4 a través de la clavada.",
+        "11": "Rompemos la clavada; el caballo de f3 vuelve a defender d4 de verdad.",
+        "12": "Las negras cambian para fijar el peón aislado.",
+        "15": "Desarrollo con tempo: la dama negra tiene que moverse otra vez.",
+        "16": "La dama se coloca en d6, mirando también a h2.",
+        "17": "Rey seguro.",
+        "19": "El alfil defiende d4. Plan: Dd2 o Db3, Tad1/Tfd1 y, si se puede, la ruptura d5."
+      }
+    },
+    {
+      "name": "2...Cf6 3.e5: 6...d6 7.Ac4",
+      "moves": "e4 c5 c3 Nf6 e5 Nd5 d4 cxd4 Nf3 Nc6 cxd4 d6 Bc4 Nb6 Bb5 dxe5 Nxe5 Bd7 Nxd7",
+      "comments": {
+        "4": "Las negras atacan e4: es la respuesta más popular a 2.c3.",
+        "5": "Avanzamos con tempo: el caballo pierde su casilla natural.",
+        "6": "El caballo se centraliza en d5, donde ya no lo pueden echar con c4 tan fácilmente.",
+        "7": "Ocupamos el centro.",
+        "9": "No hay prisa por recapturar: primero desarrollamos el caballo.",
+        "10": "Las negras presionan d4 y e5.",
+        "11": "Recapturamos con el peón y tenemos un centro sólido con e5 y d4.",
+        "12": "Las negras atacan nuestro centro con ...d6.",
+        "13": "Desarrollamos con tempo sobre el caballo de d5.",
+        "14": "El caballo se retira y ataca el alfil.",
+        "15": "El alfil clava el caballo de c6, que defiende el centro.",
+        "17": "Recapturamos con el caballo, muy activo en e5.",
+        "19": "Cambiamos el alfil de casillas blancas de las negras. Posición cómoda con peón aislado en d4 y piezas activas."
+      }
+    },
+    {
+      "name": "2...Cf6 3.e5: 5...e6",
+      "moves": "e4 c5 c3 Nf6 e5 Nd5 d4 cxd4 Nf3 e6 cxd4 d6 Bc4 Nc6 O-O Be7 Qe2 O-O Nc3",
+      "comments": {
+        "10": "Las negras refuerzan el caballo de d5 con un peón.",
+        "11": "Recapturamos: centro con peones en d4 y e5.",
+        "12": "Ataque al peón de e5, como siempre en esta línea.",
+        "13": "El alfil presiona d5 y defiende indirectamente nuestras posiciones.",
+        "15": "Enroque.",
+        "17": "La dama defiende e5 y se prepara para apoyar el ataque.",
+        "19": "Desarrollamos el último caballo y retamos al caballo de d5. Si ...Cxc3 bxc3, nuestro centro sale reforzado."
+      }
+    },
+    {
+      "name": "2...e6: estructura de peón aislado",
+      "moves": "e4 c5 c3 e6 d4 d5 exd5 exd5 Nf3 Nc6 Bb5 Bd6 dxc5 Bxc5 O-O Ne7 Nbd2 O-O Nb3",
+      "comments": {
+        "4": "Las negras preparan ...d5 como en una Francesa.",
+        "5": "Ocupamos el centro, que es la idea de 2.c3.",
+        "6": "Las negras atacan e4.",
+        "7": "Cambiamos y abrimos el juego; así no hay estructura francesa cerrada.",
+        "9": "Desarrollo con ataque al peón de c5 en el futuro.",
+        "11": "El alfil clava el caballo de c6, que vigila e5 y d4.",
+        "13": "Cambiamos en c5: ahora el peón aislado es el negro, en d5.",
+        "14": "El alfil recaptura y queda activo, pero puede ser atacado.",
+        "15": "Enroque.",
+        "17": "El caballo va a b3 para expulsar el alfil de c5 y luego controlar d4.",
+        "19": "Con tempo sobre el alfil. El caballo llegará a d4, la casilla ideal frente al peón aislado de d5."
+      }
+    },
+    {
+      "name": "2...d6: centro con Cc3",
+      "moves": "e4 c5 c3 d6 d4 cxd4 cxd4 Nf6 Nc3 g6 Nf3 Bg7 Be2 O-O O-O",
+      "comments": {
+        "4": "Las negras se preparan para un sistema tipo Dragón.",
+        "5": "Ocupamos el centro.",
+        "6": "Las negras cambian.",
+        "7": "Recapturamos: tenemos el centro ideal e4 + d4 y la casilla c3 para el caballo.",
+        "8": "Ataque al peón de e4.",
+        "9": "Lo defendemos con desarrollo. Hemos llegado a un centro clásico.",
+        "10": "El alfil irá a g7 para presionar nuestro centro desde lejos.",
+        "13": "Desarrollo sólido.",
+        "15": "Rey seguro. Plan: h3, Ae3 y Dd2; más espacio para nosotros."
+      }
+    },
+    {
+      "name": "2...d6 3.d4 Cf6: 4.Ad3",
+      "moves": "e4 c5 c3 d6 d4 Nf6 Bd3 g6 Nf3 Bg7 O-O O-O h3",
+      "comments": {
+        "6": "Las negras atacan e4 antes de cambiar en d4.",
+        "7": "Defendemos e4 con el alfil y mantenemos el triángulo de peones c3, d4, e4.",
+        "8": "Fianchetto de rey para presionar d4.",
+        "9": "Desarrollo y defensa de d4.",
+        "11": "Enroque.",
+        "13": "Evitamos ...Ag4, que presionaría d4 cambiando el defensor de f3. Tenemos más espacio y centro estable."
+      }
+    },
+    {
+      "name": "2...Cc6: 3...cxd4 y 6...e5",
+      "moves": "e4 c5 c3 Nc6 d4 cxd4 cxd4 d5 exd5 Qxd5 Nf3 e5 Nc3 Bb4 Bd2 Bxc3 Bxc3 e4 Ne5",
+      "comments": {
+        "4": "Desarrollo natural que vigila d4.",
+        "5": "Seguimos con el plan.",
+        "6": "Las negras cambian en d4 antes de jugar ...d5.",
+        "7": "Recapturamos con el peón: centro con d4 y e4.",
+        "8": "Las negras atacan e4.",
+        "9": "Cambiamos para abrir el juego y aprovechar el desarrollo.",
+        "11": "Desarrollo y defensa de d4, que está atacado por la dama y el caballo de c6.",
+        "12": "Las negras desafían el centro y abren la diagonal de su alfil.",
+        "13": "¡Desarrollo con tempo sobre la dama! Ahora que el peón de c3 ya no está, el caballo tiene su casilla.",
+        "14": "Las negras clavan el caballo.",
+        "15": "Desclavamos.",
+        "17": "Recapturamos con el alfil, que ahora mira a e5 y g7: tenemos la pareja de alfiles.",
+        "18": "Las negras echan al caballo.",
+        "19": "El caballo salta a e5 con amenazas (Ab5, Ac4). Nuestros alfiles y el desarrollo compensan de sobra."
+      }
+    }
+  ]
+}

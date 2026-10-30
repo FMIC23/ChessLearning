@@ -1,0 +1,146 @@
+{
+  "id": "gambito-dama-rehusado",
+  "name": "Gambito de Dama Rehusado",
+  "eco": "D30–D58",
+  "color": "black",
+  "group": "Con negras: contra 1.d4",
+  "summary": "Contra 1.d4 y 2.c4 mantenemos el peón de d5 con ...e6: la defensa más sólida y clásica. Desarrollo con ...Cf6, ...Ae7 y ...O-O, y liberación con ...Ce4 (Lasker), ...c5 o ...dxc4 seguido de ...c5.",
+  "ideas": [
+    "**2...e6** defiende d5 con un peón y abre la diagonal del alfil de f8. El precio: el alfil de c8 queda encerrado, así que buscaremos liberarlo con **...dxc4 y ...c5** o con **...e5**.",
+    "Desarrollo modelo: **...Cf6, ...Ae7, ...O-O**, y después ...h6 para preguntar al alfil de g5.",
+    "**Defensa Lasker (...h6 y ...Ce4):** cambiamos piezas para liberar nuestra posición. Tras dos cambios menores, ...c6 y ...Cd7 preparan la ruptura **...e5**, que libera el alfil de c8.",
+    "Si las blancas juegan con **Af4**, el alfil no clava nada: la respuesta activa es **...c5**, atacando el centro de inmediato.",
+    "En la **variante del cambio (cxd5 exd5)** nuestro alfil de c8 queda libre. Las blancas suelen hacer el **ataque de minorías** (b4–b5); nosotros jugamos ...c6, ...Cbd7–f8–g6 y piezas hacia el flanco de rey.",
+    "Contra el **Catalán (g3)** tomamos en c4 (**...dxc4**) y defendemos el peón con ...a6 y ...b5 o lo devolvemos para jugar ...c5 y ...Ab7."
+  ],
+  "plans": "**Estructura del GDR.** Peones negros en d5 y e6 contra d4 y c4. El centro está bloqueado y la gran pregunta es cómo activar el alfil de c8. Hay dos caminos: cambiar en c4 y jugar **...c5** (el alfil sale a b7) o preparar **...e5** con ...c6 y ...Cd7. Las simplificaciones con ...Ce4 ayudan a que esas rupturas lleguen sin peligro.\n\n**Estructura del cambio (peones en d5 y c6 contra d4 y e3).** Las blancas tienen una mayoría de minorías en el flanco de dama (a, b contra a, b, c): avanzan b4–b5 para crear una debilidad en c6. Nosotros contestamos con piezas en el flanco de rey (...Cf8–g6, ...Ad6, ...Ce4) y a veces con ...a5 para frenar b4. La casilla e4 es nuestro gran puesto avanzado.\n\n**Errores comunes.** Dejar el alfil de c8 encerrado toda la partida; jugar ...dxc4 sin un plan para recuperar el tiempo (las blancas toman con el alfil ganando un tiempo); y olvidar la clavada Ag5 sobre el caballo de f6 cuando la dama está en d8."
+  ,
+  "lines": [
+    {
+      "name": "Defensa Lasker: 7...Ce4 y 9.Tc1",
+      "moves": "d4 d5 c4 e6 Nc3 Nf6 Bg5 Be7 e3 O-O Nf3 h6 Bh4 Ne4 Bxe7 Qxe7 Rc1 c6 Bd3 Nxc3",
+      "comments": {
+        "2": "Ocupamos el centro y frenamos e4.",
+        "3": "El Gambito de Dama: las blancas atacan d5 desde el flanco.",
+        "4": "Rehusamos el gambito defendiendo d5 con un peón. Además se abre la diagonal del alfil de f8.",
+        "5": "Más presión sobre d5.",
+        "6": "Desarrollo y nuevo defensor de d5.",
+        "7": "Las blancas clavan el caballo de f6, que defiende d5.",
+        "8": "Desclavamos: ahora el caballo vuelve a defender de verdad.",
+        "10": "Rey a salvo.",
+        "12": "Preguntamos al alfil: ¿se retira o cambia?",
+        "13": "El alfil mantiene la clavada.",
+        "14": "¡Defensa Lasker! El caballo salta a e4 para cambiar piezas y liberar nuestra posición apretada.",
+        "15": "Cambio de alfiles.",
+        "16": "La dama recaptura y defiende el flanco de rey.",
+        "17": "La torre se coloca en la columna c, mirando a c7.",
+        "18": "Reforzamos d5 y preparamos ...Cd7 y ...e5.",
+        "19": "Las blancas atacan el caballo de e4.",
+        "20": "Cambiamos otra pieza. Tras bxc3 o Txc3 jugaremos ...Cd7 y ...dxc4 seguido de ...e5 para liberar el alfil de c8."
+      }
+    },
+    {
+      "name": "Defensa Lasker: 9.cxd5",
+      "moves": "d4 d5 c4 e6 Nc3 Nf6 Bg5 Be7 e3 O-O Nf3 h6 Bh4 Ne4 Bxe7 Qxe7 cxd5 Nxc3 bxc3 exd5",
+      "comments": {
+        "17": "Las blancas cambian en d5 para crear una estructura de cambio.",
+        "18": "Cambiamos antes de recapturar en d5.",
+        "19": "Las blancas recapturan con el peón y refuerzan su centro.",
+        "20": "Recapturamos con el peón: nuestro alfil de c8 ya tiene diagonal libre. Plan: ...Td8 o ...Te8, ...c5 y ...Cc6."
+      }
+    },
+    {
+      "name": "7.Axf6: pareja de alfiles",
+      "moves": "d4 d5 c4 e6 Nc3 Nf6 Bg5 Be7 e3 O-O Nf3 h6 Bxf6 Bxf6 Rc1 c6",
+      "comments": {
+        "13": "Las blancas ceden el alfil por el caballo.",
+        "14": "Recapturamos con el alfil: tenemos la pareja de alfiles.",
+        "15": "Presión en la columna c.",
+        "16": "Reforzamos d5. Plan: ...Cd7, ...dxc4 y ...e5 para abrir la posición, donde la pareja de alfiles brilla."
+      }
+    },
+    {
+      "name": "Variante del cambio: 4.cxd5 con Dc2 y Cge2",
+      "moves": "d4 d5 c4 e6 Nc3 Nf6 cxd5 exd5 Bg5 Be7 e3 O-O Bd3 Nbd7 Qc2 Re8 Nge2 Nf8",
+      "comments": {
+        "7": "Variante del cambio: las blancas fijan la estructura.",
+        "8": "Recapturamos con el peón: nuestro alfil de c8 queda libre.",
+        "9": "La clavada de siempre.",
+        "10": "Desclavamos.",
+        "12": "Rey seguro.",
+        "13": "El alfil blanco apunta a h7.",
+        "14": "El caballo de dama va por d7 hacia f8 y g6, donde defiende el rey.",
+        "15": "La dama y el alfil forman una batería contra h7.",
+        "16": "La torre ocupa la columna e y deja libre f8 para el caballo.",
+        "17": "Las blancas preparan f3 y e4, o el enroque largo.",
+        "18": "El caballo defiende h7 y puede ir a g6 o e6. Posición sólida."
+      }
+    },
+    {
+      "name": "Variante del cambio: 7.Cf3 y ataque de minorías",
+      "moves": "d4 d5 c4 e6 Nc3 Nf6 cxd5 exd5 Bg5 Be7 e3 O-O Bd3 Nbd7 Nf3 Re8 O-O c6",
+      "comments": {
+        "15": "Desarrollo clásico de las blancas: preparan Dc2, Tab1 y b4–b5 (ataque de minorías).",
+        "16": "La torre ocupa la columna semiabierta e y vigila e4.",
+        "17": "Enroque blanco.",
+        "18": "Reforzamos d5 y abrimos la diagonal d8–a5 para la dama. Plan: ...Cf8, ...Ce4 y juego en el flanco de rey."
+      }
+    },
+    {
+      "name": "4.Cf3 Ae7 5.Af4 c5",
+      "moves": "d4 d5 c4 e6 Nc3 Nf6 Nf3 Be7 Bf4 O-O e3 c5 dxc5 Bxc5 Qc2 Nc6 a3 Qa5",
+      "comments": {
+        "9": "El alfil en f4 no clava nada: controla e5 y la diagonal b8–h2.",
+        "10": "Enroque.",
+        "12": "¡Golpe al centro! Contra el sistema con Af4, ...c5 es la respuesta más activa.",
+        "13": "Las blancas cambian.",
+        "14": "El alfil recupera el peón con desarrollo.",
+        "15": "La dama vigila c5 y h7.",
+        "16": "Desarrollo con control de e5 y d4.",
+        "17": "Las blancas preparan b4 para echar al alfil.",
+        "18": "La dama clava el caballo de c3 y presiona por la diagonal: juego activo para las negras."
+      }
+    },
+    {
+      "name": "Orden con 4.Cf3 y 5.Ag5",
+      "moves": "d4 d5 c4 e6 Nc3 Nf6 Nf3 Be7 Bg5 O-O e3 h6 Bh4 Ne4",
+      "comments": {
+        "7": "Las blancas cambian el orden de jugadas.",
+        "8": "Respondemos igual: el alfil en e7 prepara el enroque.",
+        "9": "Ahora sí, la clavada.",
+        "10": "Enroque.",
+        "12": "Preguntamos al alfil.",
+        "14": "Hemos llegado a la Defensa Lasker por otro orden de jugadas."
+      }
+    },
+    {
+      "name": "Catalán: 4.g3 Ae7 con ...dxc4",
+      "moves": "d4 d5 c4 e6 Nf3 Nf6 g3 Be7 Bg2 O-O O-O dxc4 Qc2 a6 Qxc4 b5 Qc2 Bb7",
+      "comments": {
+        "7": "El Catalán: el alfil en g2 presionará la diagonal larga y nuestro peón de b7.",
+        "8": "Desarrollo sólido.",
+        "10": "Rey seguro.",
+        "12": "Tomamos el peón de c4: así obligamos a las blancas a gastar tiempo para recuperarlo.",
+        "13": "La dama va a recuperar el peón.",
+        "14": "Preparamos ...b5 para ganar espacio con tempo.",
+        "15": "Las blancas recuperan el peón.",
+        "16": "Echamos a la dama y ganamos espacio en el flanco de dama.",
+        "18": "El alfil de c8 sale a la gran diagonal y neutraliza al alfil de g2. Luego ...Cbd7 y ...c5: el alfil malo del GDR se ha convertido en una pieza excelente."
+      }
+    },
+    {
+      "name": "4.e3 c5: contra el sistema lento",
+      "moves": "d4 d5 c4 e6 Nf3 Nf6 e3 c5 Nc3 Nc6 Bd3 dxc4 Bxc4 a6",
+      "comments": {
+        "7": "Las blancas encierran su propio alfil de c1.",
+        "8": "Respondemos atacando el centro de inmediato con ...c5.",
+        "9": "Desarrollo blanco.",
+        "10": "Desarrollo con presión sobre d4.",
+        "11": "El alfil se coloca en d3.",
+        "12": "Tomamos en c4 para que el alfil blanco tenga que mover otra vez.",
+        "13": "Las blancas recapturan.",
+        "14": "Preparamos ...b5 y ...Ab7, desarrollando el alfil de c8 por la gran diagonal."
+      }
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "otras-respuestas-e4",
+  "name": "Escandinava, Pirc/Moderna y Alekhine",
+  "eco": "B01, B07, B06, B02–B05",
+  "color": "white",
+  "group": "Con blancas: 1.e4",
+  "summary": "Sistemas sencillos contra las respuestas menos habituales a 1.e4: desarrollo con tempo contra la Escandinava, el esquema Cc3–Ae3–Dd2 contra la Pirc y la Moderna, y el tranquilo 4.Cf3 contra la Alekhine.",
+  "ideas": [
+    "**Escandinava (1...d5):** tras 2.exd5 Dxd5 jugamos **3.Cc3** desarrollando con ganancia de tiempo sobre la dama. Luego d4, Cf3 y Ac4: ventaja de desarrollo.",
+    "Contra **2...Cf6** (Escandinava con caballo) mantenemos el peón extra un rato o devolvemos con d4 y c4, ganando espacio en el centro.",
+    "**Pirc y Moderna (1...d6 / 1...g6):** las negras nos dejan el centro para atacarlo después. Lo mantenemos con **Cc3, Ae3 y Dd2**, y a menudo **f3** para frenar ...Cg4; si enrocamos largo, **Ah6** cambia el alfil de g7 y prepara un ataque con h4–h5.",
+    "**Alekhine (1...Cf6):** el caballo nos invita a perseguirlo con peones. No hace falta exagerar: **2.e5 Cd5 3.d4 d6 4.Cf3** gana espacio y desarrolla sin crear debilidades.",
+    "En las tres aperturas el principio es el mismo: **desarrollo rápido, centro fuerte y no perder tiempos** con jugadas de peón innecesarias."
+  ],
+  "plans": "**Escandinava.** La dama negra sale pronto y nosotros ganamos tiempos atacándola (Cc3, más tarde Ad2 con amenaza Cd5 o Cb5). Con peón en d4 contra ninguno en el centro, tenemos más espacio. El alfil negro suele salir a f5 o g4; el nuestro de casillas blancas va a c4, donde presiona f7 y e6.\n\n**Pirc y Moderna.** Las negras tienen un fianchetto en g7 que mira a nuestro centro. El esquema Cc3, Ae3, Dd2 y f3 (a veces con O-O-O) sostiene e4 y d4. Si las negras enrocan corto, el plan de ataque es Ah6 para cambiar su mejor defensor y luego h4–h5 para abrir la columna h. Si juegan ...b5 y ...Cd7 sin enrocar (Moderna), atentos a la ruptura e5 o d5 y al desarrollo con Cge2.\n\n**Alekhine.** El caballo negro en d5 o b6 es objetivo de c4 y, a veces, de a4–a5. Con 4.Cf3 tenemos un centro estable con peones en d4 y e5; las negras atacarán e5 con ...d6, ...g6 o ...Ag4. Mantenemos el centro con Ae2, O-O, c4 y Cc3, y evitamos sobreextendernos.\n\n**Errores comunes.** Salir con la dama demasiado pronto, perseguir el caballo de la Alekhine con todos los peones (se debilitan), y en la Pirc permitir ...Cg4 contra el alfil de e3 (por eso f3 o h3).",
+  "lines": [
+    {
+      "name": "Escandinava: 3...Da5",
+      "moves": "e4 d5 exd5 Qxd5 Nc3 Qa5 d4 Nf6 Nf3 c6 Bc4 Bf5 Bd2 e6 Qe2",
+      "comments": {
+        "2": "La Escandinava: las negras atacan e4 de inmediato.",
+        "3": "Cambiamos: la dama negra tendrá que recapturar y saldrá pronto al centro.",
+        "4": "La dama recupera el peón, pero en d5 es un blanco fácil.",
+        "5": "Desarrollo con tempo: atacamos la dama.",
+        "6": "La dama se va a a5, donde clava el caballo de c3 y no estorba.",
+        "7": "Ocupamos el centro.",
+        "9": "Desarrollo natural.",
+        "10": "Las negras dan casilla de retirada a la dama en c7 y controlan d5.",
+        "11": "El alfil mira a f7 y e6.",
+        "13": "Desclavamos el caballo: ahora amenaza Cd5 con descubierta sobre la dama de a5.",
+        "15": "La dama se coloca detrás del alfil y prepara O-O-O o la ruptura d5. Tenemos ventaja de desarrollo."
+      }
+    },
+    {
+      "name": "Escandinava: 3...Dd6",
+      "moves": "e4 d5 exd5 Qxd5 Nc3 Qd6 d4 Nf6 Nf3 a6 g3 Bg4 Bg2 Nc6 O-O",
+      "comments": {
+        "6": "La dama se retira a d6, donde es más difícil de atacar.",
+        "7": "Centro.",
+        "9": "Desarrollo.",
+        "10": "Las negras impiden Cb5 y Ab5, que atacarían la dama y c7.",
+        "11": "Fianchetto: el alfil desde g2 presiona b7 y el centro; es muy sencillo de jugar.",
+        "12": "Las negras clavan el caballo.",
+        "13": "Desarrollo y defensa: el alfil también protege al caballo de f3.",
+        "15": "Rey seguro. Plan: h3, Ae3 y Te1, con ventaja de espacio en el centro."
+      }
+    },
+    {
+      "name": "Escandinava con caballo: 2...Cf6 3.d4 Cxd5",
+      "moves": "e4 d5 exd5 Nf6 d4 Nxd5 Nf3 g6 c4 Nb6 Nc3 Bg7 h3 O-O Be3",
+      "comments": {
+        "4": "Las negras no recuperan con la dama, sino que desarrollan primero.",
+        "5": "Mantenemos el peón y ocupamos el centro.",
+        "6": "Las negras recuperan el peón con el caballo.",
+        "7": "Desarrollo antes de echar el caballo.",
+        "9": "Ahora sí, echamos el caballo de d5 ganando espacio en el centro.",
+        "11": "Desarrollo natural: el caballo controla d5 y e4, casillas por las que las negras quieren presionar nuestro centro.",
+        "13": "Quitamos la casilla g4 al alfil y al caballo negros.",
+        "15": "El alfil defiende d4. Tenemos un gran centro con peones en c4 y d4."
+      }
+    },
+    {
+      "name": "Escandinava con caballo: 3...Ag4",
+      "moves": "e4 d5 exd5 Nf6 d4 Bg4 f3 Bf5 Bb5+ Nbd7 c4",
+      "comments": {
+        "6": "Variante portuguesa: las negras desarrollan el alfil con presión, a cambio del peón.",
+        "7": "Echamos al alfil. Debilita un poco el flanco de rey, pero gana tiempo.",
+        "8": "El alfil se mantiene en la diagonal.",
+        "9": "Jaque con tempo: el caballo negro se coloca en d7 y bloquea la dama.",
+        "11": "Defendemos el peón de d5 con un peón más: tenemos un peón de ventaja y espacio."
+      }
+    },
+    {
+      "name": "Pirc: 5...c6 con ...b5",
+      "moves": "e4 d6 d4 Nf6 Nc3 g6 Be3 Bg7 Qd2 c6 f3 b5 Nge2 Nbd7 Bh6",
+      "comments": {
+        "2": "La Defensa Pirc: las negras nos dejan el centro para atacarlo luego con piezas.",
+        "3": "Aceptamos la invitación: centro con dos peones.",
+        "4": "El caballo ataca e4.",
+        "5": "Defendemos e4 desarrollando.",
+        "6": "Fianchetto: el alfil irá a g7 para presionar nuestro centro.",
+        "7": "El alfil defiende d4 y prepara Dd2 y Ah6.",
+        "9": "La dama conecta con el alfil: amenaza Ah6 para cambiar el gran alfil de g7.",
+        "10": "Las negras preparan ...b5 para un ataque en el flanco de dama.",
+        "11": "Sostenemos e4 y quitamos la casilla g4 al caballo (que querría atacar el alfil de e3).",
+        "12": "Las negras ganan espacio y amenazan ...b4 echando el caballo de c3.",
+        "13": "El caballo se desarrolla por e2 para poder ir a g3 o c1 y no estorbar al peón de f.",
+        "15": "Cambiamos el alfil de g7 por el nuestro: el rey negro, si enroca corto, quedará débil."
+      }
+    },
+    {
+      "name": "Pirc: 5...O-O 6.O-O-O",
+      "moves": "e4 d6 d4 Nf6 Nc3 g6 Be3 Bg7 Qd2 O-O O-O-O c6 f3 b5 h4",
+      "comments": {
+        "10": "Las negras enrocan corto: su rey será nuestro objetivo.",
+        "11": "Enroque largo: así los peones de g y h quedan libres para atacar.",
+        "12": "Las negras preparan ...b5 y su propio ataque.",
+        "13": "Protegemos e4 y frenamos ...Cg4.",
+        "14": "Las negras avanzan contra nuestro rey.",
+        "15": "Nuestro ataque: h4–h5 abrirá la columna h. Ah6 cambiará el alfil defensor de g7. Carrera de ataques: el más rápido gana."
+      }
+    },
+    {
+      "name": "Moderna: 1...g6 con ...a6 y ...b5",
+      "moves": "e4 g6 d4 Bg7 Nc3 d6 Be3 a6 Qd2 Nd7 f3 b5 Nge2",
+      "comments": {
+        "2": "La Defensa Moderna: como la Pirc, pero el caballo de g8 se queda en casa más tiempo.",
+        "3": "Centro con dos peones.",
+        "5": "Desarrollo natural.",
+        "7": "El mismo esquema que contra la Pirc: Ae3, Dd2 y f3.",
+        "8": "Las negras preparan ...b5 para ganar espacio en el flanco de dama.",
+        "9": "Conectamos dama y alfil.",
+        "11": "Protegemos e4 de antemano: ...Cgf6 no podrá ponerlo en apuros, y ...Cg4 queda prohibido.",
+        "13": "El caballo va a e2 para reforzar d4 y poder ir a g3 o c1. Plan: h4 o la ruptura a4 contra el peón de b5."
+      }
+    },
+    {
+      "name": "Alekhine: 4.Cf3 Ag4",
+      "moves": "e4 Nf6 e5 Nd5 d4 d6 Nf3 Bg4 Be2 e6 O-O Be7 c4 Nb6 h3 Bh5 Nc3",
+      "comments": {
+        "2": "La Defensa Alekhine: el caballo provoca el avance de nuestros peones.",
+        "3": "Atacamos el caballo y ganamos espacio.",
+        "4": "El caballo se va al centro.",
+        "5": "Centro con dos peones.",
+        "6": "Las negras atacan e5 inmediatamente.",
+        "7": "La variante moderna: desarrollo sencillo que defiende e5.",
+        "8": "Las negras clavan el caballo que defiende e5.",
+        "9": "Desclavamos y preparamos el enroque.",
+        "11": "Enroque.",
+        "13": "Echamos el caballo de d5 y ganamos más espacio.",
+        "15": "Preguntamos al alfil: si cambia en f3, tendremos la pareja de alfiles.",
+        "17": "Desarrollo completo. Plan: Ae3, b3, Dd2 y presión en el centro."
+      }
+    },
+    {
+      "name": "Alekhine: 4.Cf3 g6 5.Ac4",
+      "moves": "e4 Nf6 e5 Nd5 d4 d6 Nf3 g6 Bc4 Nb6 Bb3 Bg7 Qe2 Nc6 O-O O-O h3",
+      "comments": {
+        "8": "Fianchetto para presionar e5 con el alfil.",
+        "9": "El alfil ataca al caballo de d5 y apunta a f7.",
+        "10": "El caballo se retira atacando nuestro alfil.",
+        "11": "El alfil se queda en la diagonal a2–g8.",
+        "13": "La dama defiende e5 y prepara Td1 o Ac4.",
+        "15": "Enroque.",
+        "17": "Evitamos ...Ag4. Tenemos espacio y un centro sólido; plan: Cc3, Td1 y Af4."
+      }
+    },
+    {
+      "name": "Alekhine: 4...dxe5 5.Cxe5",
+      "moves": "e4 Nf6 e5 Nd5 d4 d6 Nf3 dxe5 Nxe5 g6 Bc4 c6 O-O Bg7 Re1",
+      "comments": {
+        "8": "Las negras cambian en e5 de inmediato.",
+        "9": "Recapturamos con el caballo, que queda muy activo en e5 y presiona f7.",
+        "11": "El alfil ataca el caballo de d5 y suma presión sobre f7.",
+        "12": "Las negras sostienen el caballo de d5.",
+        "13": "Enroque.",
+        "15": "La torre apoya al caballo de e5. Estamos mejor desarrollados y con más espacio."
+      }
+    }
+  ]
+}

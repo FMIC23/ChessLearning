@@ -1,0 +1,218 @@
+[
+  {
+    "id": "mate-001",
+    "fen": "r1b3k1/ppq2ppp/2p5/8/8/2P2N2/PP3PPP/4R1K1 w - - 0 1",
+    "moves": [
+      "e1e8"
+    ],
+    "rating": 420,
+    "themes": [
+      "mateIn1",
+      "backRankMate",
+      "oneMove"
+    ],
+    "title": "El pasillo de siempre",
+    "hint": "Mira la última fila de las negras: ¿quién la defiende?",
+    "explanation": "**Te8#**. El rey negro está encerrado por sus propios peones de f7, g7 y h7, y el alfil de c8 tapa a la torre de a8, así que nadie puede cubrir e8. Es el clásico **mate del pasillo**.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-002",
+    "fen": "r4rk1/pp3p1p/2p2PpQ/8/2q5/8/PP3PPP/R5K1 w - - 0 1",
+    "moves": [
+      "h6g7"
+    ],
+    "rating": 450,
+    "themes": [
+      "mateIn1",
+      "oneMove"
+    ],
+    "title": "El peón de f6 manda",
+    "hint": "Tu peón de f6 es un apoyo perfecto para la dama.",
+    "explanation": "**Dg7#**. La dama da jaque protegida por el peón de f6 y el rey no puede capturarla ni escapar: f8 y h8 están controladas y la torre de f8 le quita su propia casilla. Es un patrón de ataque muy frecuente con un peón clavado en f6.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-003",
+    "fen": "r4rk1/pp3p2/2p3P1/8/8/2q4Q/P4PPP/6K1 w - - 0 1",
+    "moves": [
+      "h3h7"
+    ],
+    "rating": 480,
+    "themes": [
+      "mateIn1",
+      "oneMove"
+    ],
+    "title": "Mate de Damiano",
+    "hint": "El peón de g6 puede proteger a la dama en una casilla muy cercana al rey.",
+    "explanation": "**Dh7#**. La dama llega por la columna h abierta y se apoya en el peón de g6. El rey no puede tomarla y la torre de f8 y el peón de f7 le cierran la huida: es el **mate de Damiano**.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-004",
+    "fen": "r4rk1/pp3ppp/2n5/8/3P4/5pPq/PP3P1P/R2Q1RK1 b - - 0 1",
+    "moves": [
+      "h3g2"
+    ],
+    "rating": 500,
+    "themes": [
+      "mateIn1",
+      "oneMove"
+    ],
+    "title": "El beso de la dama",
+    "hint": "Tu peón de f3 está muy cerca del enroque blanco: úsalo como apoyo.",
+    "explanation": "**...Dg2#**. La dama se planta delante del rey (el «beso de la dama») protegida por el peón de f3. El rey no puede capturarla y todas sus casillas quedan controladas.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-005",
+    "fen": "2r3k1/pp3ppp/8/8/3qn3/1Q6/PP4PP/R5RK b - - 0 1",
+    "moves": [
+      "e4f2"
+    ],
+    "rating": 550,
+    "themes": [
+      "mateIn1",
+      "smotheredMate",
+      "oneMove"
+    ],
+    "title": "La coz del caballo",
+    "hint": "El rey blanco está rodeado de sus propias piezas. ¿Qué pieza puede saltar por encima?",
+    "explanation": "**...Cf2#**. Es un **mate de la coz** (ahogado): la torre de g1 y los peones de g2 y h2 encierran a su propio rey, y el caballo da jaque sin que nadie pueda capturarlo ni interponerse.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-006",
+    "fen": "3rkr2/pp4pp/2p5/8/8/8/PPP1QPPP/2R3K1 w - - 0 1",
+    "moves": [
+      "e2e6"
+    ],
+    "rating": 600,
+    "themes": [
+      "mateIn1",
+      "oneMove"
+    ],
+    "title": "Las charreteras",
+    "hint": "Las dos torres negras le quitan casillas a su propio rey.",
+    "explanation": "**De6#**. Las torres de d8 y f8 son como unas charreteras que bloquean al rey, y la dama desde e6 controla d7, e7 y f7. Este patrón se llama **mate de la charretera**.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-007",
+    "fen": "5k1r/pp3pp1/2p5/8/8/5n2/PP3P1P/R4R1K b - - 0 1",
+    "moves": [
+      "h8h2"
+    ],
+    "rating": 650,
+    "themes": [
+      "mateIn1",
+      "oneMove"
+    ],
+    "title": "Mate árabe",
+    "hint": "Torre y caballo forman una pareja letal cerca de la esquina.",
+    "explanation": "**...Txh2#**. Es el **mate árabe**: la torre da jaque en h2 protegida por el caballo de f3, que además controla g1. El rey blanco no tiene ninguna casilla libre.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-008",
+    "fen": "3r2k1/pp3ppp/2p5/8/Q7/3q4/PP3PPP/3R2K1 b - - 0 1",
+    "moves": [
+      "d3d1",
+      "a4d1",
+      "d8d1"
+    ],
+    "rating": 850,
+    "themes": [
+      "mateIn2",
+      "backRankMate",
+      "deflection",
+      "sacrifice"
+    ],
+    "title": "Dos piezas pesadas en la columna d",
+    "hint": "La torre de d1 es el único defensor de la primera fila.",
+    "explanation": "**...Dxd1+!** obliga a **Dxd1** y entonces **...Txd1#**. Al cambiar en d1 la dama blanca se desvía y la primera fila queda sin defensa: **mate del pasillo**.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-009",
+    "fen": "r2qkbnr/ppp2ppp/2np4/4N3/2B1P3/2N5/PPPP1PPP/R1BbK2R w KQkq - 0 6",
+    "moves": [
+      "c4f7",
+      "e8e7",
+      "c3d5"
+    ],
+    "rating": 1050,
+    "themes": [
+      "mateIn2",
+      "opening"
+    ],
+    "title": "La trampa de Légal",
+    "hint": "Las negras se han llevado tu dama, pero sus piezas no defienden al rey.",
+    "explanation": "Tras **Axf7+ Re7** llega **Cd5#**: los dos caballos y el alfil cubren todas las casillas del rey. Es el famoso **mate de Légal**: entregar la dama a cambio de un mate rápido con las piezas menores.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-010",
+    "fen": "2kr3r/pp1nbppp/2p1p3/8/3P1Bq1/3B1Q2/PPP2PPP/R4RK1 w - - 0 1",
+    "moves": [
+      "f3c6",
+      "b7c6",
+      "d3a6"
+    ],
+    "rating": 1350,
+    "themes": [
+      "mateIn2",
+      "sacrifice",
+      "attraction"
+    ],
+    "title": "Mate de Boden",
+    "hint": "Tus dos alfiles pueden cruzar sus diagonales delante del rey enrocado largo.",
+    "explanation": "**Dxc6+!** abre la diagonal: tras **...bxc6** llega **Aa6#**. Los alfiles de a6 y f4 se cruzan en b7 y b8/c7, y las piezas negras de d7 y d8 tapan las demás salidas: es el **mate de Boden**.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-011",
+    "fen": "rq3rk1/pb3ppp/8/3N3Q/8/3R4/PP3PPP/6K1 w - - 0 1",
+    "moves": [
+      "d5e7",
+      "g8h8",
+      "h5h7",
+      "h8h7",
+      "d3h3"
+    ],
+    "rating": 1500,
+    "themes": [
+      "mateIn3",
+      "sacrifice",
+      "attraction"
+    ],
+    "title": "Mate Anastasia",
+    "hint": "Empieza con un jaque de caballo que controle g8 y g6.",
+    "explanation": "**Ce7+ Rh8** y ahora **Dxh7+!** atrae al rey: **...Rxh7 Th3#**. El caballo de e7 cubre g8 y g6, el peón de g7 tapa la otra casilla y la torre remata por la columna h: es el **mate Anastasia**.",
+    "source": "propio"
+  },
+  {
+    "id": "mate-012",
+    "fen": "4r2k/pp4pp/1q6/3Q2N1/8/8/PP3PPP/6K1 w - - 0 1",
+    "moves": [
+      "g5f7",
+      "h8g8",
+      "f7h6",
+      "g8h8",
+      "d5g8",
+      "e8g8",
+      "h6f7"
+    ],
+    "rating": 1700,
+    "themes": [
+      "mate",
+      "smotheredMate",
+      "sacrifice",
+      "doubleCheck"
+    ],
+    "title": "El legado de Philidor",
+    "hint": "Jaques continuos: el caballo y la dama trabajan juntos en la diagonal a2-g8.",
+    "explanation": "**Cf7+ Rg8 Ch6+** (jaque doble) **Rh8 Dg8+!!** y tras **...Txg8 Cf7#** llega el **mate de la coz**: el rey queda ahogado por su propia torre y sus peones. Es la famosa combinación del «legado de Philidor».",
+    "source": "propio"
+  }
+]
