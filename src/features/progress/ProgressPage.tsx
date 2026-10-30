@@ -10,6 +10,7 @@ import { detectWeakPoints } from '@/lib/weakness';
 import { META_THEMES, themeLabel } from '@/lib/puzzles/themes';
 import { initialProgress, useProgress, type ProgressData } from '@/store/progress';
 import { useSettings } from '@/store/settings';
+import { useActiveProfile } from '@/store/profiles';
 import { ActivityCalendar } from './ActivityCalendar';
 import { RatingChart } from './RatingChart';
 
@@ -20,6 +21,7 @@ function pickData(state: ProgressData): ProgressData {
 
 export function ProgressPage() {
   const state = useProgress();
+  const profile = useActiveProfile();
   const [message, setMessage] = useState<{ tone: 'success' | 'error'; text: string } | null>(null);
   const fileInput = useRef<HTMLInputElement>(null);
 
@@ -52,7 +54,8 @@ export function ProgressPage() {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `progreso-ajedrez-${new Date().toISOString().slice(0, 10)}.json`;
+    const slug = profile.name.normalize('NFD').replace(/[^\w-]+/g, '-').toLowerCase();
+    a.download = `progreso-ajedrez-${slug}-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(url);
     setMessage({ tone: 'success', text: 'Progreso exportado.' });
@@ -75,7 +78,7 @@ export function ProgressPage() {
 
   return (
     <div>
-      <PageHeader title="Tu progreso" subtitle="Todo se guarda en este navegador. Exporta una copia para no perderlo o para llevarlo a otro dispositivo." />
+      <PageHeader title={`Progreso de ${profile.name}`} subtitle="Todo se guarda en este navegador. Exporta una copia para no perderlo o para llevarlo a otro dispositivo." />
 
       <div className="mb-6 grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
         <StatCard label="Elo estimado" value={rating} detail={ratingCategory(rating)} highlight />

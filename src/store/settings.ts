@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { profileStorage } from './profileStorage';
 
 export type ThemePreference = 'system' | 'light' | 'dark';
 
@@ -33,7 +34,7 @@ export const useSettings = create<SettingsState>()(
       setShowLegalMoves: (showLegalMoves) => set({ showLegalMoves }),
       setUnlockAll: (unlockAll) => set({ unlockAll }),
     }),
-    { name: 'ajedrez-ajustes', version: 1 },
+    { name: 'ajedrez-ajustes', version: 1, storage: profileStorage },
   ),
 );
 

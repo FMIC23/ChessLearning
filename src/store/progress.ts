@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { profileStorage } from './profileStorage';
 import { dayKey, type LessonRecord } from '@/lib/progress';
 import { review, type ReviewGrade, type SrsCard } from '@/lib/srs';
 import { INITIAL_RATING, updateRating } from '@/lib/elo';
@@ -207,6 +208,6 @@ export const useProgress = create<ProgressState>()(
       replaceProgress: (data) => set({ ...initialProgress(), ...data }),
       resetProgress: () => set(initialProgress()),
     }),
-    { name: PROGRESS_STORAGE_KEY, version: PROGRESS_VERSION },
+    { name: PROGRESS_STORAGE_KEY, version: PROGRESS_VERSION, storage: profileStorage },
   ),
 );
