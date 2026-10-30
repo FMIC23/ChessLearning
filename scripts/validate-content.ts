@@ -13,10 +13,31 @@ import { parseLesson } from '../src/lib/lessons/parser';
 import { validateLevels } from '../src/lib/lessons/validate';
 import { applyMove, isValidFen } from '../src/lib/chess';
 import type { Level, LevelMeta, MovesExercise } from '../src/types/lesson';
+import type { PuzzleData } from '../src/types/puzzle';
+import type { OpeningData } from '../src/types/opening';
+import { normalizePuzzle, validatePuzzle } from '../src/lib/puzzles/normalize';
+import { validateOpening } from '../src/lib/openings/tree';
 import { NodeEngine, scoreToCp } from './lib/node-engine';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const lessonsDir = join(root, 'content', 'lessons');
+const puzzlesDir = join(root, 'content', 'puzzles');
+const openingsDir = join(root, 'content', 'openings');
+
+function readJsonFiles<T>(dir: string): { file: string; data: T }[] {
+  if (!existsSync(dir)) return [];
+  return readdirSync(dir)
+    .filter((f) => f.endsWith('.json'))
+    .map((file) => ({ file, data: JSON.parse(readFileSync(join(dir, file), 'utf8')) as T }));
+}
+
+function loadPuzzles(): PuzzleData[] {
+  return readJsonFiles<PuzzleData[]>(puzzlesDir).flatMap(({ data }) => data);
+}
+
+function loadOpenings(): OpeningData[] {
+  return readJsonFiles<OpeningData>(openingsDir).map(({ data }) => data);
+}
 const useEngine = process.argv.includes('--engine');
 const depth = Number(process.argv.find((a) => a.startsWith('--depth='))?.split('=')[1] ?? 16);
 
@@ -80,6 +101,17 @@ async function main() {
   console.log(`Niveles: ${levels.length} · Lecciones: ${lessonCount} · Ejercicios: ${exerciseCount}`);
   for (const level of levels) console.log(`  Nivel ${level.number} (${level.id}): ${level.lessons.length} lecciones`);
 
+  const puzzles = loadPuzzles();
+  const ids = new Set<string>();
+  for (const p of puzzles) {
+    if (ids.has(p.id)) errors.push(`id de problema duplicado: ${p.id}`);
+    ids.add(p.id);
+    errors.push(...validatePuzzle(p));
+  }
+  const openings = loadOpenings();
+  for (const o of openings) errors.push(...validateOpening(o));
+  console.log(`Problemas: ${puzzles.length} · Aperturas: ${openings.length} (${openings.reduce((n, o) => n + o.lines.length, 0)} líneas)`);
+
   const fatal = errors.filter((e) => !(process.argv.includes('--allow-empty') && e.includes('no tiene lecciones')));
   if (fatal.length) {
     errors.length = 0;
@@ -103,6 +135,20 @@ async function main() {
           warnings.push(...(await checkWithEngine(engine, `${lesson.id} #${step.index + 1}`, step.exercise)));
         }
       }
+    }
+  }
+  if (!filter || filter === 'problemas') {
+    for (const data of puzzles) {
+      if (data.source === 'lichess') continue;
+      const p = normalizePuzzle(data);
+      const ex: MovesExercise = {
+        type: 'moves',
+        fen: p.fen,
+        solution: p.solution,
+        prompt: '',
+        goal: p.themes.some((t) => t.startsWith('mate')) ? 'mate' : undefined,
+      };
+      warnings.push(...(await checkWithEngine(engine, `problema ${p.id}`, ex)));
     }
   }
   engine.quit();

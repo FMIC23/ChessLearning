@@ -132,3 +132,67 @@ npm run validate:content -- --engine # además, comprueba con Stockfish que cada
 ```
 
 Los tests (`npm test`) también validan la estructura de todo el contenido, así que un error en un JSON hace fallar la CI.
+
+## Problemas tácticos (`content/puzzles/*.json`)
+
+Cada archivo contiene un **array** de problemas:
+
+```json
+[
+  {
+    "id": "p-pasillo-001",
+    "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+    "moves": ["a1a8"],
+    "rating": 500,
+    "themes": ["mateIn1", "backRankMate"],
+    "title": "El pasillo",
+    "hint": "El rey negro no tiene casillas de escape.",
+    "explanation": "Ta8#: los propios peones encierran al rey.",
+    "source": "propio"
+  }
+]
+```
+
+- `moves`: UCI, alternando alumno y rival; empieza el alumno y termina el alumno (número impar).
+- Con `"opponentFirst": true` el primer movimiento es del rival (formato de la base de Lichess): la app lo reproduce y luego empieza el alumno.
+- `rating`: dificultad en escala Elo (400–2600). La app elige problemas cercanos a tu puntuación.
+- `themes`: claves compatibles con Lichess (`fork`, `pin`, `skewer`, `discoveredAttack`, `doubleCheck`, `deflection`, `attraction`, `sacrifice`, `capturingDefender`, `hangingPiece`, `trappedPiece`, `backRankMate`, `smotheredMate`, `mateIn1`, `mateIn2`, `mateIn3`, `promotion`, `endgame`, `zwischenzug`, `clearance`, `interference`, `xRayAttack`, `quietMove`, `defensiveMove`...). Si un tema empieza por `mate`, en la última jugada se acepta cualquier mate.
+
+### Importar la base de datos de Lichess
+
+La base de problemas de Lichess es libre (CC0). Descarga `lichess_db_puzzle.csv.zst` de <https://database.lichess.org/#puzzles>, descomprímela y ejecuta:
+
+```bash
+npm run puzzles:import -- --input lichess_db_puzzle.csv --count 2000 --min 600 --max 2400
+```
+
+Se genera `content/puzzles/lichess.json` con una selección equilibrada por dificultad y tema.
+
+## Aperturas (`content/openings/*.json`)
+
+Un archivo por apertura. El repertorio se escribe como **líneas** que la app fusiona en un árbol de variantes:
+
+```json
+{
+  "id": "italiana",
+  "name": "Apertura Italiana",
+  "eco": "C50",
+  "color": "white",
+  "group": "Con blancas: 1.e4",
+  "summary": "Desarrollo rápido y presión sobre f7.",
+  "ideas": ["El alfil de c4 apunta a **f7**...", "Plan c3 y d4..."],
+  "plans": "Texto Markdown opcional con planes y estructuras.",
+  "lines": [
+    {
+      "name": "Giuoco Piano: c3 y d4",
+      "moves": "e4 e5 Nf3 Nc6 Bc4 Bc5 c3 Nf6 d4 exd4 cxd4 Bb4+ Bd2",
+      "comments": { "5": "El alfil apunta a f7.", "7": "c3 prepara d4." }
+    }
+  ]
+}
+```
+
+- `color`: bando del alumno. Cada línea debe **terminar con una jugada de ese bando**.
+- `moves`: SAN en inglés (K, Q, R, B, N), separadas por espacios, desde la posición inicial.
+- `comments`: clave = número de media jugada (1 = primera jugada de las blancas, 2 = respuesta de las negras...).
+- En el **modo estudio** se explora el árbol con los comentarios; en el **modo test** la app juega las jugadas del rival y pregunta las tuyas.
