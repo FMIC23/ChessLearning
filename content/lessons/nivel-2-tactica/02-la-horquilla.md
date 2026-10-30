@@ -24,7 +24,7 @@ Cualquier pieza puede hacer horquillas, pero hay tres especialistas:
 ```
 
 ```ejercicio
-{ "type": "moves", "fen": "2r3k1/pp3ppp/2n1b3/8/2PP4/8/PP3PPP/2R2BK1 w - - 0 1", "solution": ["d4d5"], "prompt": "Gana una pieza con una **horquilla de peón**.", "hint": "¿Qué peón puede atacar a la vez al caballo y al alfil?", "explanation": "d5 ataca al caballo de c6 y al alfil de e6. El peón está protegido por c4, así que una de las dos piezas caerá." }
+{ "type": "moves", "fen": "2r3k1/pp3ppp/2n1b3/8/2PP4/6N1/PP3PPP/2R2BK1 w - - 0 1", "solution": ["d4d5"], "prompt": "Gana una pieza con una **horquilla de peón**.", "hint": "¿Qué peón puede atacar a la vez al caballo y al alfil?", "explanation": "d5 ataca al caballo de c6 y al alfil de e6. El peón está protegido por c4, así que una de las dos piezas caerá." }
 ```
 
 ```ejercicio

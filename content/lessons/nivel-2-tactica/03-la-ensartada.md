@@ -21,7 +21,7 @@ Las ensartadas las hacen las piezas de largo alcance: **alfiles, torres y damas*
 ```
 
 ```ejercicio
-{ "type": "moves", "fen": "7r/8/8/4k3/8/8/P4PPP/2B3K1 w - - 0 1", "solution": ["c1b2", "e5f5", "b2h8"], "prompt": "Gana la torre con una **ensartada de alfil**.", "hint": "El rey y la torre están en la misma diagonal larga.", "explanation": "1.Ab2+ da jaque por la gran diagonal. Cuando el rey se aparta (1...Rf5), 2.Axh8 captura la torre." }
+{ "type": "moves", "fen": "7r/8/8/4k3/8/8/P4P1P/2B3K1 w - - 0 1", "solution": ["c1b2", "e5d5", "b2h8"], "prompt": "Gana la torre con una **ensartada de alfil**.", "hint": "El rey y la torre están en la misma diagonal larga.", "explanation": "1.Ab2+ da jaque por la gran diagonal. Cuando el rey se aparta (1...Rd5), 2.Axh8 captura la torre." }
 ```
 
 ```ejercicio
@@ -29,7 +29,7 @@ Las ensartadas las hacen las piezas de largo alcance: **alfiles, torres y damas*
 ```
 
 ```ejercicio
-{ "type": "moves", "fen": "6r1/p7/8/8/2k5/8/5PPP/1B4K1 w - - 0 1", "solution": ["b1a2", "c4d4", "a2g8"], "prompt": "El rey negro y su torre comparten una diagonal. **Ensártalos**.", "hint": "Da jaque desde a2.", "explanation": "1.Aa2+ ataca al rey a lo largo de la diagonal a2-g8. Cuando se aparta (1...Rd4), 2.Axg8 gana la torre." }
+{ "type": "moves", "fen": "6r1/p7/8/8/2k5/8/5PPP/1B4K1 w - - 0 1", "solution": ["b1a2", "c4b4", "a2g8"], "prompt": "El rey negro y su torre comparten una diagonal. **Ensártalos**.", "hint": "Da jaque desde a2.", "explanation": "1.Aa2+ ataca al rey a lo largo de la diagonal a2-g8. Cuando se aparta (1...Rb4), 2.Axg8 gana la torre." }
 ```
 
 ```ejercicio
