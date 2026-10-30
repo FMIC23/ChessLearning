@@ -28,7 +28,7 @@ Cualquier pieza puede hacer horquillas, pero hay tres especialistas:
 ```
 
 ```ejercicio
-{ "type": "moves", "fen": "r5k1/p5pp/8/7n/8/8/5PPP/3Q2K1 w - - 0 1", "solution": ["d1d5", "g8f8", "d5a8"], "prompt": "Usa la dama para hacer una **horquilla con jaque**.", "hint": "La torre de a8 no está defendida. ¿Puedes dar jaque y atacarla a la vez?", "wrong": { "d1h5": "Ganas el caballo, pero con una horquilla puedes ganar la torre, que vale más." }, "explanation": "1.Dd5+ da jaque al rey y ataca la torre de a8. Tras 1...Rf8, 2.Dxa8+ gana la torre." }
+{ "type": "moves", "fen": "r5k1/p5pp/8/7n/8/8/5PPP/3Q2K1 w - - 0 1", "solution": ["d1d5"], "prompt": "Usa la dama para hacer una **horquilla con jaque**.", "hint": "La torre de a8 no está defendida. ¿Puedes dar jaque y atacarla a la vez?", "wrong": { "d1h5": "Ganas el caballo, pero con una horquilla puedes ganar la torre, que vale más." }, "explanation": "1.Dd5+ da jaque al rey y ataca la torre de a8. Tras cualquier respuesta del rey, 2.Dxa8+ gana la torre." }
 ```
 
 ```ejercicio
